@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Just Natural Football Club | Impulse Group</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1b9883",
+                        "background-light": "#ffffff",
+                        "background-dark": "#1a1a1a",
+                        "accent-gold": "#D1BC94",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-[#121716] dark:text-white transition-colors duration-300">
+    <!-- Top Navigation -->
+    <header
+        class="sticky top-0 z-50 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-[#f0f4f3] dark:border-white/10 px-4 md:px-20 lg:px-40 py-3">
+        <div class="max-w-[1200px] mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-8">
+                <div class="flex items-center gap-3">
+                    <div class="size-6 text-primary">
+                        <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-[#121716] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">
+                        Impulse Group</h2>
+                </div>
+                <nav class="hidden lg:flex items-center gap-8">
+                    <a class="text-[#121716] dark:text-white/80 text-sm font-medium hover:text-primary transition-colors"
+                        href="./../home_page_variant_1/code.html">Home</a>
+                    <a class="text-primary text-sm font-bold border-b-2 border-primary"
+                        href="./../just_natural_football_team_page/code.html">Football Team</a>
+                    <a class="text-[#121716] dark:text-white/80 text-sm font-medium hover:text-primary transition-colors"
+                        href="./../products_catalog_page/code.html">Products</a>
+                    <a class="text-[#121716] dark:text-white/80 text-sm font-medium hover:text-primary transition-colors"
+                        href="./../media_gallery_page/code.html">Media</a>
+                    <a class="text-[#121716] dark:text-white/80 text-sm font-medium hover:text-primary transition-colors"
+                        href="./../contact_us_page/code.html">Contact Us</a>
+                </nav>
+            </div>
+            <div class="flex items-center gap-4">
+                <button
+                    class="hidden sm:flex min-w-[100px] cursor-pointer items-center justify-center rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold">
+                    Contact Us
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="flex flex-col items-center">
+        <!-- Hero Section -->
+        <section class="w-full max-w-[1200px] px-4 py-6 md:py-10">
+            <div
+                class="relative overflow-hidden rounded-xl h-[500px] md:h-[600px] flex flex-col justify-end p-8 md:p-16">
+                <div class="absolute inset-0 z-0">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="w-full h-full bg-center bg-cover"
+                        data-alt="Professional football team group photo on green pitch"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDVwKw_DZRKaSA046oxRwvh2zuOb6xVCzZHPdglLzhCI_HNzn8IRSvR1hG1qoMHu5pCDrCGvzICYH4RCtnEhXo5IfVzi9tLd3mp9UfYtaV46O59FdYdOtAcLjJlNWuJMkXtLcdWP1LDH9pgRDFD7FERtFyjNjscuBMkdZvx-kr99OWViA3oRvLrq4zSurG7ZcGpII3a-b3WBxcnV4glSdgICRHGL0fs1yyZG8GAg0C2WgFKBFmEgS9rjK5nrm3EwOSqJRQiZ93By-c");'>
+                    </div>
+                </div>
+                <div class="relative z-10 flex flex-col gap-6 max-w-2xl">
+                    <div class="flex items-center gap-2 text-accent-gold font-bold tracking-widest text-xs uppercase">
+                        <span class="material-symbols-outlined text-sm">stars</span>
+                        Elite Corporate League
+                    </div>
+                    <h1 class="text-white text-4xl md:text-6xl font-extrabold leading-tight tracking-tighter">
+                        Just Natural Football Club: <span class="text-primary">Excellence</span> on and off the Pitch
+                    </h1>
+                    <p class="text-white/90 text-lg md:text-xl font-normal max-w-lg">
+                        Representing the spirit and health-driven mission of the Impulse Group through competitive
+                        sports and community engagement.
+                    </p>
+                    <div class="flex gap-4">
+                        <button
+                            class="bg-primary hover:bg-primary/90 text-white font-bold py-3 px-8 rounded-lg transition-all flex items-center gap-2">
+                            View Schedule
+                        </button>
+                        <button
+                            class="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/20 font-bold py-3 px-8 rounded-lg transition-all">
+                            Meet the Team
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Quick Stats Banner -->
+        <section class="w-full bg-primary/10 dark:bg-primary/5 py-12">
+            <div class="max-w-[1200px] mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="text-primary text-4xl font-black">12</div>
+                    <div class="text-[#658680] dark:text-white/60 text-sm font-bold uppercase tracking-wider">Wins This
+                        Season</div>
+                </div>
+                <div class="text-center border-l border-primary/20">
+                    <div class="text-primary text-4xl font-black">42</div>
+                    <div class="text-[#658680] dark:text-white/60 text-sm font-bold uppercase tracking-wider">Goals
+                        Scored</div>
+                </div>
+                <div class="text-center border-l border-primary/20">
+                    <div class="text-primary text-4xl font-black">8</div>
+                    <div class="text-[#658680] dark:text-white/60 text-sm font-bold uppercase tracking-wider">Clean
+                        Sheets</div>
+                </div>
+                <div class="text-center border-l border-primary/20">
+                    <div class="text-primary text-4xl font-black">2nd</div>
+                    <div class="text-[#658680] dark:text-white/60 text-sm font-bold uppercase tracking-wider">League
+                        Rank</div>
+                </div>
+            </div>
+        </section>
+        <!-- Match Results -->
+        <section class="w-full max-w-[1200px] px-4 py-16">
+            <div class="flex justify-between items-end mb-8">
+                <div>
+                    <span class="text-primary font-bold text-sm tracking-widest uppercase mb-2 block">Performance</span>
+                    <h2 class="text-3xl font-bold tracking-tight">Latest Match Results</h2>
+                </div>
+                <a class="text-primary font-bold flex items-center gap-1 hover:underline" href="#">
+                    View All Results <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                </a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Result Card 1 -->
+                <div
+                    class="group flex flex-col gap-4 rounded-xl border border-[#dce5e3] dark:border-white/10 bg-white dark:bg-white/5 p-6 hover:shadow-xl hover:border-primary/30 transition-all">
+                    <div class="flex justify-between items-center mb-2">
+                        <span
+                            class="bg-[#f0f4f3] dark:bg-white/10 text-[#658680] dark:text-white/60 px-3 py-1 rounded-full text-xs font-bold">Oct
+                            12, 2023</span>
+                        <span class="text-primary font-black">FT</span>
+                    </div>
+                    <div class="flex justify-between items-center gap-4">
+                        <div class="flex flex-col items-center gap-2 flex-1">
+                            <div class="size-12 rounded-full bg-primary/10 flex items-center justify-center p-2">
+                                <span class="material-symbols-outlined text-primary text-2xl">sports_soccer</span>
+                            </div>
+                            <span class="font-bold text-sm text-center">JNFC</span>
+                        </div>
+                        <div class="text-2xl font-black flex gap-3">
+                            <span>3</span>
+                            <span class="text-[#dce5e3]">—</span>
+                            <span>1</span>
+                        </div>
+                        <div class="flex flex-col items-center gap-2 flex-1">
+                            <div
+                                class="size-12 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center p-2 grayscale">
+                                <span class="material-symbols-outlined text-gray-400 text-2xl">shield</span>
+                            </div>
+                            <span class="font-bold text-sm text-center">Corp Rivals</span>
+                        </div>
+                    </div>
+                    <div
+                        class="mt-4 pt-4 border-t border-[#f0f4f3] dark:border-white/5 flex items-center gap-2 text-xs text-[#658680] dark:text-white/60">
+                        <span class="material-symbols-outlined text-base">location_on</span>
+                        Impulse Arena, Home
+                    </div>
+                </div>
+                <!-- Result Card 2 -->
+                <div
+                    class="group flex flex-col gap-4 rounded-xl border border-[#dce5e3] dark:border-white/10 bg-white dark:bg-white/5 p-6 hover:shadow-xl hover:border-primary/30 transition-all">
+                    <div class="flex justify-between items-center mb-2">
+                        <span
+                            class="bg-[#f0f4f3] dark:bg-white/10 text-[#658680] dark:text-white/60 px-3 py-1 rounded-full text-xs font-bold">Oct
+                            05, 2023</span>
+                        <span class="text-primary font-black">FT</span>
+                    </div>
+                    <div class="flex justify-between items-center gap-4">
+                        <div class="flex flex-col items-center gap-2 flex-1">
+                            <div
+                                class="size-12 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center p-2 grayscale">
+                                <span class="material-symbols-outlined text-gray-400 text-2xl">apartment</span>
+                            </div>
+                            <span class="font-bold text-sm text-center">Tech Utd</span>
+                        </div>
+                        <div class="text-2xl font-black flex gap-3 text-primary">
+                            <span>0</span>
+                            <span class="text-[#dce5e3]">—</span>
+                            <span>2</span>
+                        </div>
+                        <div class="flex flex-col items-center gap-2 flex-1">
+                            <div class="size-12 rounded-full bg-primary/10 flex items-center justify-center p-2">
+                                <span class="material-symbols-outlined text-primary text-2xl">sports_soccer</span>
+                            </div>
+                            <span class="font-bold text-sm text-center">JNFC</span>
+                        </div>
+                    </div>
+                    <div
+                        class="mt-4 pt-4 border-t border-[#f0f4f3] dark:border-white/5 flex items-center gap-2 text-xs text-[#658680] dark:text-white/60">
+                        <span class="material-symbols-outlined text-base">location_on</span>
+                        West Field Stadium, Away
+                    </div>
+                </div>
+                <!-- Result Card 3 -->
+                <div
+                    class="group flex flex-col gap-4 rounded-xl border border-[#dce5e3] dark:border-white/10 bg-white dark:bg-white/5 p-6 hover:shadow-xl hover:border-primary/30 transition-all">
+                    <div class="flex justify-between items-center mb-2">
+                        <span
+                            class="bg-[#f0f4f3] dark:bg-white/10 text-[#658680] dark:text-white/60 px-3 py-1 rounded-full text-xs font-bold">Sept
+                            28, 2023</span>
+                        <span class="text-primary font-black">FT</span>
+                    </div>
+                    <div class="flex justify-between items-center gap-4">
+                        <div class="flex flex-col items-center gap-2 flex-1">
+                            <div class="size-12 rounded-full bg-primary/10 flex items-center justify-center p-2">
+                                <span class="material-symbols-outlined text-primary text-2xl">sports_soccer</span>
+                            </div>
+                            <span class="font-bold text-sm text-center">JNFC</span>
+                        </div>
+                        <div class="text-2xl font-black flex gap-3">
+                            <span>1</span>
+                            <span class="text-[#dce5e3]">—</span>
+                            <span>1</span>
+                        </div>
+                        <div class="flex flex-col items-center gap-2 flex-1">
+                            <div
+                                class="size-12 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center p-2 grayscale">
+                                <span class="material-symbols-outlined text-gray-400 text-2xl">location_city</span>
+                            </div>
+                            <span class="font-bold text-sm text-center">City Builders</span>
+                        </div>
+                    </div>
+                    <div
+                        class="mt-4 pt-4 border-t border-[#f0f4f3] dark:border-white/5 flex items-center gap-2 text-xs text-[#658680] dark:text-white/60">
+                        <span class="material-symbols-outlined text-base">location_on</span>
+                        Impulse Arena, Home
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Squad List -->
+        <section class="w-full bg-[#f8f8f8] dark:bg-white/5 py-20">
+            <div class="max-w-[1200px] mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-black mb-4">Meet The Squad</h2>
+                    <p class="text-[#658680] dark:text-white/60 max-w-xl mx-auto">
+                        The talented individuals representing the Just Natural brand through teamwork, dedication, and
+                        sportsmanship.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8">
+                    <!-- Player Card 1 -->
+                    <div
+                        class="group bg-white dark:bg-background-dark rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+                        <div class="aspect-[3/4] overflow-hidden relative">
+                            <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                                data-alt="Portrait of professional football player"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBSfxoxsVmWWnL-PlAno23A3lDDYiJk9lizea6F-OkPDrvgCJUA0wHYCD_ZlinzHKxatAYf09IqXNdYayzCq6vlV2leheirFU-GY2XqNr0BGSTO-srSnLUXdHVy4lsgFH8Vbww-zw0nCI5gWcTmWdXWFWO9nMC_tpaXVz_PpArXjVeS-PLtT0W6a3QE-Ono-CuJck8V6RDWJ53qltV1ABLBvSiMSiI7KBijFqsfqs3AtLPCn74FqQd1H2sy7tihClA5Z5IUTegQU88");'>
+                            </div>
+                            <div
+                                class="absolute top-4 right-4 bg-primary text-white text-xl font-black size-10 rounded-full flex items-center justify-center shadow-lg">
+                                01</div>
+                        </div>
+                        <div class="p-5 text-center">
+                            <h3 class="font-bold text-lg mb-1 group-hover:text-primary transition-colors">Marcus Thorne
+                            </h3>
+                            <p class="text-[#658680] dark:text-white/60 text-sm font-bold uppercase tracking-wider">
+                                Goalkeeper</p>
+                        </div>
+                    </div>
+                    <!-- Player Card 2 -->
+                    <div
+                        class="group bg-white dark:bg-background-dark rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+                        <div class="aspect-[3/4] overflow-hidden relative">
+                            <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                                data-alt="Portrait of professional football player"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBAtIejUVOrWSa2nDjMSVE8w5WJqlvX99aUpQNY3TVPNEbFdYsPVySgdwDDHkbCverTJ2c4ZhWghJQFe-G1QuFySIM5f9kWEoPjKH1nhwOd4st7cyTGZN2vBGM0ljfc5ZamK87DVVByn4-HVDBpnf2Jh7JP5Q_IGJdiz7HqnBZDgTId2BD8z2NWbgaICoCUSLLXWUXDtFKTtxHuYT8-TUDLHfP0_VMoHAKpabHaPHOAXKszPJchStsgwxgJlBLeTxhH7JZdm8R45Ew");'>
+                            </div>
+                            <div
+                                class="absolute top-4 right-4 bg-primary text-white text-xl font-black size-10 rounded-full flex items-center justify-center shadow-lg">
+                                04</div>
+                        </div>
+                        <div class="p-5 text-center">
+                            <h3 class="font-bold text-lg mb-1 group-hover:text-primary transition-colors">Elena
+                                Rodriguez</h3>
+                            <p class="text-[#658680] dark:text-white/60 text-sm font-bold uppercase tracking-wider">
+                                Defender</p>
+                        </div>
+                    </div>
+                    <!-- Player Card 3 -->
+                    <div
+                        class="group bg-white dark:bg-background-dark rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+                        <div class="aspect-[3/4] overflow-hidden relative">
+                            <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                                data-alt="Portrait of professional football player"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDfFFixHYxQLxhw5bRTkt0FCOuB-wciQu1jJAr_Z1LuYE-JQzJlbbkVSuKhmcQNd71JdM68-5rfgwYUL756AVsi41BhcyrAwn72IhSMr-wLuqr66xiR18ltbDFhgGe45trNk8Z-SnCn3NQQMzgBr6SDJEaoKF43OluZm9mBbs6J0CjXu2-LRD9Xs892OYfmovxSipajBFqPYfadgiNle9HBEpO_lD5zyqaPuO4edXiGb4V4YG2xS4fVTBDrpkWbM2MbTTiR_p143dA");'>
+                            </div>
+                            <div
+                                class="absolute top-4 right-4 bg-primary text-white text-xl font-black size-10 rounded-full flex items-center justify-center shadow-lg">
+                                08</div>
+                        </div>
+                        <div class="p-5 text-center">
+                            <h3 class="font-bold text-lg mb-1 group-hover:text-primary transition-colors">David Kim</h3>
+                            <p class="text-[#658680] dark:text-white/60 text-sm font-bold uppercase tracking-wider">
+                                Midfielder</p>
+                        </div>
+                    </div>
+                    <!-- Player Card 4 -->
+                    <div
+                        class="group bg-white dark:bg-background-dark rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+                        <div class="aspect-[3/4] overflow-hidden relative">
+                            <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                                data-alt="Portrait of professional football player"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDtfY94P0UjKQeIeA7wFpCHzDB8s3C93zCi8xrjn3EHO0iD3hPtkFHmTN7uIhVTWRKWl0ZC0Enz2CkhBYj1-f6YQ7HumwgDWvl7E7u0ePyMiFZCOj3UDvyFa09omYOgTcHqAAV7au9fR_0PZJvbvQXMYcoEk1JRaEmpOzbxLPWTvxhycTvl5KpckcO9t8OLmQWyctCpp24xViHggfgxVcIE3qo_Tqo3IIaxKjKQuQ6UKtt7PDCWHuGwCjFwThsWA5mHDMm6Un2S93E");'>
+                            </div>
+                            <div
+                                class="absolute top-4 right-4 bg-primary text-white text-xl font-black size-10 rounded-full flex items-center justify-center shadow-lg">
+                                10</div>
+                        </div>
+                        <div class="p-5 text-center">
+                            <h3 class="font-bold text-lg mb-1 group-hover:text-primary transition-colors">Sarah Jenkins
+                            </h3>
+                            <p class="text-[#658680] dark:text-white/60 text-sm font-bold uppercase tracking-wider">
+                                Forward</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 text-center">
+                    <button
+                        class="border-2 border-primary text-primary hover:bg-primary hover:text-white font-bold py-3 px-10 rounded-lg transition-all">
+                        View Full Squad List
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Gallery Section -->
+        <section class="w-full max-w-[1200px] px-4 py-20">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 mb-10">
+                <div>
+                    <span class="text-accent-gold font-bold text-sm tracking-widest uppercase mb-2 block">Visuals</span>
+                    <h2 class="text-4xl font-black tracking-tight">Match Highlights</h2>
+                </div>
+                <div class="flex gap-2">
+                    <button
+                        class="p-2 border border-[#dce5e3] dark:border-white/10 rounded-lg hover:bg-primary/5 transition-colors">
+                        <span class="material-symbols-outlined">chevron_left</span>
+                    </button>
+                    <button
+                        class="p-2 border border-[#dce5e3] dark:border-white/10 rounded-lg hover:bg-primary/5 transition-colors">
+                        <span class="material-symbols-outlined">chevron_right</span>
+                    </button>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <div class="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-xl cursor-pointer">
+                    <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                        data-alt="Crowd cheering at football stadium"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDvc8GsBDEh2XqQz5dy2ef0HlUANCTJxdvtWjgqkbdqEfQtVzypMkda_P8uG7HepvE0Nz5wDzmA3S6DIbT71NhUkCCg0M9w0GJrR9Dakqq4i5438jUhsbQz8qTvERRMeOGyH5dpOBSgJ1149XpV2TPlrOA3nmfbG_GKgSB7TGxiQUDpTyYTW9v7qX9loEpi_crygSlyAHHFIo-ofBIF5AJ4J4a1jcyelpdrbs_y9QdDWcXlc4Cx_xMIMCmG63ZwLSrEiiTIZGDrYys");'>
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <div
+                            class="size-16 bg-white rounded-full flex items-center justify-center shadow-2xl scale-75 group-hover:scale-100 transition-transform">
+                            <span class="material-symbols-outlined text-primary text-3xl">play_arrow</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-xl h-48 md:h-auto cursor-pointer">
+                    <div class="w-full h-full bg-cover bg-center" data-alt="Football landing in the goal net"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB4cgP7iUNlYug2dMjuQ7KWICV7H_A_I5Q354bCUdHCgZMwySfUUJjuDuchStzVttslWtQWJ2M1ZPD49N7oRdG0v9y7wKKE6K8JeLdb6ZKXmhbF__jKsT1kvkml8tZSseBlD6NbpZjsLruR0AeLHuGzz8cIGK95xIOzIwPW7atHQ0zY9xgQOiGiCWoY9FoR-y_eV2YfQHFM_tvWGGQKrGfLAluO-O39QmCYEH2bGnF1el44TKqgx54V5kSz_8qj4jJdxfW1XvXfTFM");'>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-xl h-48 md:h-auto cursor-pointer">
+                    <div class="w-full h-full bg-cover bg-center" data-alt="Players celebrating a winning goal"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBd8pq7aAZlguJ7zPrh7lN3JlN8mBT2ap2F6WT91nif0f53JPPVu2-Tb3_MOfsXVGdt5q5Zl1hMqWVD3PAyV4bQPzFJRSpH2WIxoxhNce5FyDMfwVoAAT2xwChU1WUmHYxrVjT584Kzgh3IUB_gcfx_OngaRRj791lbO75bPYNG9P7gK6L8f1agz8F8EXsVHQbQVsD-09e5hAZoyVrY1EyzI8KfvkIPTbPd2b0vXhQC9Bsq6CI68lk2ugTBX3iaujCscSL2KO_2bEk");'>
+                    </div>
+                </div>
+                <div class="md:col-span-2 relative group overflow-hidden rounded-xl h-64 cursor-pointer">
+                    <div class="w-full h-full bg-cover bg-center" data-alt="Football team tactical board"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBM8NYPwYJiRMDd7epjVMasOjiDKg2GzsgP0CorJV-2Q4ELDKGc5ugHc8QnEfi3vftzK-zFJnJgDDFFLye9wtk8F-wupe6CoBsQYJKYJGVTk_8bDtDzn7A5yHyxjEYZZ8tI0j9RWX07NaIrm0qHdNctqDyR8_-LADcBoknnNFo8fD9L3yrdsDmNYh6LnehBkIEEiZb7qA0bLiz4rpEGxqSdjOinMXBGwN3EHYuIgdtgLfCg3sYqBh4ox8z_q0FS_ykI_-duaXS4vDU");'>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Newsletter / Community Section -->
+        <section class="w-full bg-primary py-20">
+            <div class="max-w-[800px] mx-auto px-4 text-center text-white">
+                <span class="material-symbols-outlined text-5xl mb-6">group</span>
+                <h2 class="text-4xl font-black mb-6">Join the Community</h2>
+                <p class="text-white/80 text-lg mb-10 leading-relaxed">
+                    Subscribe to our weekly match newsletter and get updates on upcoming fixtures, player insights, and
+                    exclusive Just Natural community events.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                    <input
+                        class="flex-1 rounded-lg border-none px-4 py-3 text-[#121716] focus:ring-2 focus:ring-accent-gold"
+                        placeholder="Your corporate email" type="email" />
+                    <button
+                        class="bg-accent-gold hover:bg-accent-gold/90 text-[#121716] font-black py-3 px-8 rounded-lg transition-all">
+                        Subscribe
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="w-full border-t border-[#f0f4f3] dark:border-white/10 bg-white dark:bg-background-dark py-12">
+        <div class="max-w-[1200px] mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="col-span-1 md:col-span-2">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="size-6 text-primary">
+                        <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-[#121716] dark:text-white text-xl font-bold">Impulse Group</h2>
+                </div>
+                <p class="text-[#658680] dark:text-white/60 mb-8 max-w-sm">
+                    A multi-brand conglomerate committed to excellence, health, and sustainable growth through our
+                    diverse portfolio of industry-leading companies.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6">Impulse Brands</h4>
+                <ul class="flex flex-col gap-4 text-sm text-[#658680] dark:text-white/60">
+                    <li><a class="hover:text-primary" href="#">Just Natural</a></li>
+                    <li><a class="hover:text-primary" href="#">Impulse Solutions</a></li>
+                    <li><a class="hover:text-primary" href="#">KKS Industrial</a></li>
+                    <li><a class="hover:text-primary" href="#">Corporate Services</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6">Quick Links</h4>
+                <ul class="flex flex-col gap-4 text-sm text-[#658680] dark:text-white/60">
+                    <li><a class="hover:text-primary" href="#">Match Schedule</a></li>
+                    <li><a class="hover:text-primary" href="#">Player Bios</a></li>
+                    <li><a class="hover:text-primary" href="#">Merchandise</a></li>
+                    <li><a class="hover:text-primary" href="#">Careers</a></li>
+                </ul>
+            </div>
+        </div>
+        <div
+            class="max-w-[1200px] mx-auto px-4 mt-12 pt-8 border-t border-[#f0f4f3] dark:border-white/10 flex flex-col md:flex-row justify-between gap-4 text-xs text-[#658680] dark:text-white/60">
+            <p>© 2023 Impulse Group. All rights reserved.</p>
+            <div class="flex gap-6">
+                <a class="hover:text-primary" href="#">Privacy Policy</a>
+                <a class="hover:text-primary" href="#">Terms of Service</a>
+                <a class="hover:text-primary" href="#">Cookie Settings</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

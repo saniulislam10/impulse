@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Contact Us | Impulse Group</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1b9883",
+                        "accent-gold": "#d1bc94",
+                        "background-light": "#ffffff",
+                        "background-dark": "#1a1a1a",
+                        "soft-gray": "#f8faf9",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-[#121716] transition-colors duration-300">
+    <!-- Navigation -->
+    <header
+        class="sticky top-0 z-50 w-full border-b border-solid border-[#f0f4f3] bg-white/90 backdrop-blur-md dark:bg-background-dark/90 dark:border-[#2a2a2a] px-4 md:px-10 lg:px-40 py-3">
+        <div class="max-w-[1200px] mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-4 text-primary">
+                <div class="size-8">
+                    <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_6_319)">
+                            <path
+                                d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
+                                fill="currentColor"></path>
+                        </g>
+                        <defs>
+                            <clippath id="clip0_6_319">
+                                <rect fill="white" height="48" width="48"></rect>
+                            </clippath>
+                        </defs>
+                    </svg>
+                </div>
+                <h1 class="text-[#121716] dark:text-white text-xl font-bold leading-tight tracking-tight">Impulse Group
+                </h1>
+            </div>
+            <nav class="hidden md:flex flex-1 justify-end items-center gap-8">
+                <div class="flex items-center gap-9">
+                    <a class="text-[#121716] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors"
+                        href="./../home_page_variant_2/code.html">Home</a>
+                    <a class="text-[#121716] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors"
+                        href="./../brands_overview_page/code.html">Brands</a>
+                    <a class="text-[#121716] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors"
+                        href="./../about_us_page/code.html">About Us</a>
+                    <a class="text-[#121716] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors"
+                        href="./../contact_us_page/code.html">Contact</a>
+                </div>
+                <button
+                    class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all shadow-sm">
+                    Inquire Now
+                </button>
+            </nav>
+        </div>
+    </header>
+    <main class="max-w-[1200px] mx-auto px-4 md:px-10 lg:px-40 py-12">
+        <!-- Page Heading -->
+        <div class="mb-12">
+            <h2 class="text-[#121716] dark:text-white text-5xl font-black leading-tight tracking-tight mb-4">Connect
+                With Us</h2>
+            <p class="text-[#658680] dark:text-gray-400 text-lg max-w-2xl">
+                Whether you're looking for support with <span class="text-primary font-semibold">Just Natural</span>,
+                seeking <span class="text-primary font-semibold">Impulse Solutions</span> for your business,
+                or inquiring about <span class="text-primary font-semibold">KKS</span> logistics, our team is ready to
+                assist.
+            </p>
+        </div>
+        <!-- Map Section -->
+        <div
+            class="relative w-full h-[400px] mb-16 rounded-xl overflow-hidden shadow-xl border border-gray-100 dark:border-gray-800">
+            <div class="absolute inset-0 bg-cover bg-center grayscale hover:grayscale-0 transition-all duration-700"
+                data-alt="Map showing corporate headquarters location" data-location="London, United Kingdom"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDjGG_o-0BHXtbIaxBtFToi0_r59ebztZKToheIMBmOv9NkBoSUW5ZQvXolPH7dUDiiXhx2Xrtow-1Kq6jOwp-02FMI0F-AejJu4s2CDx26Z8ZHWfruSWprkfcK4F0RHkPRj5Z3wh7Dv9mkiODMAJxUg3RyrVGrGWd8vzQXrG8KINPlDsyiRjkuwWKVaxM1nsiPQrMM1nDgDuZH1yowJ49VF-fi0OHE5n5si2BLPX2j9aS2Bq7UcN-NHuOpVlldldl-iY6XU38yYvk");'>
+            </div>
+            <div class="absolute top-6 left-6 z-10">
+                <div
+                    class="bg-white/95 dark:bg-background-dark/95 p-4 rounded-lg shadow-lg max-w-xs border-t-4 border-primary">
+                    <div class="flex items-center gap-2 text-primary mb-2">
+                        <span class="material-symbols-outlined text-sm">location_on</span>
+                        <span class="text-xs font-bold uppercase tracking-wider">Headquarters</span>
+                    </div>
+                    <p class="text-sm font-bold dark:text-white">185 Rose view plaza, Room No - 504</p>
+                    <p class="text-sm text-gray-500">Bir Uttam C R Dutta Road, Hatirpool, Dhaka</p>
+                    <button class="mt-4 text-primary text-xs font-bold hover:underline flex items-center gap-1">
+                        Get Directions <span class="material-symbols-outlined text-xs">arrow_forward</span>
+                    </button>
+                </div>
+            </div>
+            <!-- Map Controls Overlay -->
+            <div class="absolute bottom-6 right-6 flex flex-col gap-2">
+                <button
+                    class="bg-white dark:bg-gray-800 p-2 rounded-lg shadow-md hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                    <span class="material-symbols-outlined dark:text-white">add</span>
+                </button>
+                <button
+                    class="bg-white dark:bg-gray-800 p-2 rounded-lg shadow-md hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                    <span class="material-symbols-outlined dark:text-white">remove</span>
+                </button>
+            </div>
+        </div>
+        <div class="grid lg:grid-cols-5 gap-16">
+            <!-- Left Column: Info Panels -->
+            <div class="lg:col-span-2 space-y-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 flex items-center gap-2 dark:text-white">
+                        <span class="w-8 h-[2px] bg-accent-gold"></span>
+                        Office Details
+                    </h3>
+                    <div class="space-y-6">
+                        <div
+                            class="group p-4 rounded-xl border border-gray-100 dark:border-gray-800 hover:border-primary/30 transition-all bg-soft-gray/50 dark:bg-white/5">
+                            <p class="text-xs font-bold text-primary uppercase tracking-widest mb-2">General Inquiries
+                            </p>
+                            <p class="text-lg font-medium dark:text-white">+44 (0) 20 7946 0123</p>
+                            <p class="text-gray-500 text-sm">info@impulsegroupbd.com</p>
+                        </div>
+                        <div
+                            class="group p-4 rounded-xl border border-gray-100 dark:border-gray-800 hover:border-primary/30 transition-all bg-soft-gray/50 dark:bg-white/5">
+                            <p class="text-xs font-bold text-primary uppercase tracking-widest mb-2">Impulse Solutions
+                                (B2B)</p>
+                            <p class="text-lg font-medium dark:text-white">+44 (0) 20 7946 0456</p>
+                            <p class="text-gray-500 text-sm">solutions@impulsegroupbd.com</p>
+                        </div>
+                        <div
+                            class="group p-4 rounded-xl border border-gray-100 dark:border-gray-800 hover:border-primary/30 transition-all bg-soft-gray/50 dark:bg-white/5">
+                            <p class="text-xs font-bold text-primary uppercase tracking-widest mb-2">Careers</p>
+                            <p class="text-gray-500 text-sm mb-1">Looking to join our multi-brand family?</p>
+                            <p class="text-lg font-medium dark:text-white">info@impulsegroupbd.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6 bg-primary/5 dark:bg-primary/10 rounded-2xl border border-primary/10">
+                    <h4 class="font-bold text-primary mb-2">Operating Hours</h4>
+                    <ul class="text-sm space-y-2 text-[#658680] dark:text-gray-400">
+                        <li class="flex justify-between"><span>Sun - Thur</span> <span
+                                class="font-semibold text-gray-700 dark:text-gray-200">08:00 - 18:00</span></li>
+                        <li class="flex justify-between"><span>Saturday</span> <span
+                                class="font-semibold text-gray-700 dark:text-gray-200">10:00 - 14:00</span></li>
+                        <li class="flex justify-between"><span>Friday</span> <span
+                                class="font-semibold text-gray-700 dark:text-gray-200">Closed</span></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Right Column: Contact Form -->
+            <div class="lg:col-span-3">
+                <div
+                    class="bg-white dark:bg-gray-900 p-8 lg:p-10 rounded-2xl shadow-2xl shadow-primary/5 border border-gray-100 dark:border-gray-800">
+                    <h3 class="text-2xl font-bold mb-2 dark:text-white">Send us a message</h3>
+                    <p class="text-gray-500 dark:text-gray-400 mb-8">Fill out the form below and our brand-specific
+                        teams will reach out within 24 hours.</p>
+                    <form class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="flex flex-col gap-2">
+                                <label class="text-sm font-semibold dark:text-gray-300">Full Name</label>
+                                <input
+                                    class="w-full px-4 py-3 rounded-lg border border-gray-200 dark:border-gray-700 dark:bg-gray-800 dark:text-white focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all"
+                                    placeholder="John Doe" type="text" />
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label class="text-sm font-semibold dark:text-gray-300">Email Address</label>
+                                <input
+                                    class="w-full px-4 py-3 rounded-lg border border-gray-200 dark:border-gray-700 dark:bg-gray-800 dark:text-white focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all"
+                                    placeholder="john@example.com" type="email" />
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label class="text-sm font-semibold dark:text-gray-300">Relevant Brand</label>
+                            <div class="relative">
+                                <select
+                                    class="w-full px-4 py-3 rounded-lg border border-gray-200 dark:border-gray-700 dark:bg-gray-800 dark:text-white focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none appearance-none transition-all cursor-pointer">
+                                    <option value="general">Impulse Group (General)</option>
+                                    <option value="natural">Just Natural (Consumer Goods)</option>
+                                    <option value="solutions">Impulse Solutions (Enterprise)</option>
+                                    <option value="kks">KKS (Logistics &amp; Supply)</option>
+                                </select>
+                                <span
+                                    class="material-symbols-outlined absolute right-3 top-3.5 text-gray-400 pointer-events-none">expand_more</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label class="text-sm font-semibold dark:text-gray-300">Your Message</label>
+                            <textarea
+                                class="w-full px-4 py-3 rounded-lg border border-gray-200 dark:border-gray-700 dark:bg-gray-800 dark:text-white focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all resize-none"
+                                placeholder="How can we help you?" rows="5"></textarea>
+                        </div>
+                        <button
+                            class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 rounded-xl transition-all shadow-lg shadow-primary/20 flex items-center justify-center gap-2 group"
+                            type="submit">
+                            Send Message
+                            <span
+                                class="material-symbols-outlined group-hover:translate-x-1 transition-transform">send</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-soft-gray dark:bg-[#111111] border-t border-gray-100 dark:border-gray-800 pt-16 pb-8">
+        <div class="max-w-[1200px] mx-auto px-4 md:px-10 lg:px-40">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center gap-3 text-primary mb-6">
+                        <span class="material-symbols-outlined text-3xl">corporate_fare</span>
+                        <h2 class="text-2xl font-black text-[#121716] dark:text-white">Impulse Group</h2>
+                    </div>
+                    <p class="text-gray-500 dark:text-gray-400 max-w-sm mb-6">
+                        A diversified conglomerate committed to sustainable growth and innovative solutions across our
+                        market-leading brands.
+                    </p>
+                    <div class="flex gap-4">
+                        <a class="w-10 h-10 rounded-full bg-white dark:bg-gray-800 shadow-sm border border-gray-100 dark:border-gray-700 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-primary transition-colors"
+                            href="#">
+                            <span class="material-symbols-outlined text-xl">share</span>
+                        </a>
+                        <a class="w-10 h-10 rounded-full bg-white dark:bg-gray-800 shadow-sm border border-gray-100 dark:border-gray-700 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-primary transition-colors"
+                            href="#">
+                            <span class="material-symbols-outlined text-xl">group</span>
+                        </a>
+                        <a class="w-10 h-10 rounded-full bg-white dark:bg-gray-800 shadow-sm border border-gray-100 dark:border-gray-700 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-primary transition-colors"
+                            href="#">
+                            <span class="material-symbols-outlined text-xl">photo_camera</span>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6 dark:text-white">The Brands</h4>
+                    <ul class="space-y-4 text-sm text-gray-500 dark:text-gray-400">
+                        <li><a class="hover:text-primary transition-colors" href="#">Just Natural</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Impulse Solutions</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">KKS Global</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">I13 Media</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6 dark:text-white">Corporate</h4>
+                    <ul class="space-y-4 text-sm text-gray-500 dark:text-gray-400">
+                        <li><a class="hover:text-primary transition-colors" href="#">Investor Relations</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Sustainability</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Press Room</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Governance</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="pt-8 border-t border-gray-200 dark:border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-400 font-medium">
+                <p>© 2024 Impulse Group Holdings. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+                    <a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+                    <a class="hover:text-primary transition-colors" href="#">Cookie Settings</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
