@@ -3,113 +3,132 @@ import Footer from '@/components/Footer';
 
 export const metadata = {
   title: 'Contact Us | Impulse Group',
-  description: 'Get in touch with Impulse Group. We&apos;d love to hear from you.',
+  description: 'Connect with Impulse Group. Get in touch with our teams across different brands.',
 };
 
 export default function Contact() {
   return (
-    <>
+    <div className="bg-white dark:bg-[#1a1a1a] font-[Manrope] text-[#121716] dark:text-gray-100 transition-colors duration-300">
       <Header />
-      <main>
-        <section className="relative pt-20 pb-16 lg:py-32">
-          <div className="max-w-[1280px] mx-auto px-6 lg:px-10">
-            <h1 className="text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
-              Contact Us
-            </h1>
-            <p className="text-xl text-gray-600 dark:text-gray-400 leading-relaxed max-w-2xl">
-              Have questions? We&apos;d love to hear from you. Send us a message and we&apos;ll respond as soon as possible.
-            </p>
+      <main className="max-w-[1200px] mx-auto px-4 md:px-10 lg:px-40 py-12">
+        {/* Page Heading */}
+        <div className="mb-12">
+          <h2 className="text-[#121716] dark:text-white text-5xl font-black leading-tight tracking-tight mb-4">Connect With Us</h2>
+          <p className="text-[#658680] dark:text-gray-400 text-lg max-w-2xl">
+            Whether you&apos;re looking for support with <span className="text-[#1b9883] font-semibold">Just Natural</span>, seeking <span className="text-[#1b9883] font-semibold">Impulse Solutions</span> for your business, or inquiring about <span className="text-[#1b9883] font-semibold">KKS</span> logistics, our team is ready to assist.
+          </p>
+        </div>
+
+        {/* Map Section */}
+        <div className="relative w-full h-[400px] mb-16 rounded-xl overflow-hidden shadow-xl border border-gray-100 dark:border-gray-800">
+          <div
+            className="absolute inset-0 bg-cover bg-center grayscale hover:grayscale-0 transition-all duration-700"
+            style={{
+              backgroundImage: `url("https://lh3.googleusercontent.com/aida-public/AB6AXuDjGG_o-0BHXtbIaxBtFToi0_r59ebztZKToheIMBmOv9NkBoSUW5ZQvXolPH7dUDiiXhx2Xrtow-1Kq6jOwp-02FMI0F-AejJu4s2CDx26Z8ZHWfruSWprkfcK4F0RHkPRj5Z3wh7Dv9mkiODMAJxUg3RyrVGrGWd8vzQXrG8KINPlDsyiRjkuwWKVaxM1nsiPQrMM1nDgDuZH1yowJ49VF-fi0OHE5n5si2BLPX2j9aS2Bq7UcN-NHuOpVlldldl-iY6XU38yYvk")`
+            }}
+          ></div>
+          <div className="absolute top-6 left-6 z-10">
+            <div className="bg-white/95 dark:bg-[#1a1a1a]/95 p-4 rounded-lg shadow-lg max-w-xs border-t-4 border-[#1b9883]">
+              <div className="flex items-center gap-2 text-[#1b9883] mb-2">
+                <span className="material-symbols-outlined text-sm">location_on</span>
+                <span className="text-xs font-bold uppercase tracking-wider">Headquarters</span>
+              </div>
+              <p className="text-sm font-bold dark:text-white">185 Rose view plaza, Room No - 504</p>
+              <p className="text-sm text-gray-500">Bir Uttam C R Dutta Road, Hatirpool, Dhaka</p>
+              <button className="mt-4 text-[#1b9883] text-xs font-bold hover:underline flex items-center gap-1">
+                Get Directions <span className="material-symbols-outlined text-xs">arrow_forward</span>
+              </button>
+            </div>
           </div>
-        </section>
+          {/* Map Controls Overlay */}
+          <div className="absolute bottom-6 right-6 flex flex-col gap-2">
+            <button className="bg-white dark:bg-gray-800 p-2 rounded-lg shadow-md hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+              <span className="material-symbols-outlined dark:text-white">add</span>
+            </button>
+            <button className="bg-white dark:bg-gray-800 p-2 rounded-lg shadow-md hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+              <span className="material-symbols-outlined dark:text-white">remove</span>
+            </button>
+          </div>
+        </div>
 
-        <section className="py-24">
-          <div className="max-w-[1280px] mx-auto px-6 lg:px-10">
-            <div className="grid lg:grid-cols-2 gap-16">
-              {/* Contact Form */}
-              <form className="space-y-6">
-                <div>
-                  <label className="block text-sm font-semibold mb-2">Name</label>
-                  <input
-                    type="text"
-                    placeholder="Your name"
-                    className="w-full px-4 py-3 rounded-lg border border-[#dce5e3] dark:border-white/10 bg-background-light dark:bg-background-dark focus:outline-none focus:ring-2 focus:ring-primary"
-                  />
+        <div className="grid lg:grid-cols-5 gap-16">
+          {/* Left Column: Info Panels */}
+          <div className="lg:col-span-2 space-y-8">
+            <div>
+              <h3 className="text-2xl font-bold mb-6 flex items-center gap-2 dark:text-white">
+                <span className="w-8 h-[2px] bg-[#D1BC94]"></span>
+                Office Details
+              </h3>
+              <div className="space-y-6">
+                <div className="group p-4 rounded-xl border border-gray-100 dark:border-gray-800 hover:border-[#1b9883]/30 transition-all bg-[#f8faf9]/50 dark:bg-white/5">
+                  <p className="text-xs font-bold text-[#1b9883] uppercase tracking-widest mb-2">General Inquiries</p>
+                  <p className="text-lg font-medium dark:text-white">+44 (0) 20 7946 0123</p>
+                  <p className="text-gray-500 text-sm">info@impulsegroupbd.com</p>
                 </div>
-                <div>
-                  <label className="block text-sm font-semibold mb-2">Email</label>
-                  <input
-                    type="email"
-                    placeholder="your@email.com"
-                    className="w-full px-4 py-3 rounded-lg border border-[#dce5e3] dark:border-white/10 bg-background-light dark:bg-background-dark focus:outline-none focus:ring-2 focus:ring-primary"
-                  />
+                <div className="group p-4 rounded-xl border border-gray-100 dark:border-gray-800 hover:border-[#1b9883]/30 transition-all bg-[#f8faf9]/50 dark:bg-white/5">
+                  <p className="text-xs font-bold text-[#1b9883] uppercase tracking-widest mb-2">Impulse Solutions (B2B)</p>
+                  <p className="text-lg font-medium dark:text-white">+44 (0) 20 7946 0456</p>
+                  <p className="text-gray-500 text-sm">solutions@impulsegroupbd.com</p>
                 </div>
-                <div>
-                  <label className="block text-sm font-semibold mb-2">Message</label>
-                  <textarea
-                    placeholder="Your message here..."
-                    rows={6}
-                    className="w-full px-4 py-3 rounded-lg border border-[#dce5e3] dark:border-white/10 bg-background-light dark:bg-background-dark focus:outline-none focus:ring-2 focus:ring-primary"
-                  />
-                </div>
-                <button
-                  type="submit"
-                  className="w-full bg-primary hover:bg-primary/90 text-white py-3 rounded-lg font-bold transition-all"
-                >
-                  Send Message
-                </button>
-              </form>
-
-              {/* Contact Info */}
-              <div className="space-y-8">
-                <div>
-                  <h3 className="text-lg font-bold mb-3 flex items-center gap-2">
-                    <span className="material-symbols-outlined text-primary">location_on</span>
-                    Address
-                  </h3>
-                  <p className="text-gray-600 dark:text-gray-400">
-                    123 Business Avenue, Suite 500
-                    <br />
-                    Corporate Hub, Metropolis
-                  </p>
-                </div>
-
-                <div>
-                  <h3 className="text-lg font-bold mb-3 flex items-center gap-2">
-                    <span className="material-symbols-outlined text-primary">phone</span>
-                    Phone
-                  </h3>
-                  <a href="tel:+15550001234" className="text-gray-600 dark:text-gray-400 hover:text-primary">
-                    +1 (555) 000-1234
-                  </a>
-                </div>
-
-                <div>
-                  <h3 className="text-lg font-bold mb-3 flex items-center gap-2">
-                    <span className="material-symbols-outlined text-primary">mail</span>
-                    Email
-                  </h3>
-                  <a href="mailto:hello@imperialgroup.com" className="text-gray-600 dark:text-gray-400 hover:text-primary">
-                    hello@imperialgroup.com
-                  </a>
-                </div>
-
-                <div>
-                  <h3 className="text-lg font-bold mb-3 flex items-center gap-2">
-                    <span className="material-symbols-outlined text-primary">schedule</span>
-                    Business Hours
-                  </h3>
-                  <p className="text-gray-600 dark:text-gray-400">
-                    Monday - Friday: 9:00 AM - 6:00 PM
-                    <br />
-                    Saturday - Sunday: Closed
-                  </p>
+                <div className="group p-4 rounded-xl border border-gray-100 dark:border-gray-800 hover:border-[#1b9883]/30 transition-all bg-[#f8faf9]/50 dark:bg-white/5">
+                  <p className="text-xs font-bold text-[#1b9883] uppercase tracking-widest mb-2">Careers</p>
+                  <p className="text-gray-500 text-sm mb-1">Looking to join our multi-brand family?</p>
+                  <p className="text-lg font-medium dark:text-white">info@impulsegroupbd.com</p>
                 </div>
               </div>
             </div>
+            <div className="p-6 bg-[#1b9883]/5 dark:bg-[#1b9883]/10 rounded-2xl border border-[#1b9883]/10">
+              <h4 className="font-bold text-[#1b9883] mb-2">Operating Hours</h4>
+              <ul className="text-sm space-y-2 text-[#658680] dark:text-gray-400">
+                <li className="flex justify-between"><span>Sun - Thur</span> <span className="font-semibold text-gray-700 dark:text-gray-200">08:00 - 18:00</span></li>
+                <li className="flex justify-between"><span>Saturday</span> <span className="font-semibold text-gray-700 dark:text-gray-200">10:00 - 14:00</span></li>
+                <li className="flex justify-between"><span>Friday</span> <span className="font-semibold text-gray-700 dark:text-gray-200">Closed</span></li>
+              </ul>
+            </div>
           </div>
-        </section>
+
+          {/* Right Column: Contact Form */}
+          <div className="lg:col-span-3">
+            <div className="bg-white dark:bg-gray-900 p-8 lg:p-10 rounded-2xl shadow-2xl shadow-[#1b9883]/5 border border-gray-100 dark:border-gray-800">
+              <h3 className="text-2xl font-bold mb-2 dark:text-white">Send us a message</h3>
+              <p className="text-gray-500 dark:text-gray-400 mb-8">Fill out the form below and our brand-specific teams will reach out within 24 hours.</p>
+              <form className="space-y-6">
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="flex flex-col gap-2">
+                    <label className="text-sm font-semibold dark:text-gray-300">Full Name</label>
+                    <input className="w-full px-4 py-3 rounded-lg border border-gray-200 dark:border-gray-700 dark:bg-gray-800 dark:text-white focus:ring-2 focus:ring-[#1b9883]/20 focus:border-[#1b9883] outline-none transition-all" placeholder="John Doe" type="text" />
+                  </div>
+                  <div className="flex flex-col gap-2">
+                    <label className="text-sm font-semibold dark:text-gray-300">Email Address</label>
+                    <input className="w-full px-4 py-3 rounded-lg border border-gray-200 dark:border-gray-700 dark:bg-gray-800 dark:text-white focus:ring-2 focus:ring-[#1b9883]/20 focus:border-[#1b9883] outline-none transition-all" placeholder="john@example.com" type="email" />
+                  </div>
+                </div>
+                <div className="flex flex-col gap-2">
+                  <label className="text-sm font-semibold dark:text-gray-300">Relevant Brand</label>
+                  <div className="relative">
+                    <select className="w-full px-4 py-3 rounded-lg border border-gray-200 dark:border-gray-700 dark:bg-gray-800 dark:text-white focus:ring-2 focus:ring-[#1b9883]/20 focus:border-[#1b9883] outline-none appearance-none transition-all cursor-pointer">
+                      <option value="general">Impulse Group (General)</option>
+                      <option value="natural">Just Natural (Consumer Goods)</option>
+                      <option value="solutions">Impulse Solutions (Enterprise)</option>
+                      <option value="kks">KKS (Logistics &amp; Supply)</option>
+                    </select>
+                    <span className="material-symbols-outlined absolute right-3 top-3.5 text-gray-400 pointer-events-none">expand_more</span>
+                  </div>
+                </div>
+                <div className="flex flex-col gap-2">
+                  <label className="text-sm font-semibold dark:text-gray-300">Your Message</label>
+                  <textarea className="w-full px-4 py-3 rounded-lg border border-gray-200 dark:border-gray-700 dark:bg-gray-800 dark:text-white focus:ring-2 focus:ring-[#1b9883]/20 focus:border-[#1b9883] outline-none transition-all resize-none" placeholder="How can we help you?" rows={5}></textarea>
+                </div>
+                <button className="w-full bg-[#1b9883] hover:bg-[#1b9883]/90 text-white font-bold py-4 rounded-xl transition-all shadow-lg shadow-[#1b9883]/20 flex items-center justify-center gap-2 group" type="submit">
+                  Send Message
+                  <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">send</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
