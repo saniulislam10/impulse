@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>About Us | Impulse Group</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1b9883",
+                        "accent-gold": "#d1bc94",
+                        "background-light": "#ffffff",
+                        "background-dark": "#1a1a1a",
+                        "surface-light": "#f8fafa",
+                        "surface-dark": "#242424",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-[#121716] dark:text-gray-100 transition-colors duration-300">
+    <!-- Top Navigation Bar -->
+    <header
+        class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-[#f0f4f3] dark:border-gray-800">
+        <div class="max-w-[1280px] mx-auto px-6 lg:px-10 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-10">
+                <div class="flex items-center gap-3">
+                    <div class="size-8 text-primary">
+                        <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-xl font-extrabold tracking-tight">
+                        <a href="./home1.html">
+                            Impulse Group
+                        </a>
+                    </h2>
+                </div>
+                <nav class="hidden lg:flex items-center gap-8">
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="./about_us.html">About
+                        Us</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors"
+                        href="./brands.html">Brands</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors"
+                        href="./products.html">Products</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors"
+                        href="./media.html">Gallery</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors"
+                        href="./football_team.html">Football Team</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors"
+                        href="./contact_us.html">Contact Us</a>
+                </nav>
+            </div>
+            <div class="flex items-center gap-6">
+                <div
+                    class="hidden lg:flex items-center bg-surface-light dark:bg-surface-dark rounded-lg px-3 py-1.5 border border-[#f0f4f3] dark:border-gray-700">
+                    <span class="material-symbols-outlined text-gray-400 text-xl">search</span>
+                    <input class="bg-transparent border-none focus:ring-0 text-sm w-48" placeholder="Search insights..."
+                        type="text" />
+                </div>
+                <button
+                    class="bg-primary text-white text-sm font-bold px-6 py-2.5 rounded-lg hover:bg-opacity-90 transition-all shadow-sm">
+                    Get in Touch
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="max-w-[1280px] mx-auto">
+        <!-- Breadcrumbs -->
+        <div class="px-6 lg:px-10 py-6">
+            <div class="flex items-center gap-2 text-sm font-medium text-gray-500 dark:text-gray-400">
+                <a class="hover:text-primary" href="#">Home</a>
+                <span class="material-symbols-outlined text-xs">chevron_right</span>
+                <span class="text-primary">About Us</span>
+            </div>
+        </div>
+        <!-- Hero Section -->
+        <section class="px-6 lg:px-10 pb-16">
+            <div
+                class="relative overflow-hidden rounded-2xl bg-surface-light dark:bg-surface-dark p-8 lg:p-16 flex flex-col lg:flex-row items-center gap-12">
+                <div class="flex-1 space-y-6">
+                    <span
+                        class="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest rounded">Our
+                        Legacy</span>
+                    <h1 class="text-4xl lg:text-6xl font-black leading-tight tracking-tight">
+                        Pioneering <span class="text-primary">Excellence</span> Across Generations
+                    </h1>
+                    <p class="text-lg text-gray-600 dark:text-gray-400 max-w-xl leading-relaxed">
+                        A multi-brand conglomerate dedicated to innovation, sustainability, and growth. We harmonize the
+                        organic purity of Just Natural with the precision of Impulse Solutions and the scale of KKS.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <button
+                            class="bg-primary text-white font-bold px-8 py-4 rounded-xl hover:scale-105 transition-transform shadow-lg shadow-primary/20">
+                            Explore Our Journey
+                        </button>
+                        <button
+                            class="bg-white dark:bg-gray-800 border-2 border-primary/20 text-primary font-bold px-8 py-4 rounded-xl hover:bg-primary/5 transition-colors">
+                            Our Impact
+                        </button>
+                    </div>
+                </div>
+                <div class="flex-1 w-full max-w-[540px]">
+                    <div class="aspect-[4/3] rounded-2xl bg-center bg-cover shadow-2xl"
+                        data-alt="Modern corporate architectural glass building reflecting the sky"
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBO1IiNkOrfjg1yRL21n9puBv8UE7TR3NKYVLbZL55jNtZv7wsd7HZQvidiSw7gD1gXCGVneg-er6W_Y_xkzS3ojQLcAcZ0AnQnlrtT7LP_HL7s5-WLaDs1CoHRtQo2Mh878JNzJJRv8ranqYShlCz5xnE0qY1aaKeUm8GkbPDg3xp3ArRfDw2j8CM6WkTN716YEUupZi3TVb-SwC3ChdRJUUPBZZB_sweIw0AZcXdr1edfuEfkLb-8B6vMF-Vq9dkDKlzB3MljY_4');">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Chairperson's Speech -->
+        <section class="px-6 lg:px-10 py-20 bg-primary/5 dark:bg-primary/10 -mx-6 lg:-mx-10">
+            <div class="max-w-[1100px] mx-auto flex flex-col lg:flex-row items-center gap-16">
+                <div class="w-full lg:w-1/2 relative">
+                    <div class="absolute -top-4 -left-4 w-24 h-24 bg-accent-gold/20 rounded-full blur-2xl"></div>
+                    <div
+                        class="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl border-8 border-white dark:border-gray-800">
+                        <img alt="Professional portrait of the Chairperson" class="w-full h-full object-cover"
+                            data-alt="Professional woman in business attire smiling in office"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAalncMc-OqSTGkMdxYxZf0jjoJ_ZUpT-WJe4iuriPQPj5pv3EDOt4_t0TtQJR_adtqZ0iGuvcRNBx4_JAce5TLFf4B7g5hv-wYsrqFKb8skxkX6ECnsS4nx3KurSx778G2sXNTX5gx-NV7YGTJlgf0r4sKPmt3Gi982lqp-VNzG5820tKupgD9GQwZLOqFtpmzu5UOZZFXHa2d9ISUq5jCLB7NJZtRRYT-YZ6IXrNeJvVO3-R6Y50vs6UpmzXQOM8ZjX-9mDs7Lb0" />
+                    </div>
+                    <div
+                        class="absolute -bottom-6 -right-6 bg-white dark:bg-gray-800 p-6 rounded-xl shadow-xl max-w-[240px]">
+                        <p class="font-bold text-lg">Neher Saha</p>
+                        <p class="text-primary text-sm font-semibold">Chairperson &amp; Founder</p>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 space-y-8">
+                    <span class="material-symbols-outlined text-6xl text-accent-gold opacity-50">format_quote</span>
+                    <h2 class="text-3xl font-bold italic leading-snug">
+                        "Sustainability is no longer a choice; it's the core of how we build the future. At Impulse
+                        Group, we don't just scale businesses; we nurture ecosystems."
+                    </h2>
+                    <div class="h-1 w-20 bg-accent-gold"></div>
+                    <div class="space-y-4 text-gray-600 dark:text-gray-300 leading-relaxed text-lg">
+                        <p>
+                            For nearly three decades, Impulse Group has evolved from a local startup into a global
+                            powerhouse. Our philosophy is simple: innovate where it matters most.
+                        </p>
+                        <p>
+                            Through 'Just Natural', we've returned to our roots in organic wellness. Through 'Impulse
+                            Solutions', we define the cutting edge of industrial tech. And through 'KKS', we manage the
+                            logistics that connect the world.
+                        </p>
+                    </div>
+                    <div class="pt-4">
+                        <img alt="Signature" class="opacity-70 dark:invert"
+                            data-alt="Handwritten artistic signature of Elena Impulse"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZrL8WsGmB62OUD8UgSHcEUID3Cz9RP7uPambPpIN1-sPk61-jmJ3P6NgS3l0p2yOhIOvulRgZdN7hmZtwU7-ezSnC5GTV8cGhq5BXDdOOkq8j1jRRzTI00jp-uOP-J6KES1hNKeGR0oknqulU-9E2GfmwlvINSWZu45rHJB-gqMRRM385nUA0rmY3iyit-bbitu5Itz6M0wUC4w9YtfvG_3HObS_5TDsoKpLAwy5VqvQUf3YnBYeZXnlz6qPrNGRhQfgXjQuurw0" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Vertical Timeline -->
+        <section class="px-6 lg:px-10 py-24">
+            <div class="text-center max-w-2xl mx-auto mb-20">
+                <h2 class="text-4xl font-black mb-4">Our Historic Milestones</h2>
+                <p class="text-gray-500">The journey of a thousand miles that began with a single vision in 1995.</p>
+            </div>
+            <div class="relative max-w-4xl mx-auto">
+                <!-- Vertical Line -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gray-200 dark:bg-gray-800">
+                </div>
+                <div class="space-y-24">
+                    <!-- Milestone 1 -->
+                    <div class="relative flex items-center justify-between flex-row-reverse md:flex-row">
+                        <div
+                            class="w-full md:w-[45%] bg-white dark:bg-surface-dark p-8 rounded-2xl shadow-lg border-l-4 border-primary">
+                            <span class="text-primary font-black text-2xl">1995</span>
+                            <h3 class="text-xl font-bold mt-2">Foundation of Impulse Group</h3>
+                            <p class="text-gray-500 mt-3 leading-relaxed">Started as a small consulting firm in London,
+                                focusing on sustainable industrial practices before it was a global trend.</p>
+                        </div>
+                        <div
+                            class="absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center size-10 rounded-full bg-primary text-white border-4 border-white dark:border-background-dark z-10">
+                            <span class="material-symbols-outlined text-lg">history_edu</span>
+                        </div>
+                        <div class="hidden md:block w-[45%]"></div>
+                    </div>
+                    <!-- Milestone 2 -->
+                    <div class="relative flex items-center justify-between">
+                        <div class="hidden md:block w-[45%]"></div>
+                        <div
+                            class="absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center size-10 rounded-full bg-accent-gold text-white border-4 border-white dark:border-background-dark z-10">
+                            <span class="material-symbols-outlined text-lg">eco</span>
+                        </div>
+                        <div
+                            class="w-full md:w-[45%] bg-white dark:bg-surface-dark p-8 rounded-2xl shadow-lg border-r-4 border-accent-gold">
+                            <span class="text-accent-gold font-black text-2xl">2005</span>
+                            <h3 class="text-xl font-bold mt-2">Launch of Just Natural</h3>
+                            <p class="text-gray-500 mt-3 leading-relaxed">Diversified into the FMCG sector with an
+                                organic-first approach, launching our flagship health brand.</p>
+                        </div>
+                    </div>
+                    <!-- Milestone 3 -->
+                    <div class="relative flex items-center justify-between flex-row-reverse md:flex-row">
+                        <div
+                            class="w-full md:w-[45%] bg-white dark:bg-surface-dark p-8 rounded-2xl shadow-lg border-l-4 border-primary">
+                            <span class="text-primary font-black text-2xl">2012</span>
+                            <h3 class="text-xl font-bold mt-2">Expansion into Solutions</h3>
+                            <p class="text-gray-500 mt-3 leading-relaxed">Impulse Solutions was established to provide
+                                enterprise-level technological frameworks for global logistics.</p>
+                        </div>
+                        <div
+                            class="absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center size-10 rounded-full bg-primary text-white border-4 border-white dark:border-background-dark z-10">
+                            <span class="material-symbols-outlined text-lg">precision_manufacturing</span>
+                        </div>
+                        <div class="hidden md:block w-[45%]"></div>
+                    </div>
+                    <!-- Milestone 4 -->
+                    <div class="relative flex items-center justify-between">
+                        <div class="hidden md:block w-[45%]"></div>
+                        <div
+                            class="absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center size-10 rounded-full bg-gray-900 text-white border-4 border-white dark:border-background-dark z-10">
+                            <span class="material-symbols-outlined text-lg">hub</span>
+                        </div>
+                        <div
+                            class="w-full md:w-[45%] bg-white dark:bg-surface-dark p-8 rounded-2xl shadow-lg border-r-4 border-gray-900">
+                            <span class="text-gray-900 dark:text-gray-100 font-black text-2xl">2020</span>
+                            <h3 class="text-xl font-bold mt-2">Acquisition of KKS</h3>
+                            <p class="text-gray-500 mt-3 leading-relaxed">Finalized the acquisition of KKS Logistics,
+                                completing our end-to-end supply chain integration.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Key Team Section -->
+        <section class="px-6 lg:px-10 py-24 bg-surface-light dark:bg-surface-dark rounded-3xl mb-24">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div class="max-w-xl">
+                    <h2 class="text-4xl font-black mb-4">The Minds Behind Impulse</h2>
+                    <p class="text-gray-500">A collective of visionaries, engineers, and strategists leading the charge
+                        across three industries.</p>
+                </div>
+                <button
+                    class="flex items-center gap-2 text-primary font-bold border-b-2 border-primary/20 hover:border-primary pb-1 transition-all">
+                    View Full Directory <span class="material-symbols-outlined">arrow_forward</span>
+                </button>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Team Member 1 -->
+                <div
+                    class="group bg-white dark:bg-background-dark p-4 rounded-2xl shadow-sm hover:shadow-xl transition-all hover:-translate-y-2">
+                    <div class="aspect-square overflow-hidden rounded-xl mb-6 bg-gray-100">
+                        <img alt="David Chen"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                            data-alt="Professional man in dark suit with glasses"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvse2a4yL7TReINFxSv62fEtl9TJ6gpJv8wpX9UTM4huKnAkO7n9GynZ2COvLHVqSUplAk6O5dNmhdk7iLwl37lvtCMJyBVKQliHI2uJ1nbwBPQfxTKkUOBIXzWBXrxcnaH4dPW-owLD1fYNZsS505dc98Jx4vqFM0XbmhKYmmxUlbVD2lSt1woGrBeCIN0bN1Oprq52hutL4-3Msa0x-yKsjRuW4UX4Fk9vvGkcrwsfB-qv3Dqv5jZO1fmwtaj5NID8dg26BqmPw" />
+                    </div>
+                    <div class="text-center">
+                        <h4 class="text-lg font-extrabold">David Chen</h4>
+                        <p class="text-sm text-primary font-semibold uppercase tracking-wider mt-1">CEO, Impulse
+                            Solutions</p>
+                        <div class="flex justify-center gap-3 mt-4 text-gray-400">
+                            <span
+                                class="material-symbols-outlined text-lg cursor-pointer hover:text-primary">alternate_email</span>
+                            <span
+                                class="material-symbols-outlined text-lg cursor-pointer hover:text-primary">person</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team Member 2 -->
+                <div
+                    class="group bg-white dark:bg-background-dark p-4 rounded-2xl shadow-sm hover:shadow-xl transition-all hover:-translate-y-2">
+                    <div class="aspect-square overflow-hidden rounded-xl mb-6 bg-gray-100">
+                        <img alt="Sarah Janssen"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                            data-alt="Professional woman in white blazer smiling"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhJ5lfEsPmEIQZOAK3PhXFlm9UDmgHlEl-P3okl4nBAQjLVsgSR-lLeZmWKhImc3PxPbBKhoyp-FlWlwYDHE1PRGljbeEyS0LMYtd9AoDfmOe1R7DAnKXIRsmsh1KXIyVGoMtqcBUbEgtVKT2MJaFSaUYamwTiE7BROSZAPOaxtUl-5Z1YRwqBQt1NCGU7KIFdVgJZmgR8-Chtk-ULNxG3SX9W05cQps9wqYdraAJqgF_KhcWHKkWqLI5xrNES-0nqHS6wZjawqSE" />
+                    </div>
+                    <div class="text-center">
+                        <h4 class="text-lg font-extrabold">Sarah Janssen</h4>
+                        <p class="text-sm text-primary font-semibold uppercase tracking-wider mt-1">Head of Just Natural
+                        </p>
+                        <div class="flex justify-center gap-3 mt-4 text-gray-400">
+                            <span
+                                class="material-symbols-outlined text-lg cursor-pointer hover:text-primary">alternate_email</span>
+                            <span
+                                class="material-symbols-outlined text-lg cursor-pointer hover:text-primary">person</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team Member 3 -->
+                <div
+                    class="group bg-white dark:bg-background-dark p-4 rounded-2xl shadow-sm hover:shadow-xl transition-all hover:-translate-y-2">
+                    <div class="aspect-square overflow-hidden rounded-xl mb-6 bg-gray-100">
+                        <img alt="Marcus Thorne"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                            data-alt="Professional man with short beard in blue shirt"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkxV7j3cHWbF-UYpIQRdw0lunyaZBTSigD_xsMiVBHciRmj0iYqcT-qtMcTNuqPDXNmwhXmvJQojcQoB6rdDHBL2wzjRUv4CRcmmwqxnqKsFlKebXC-ZY5oWH1DJIi4wW3Hu0LEeIf9nfK1iHtte5wk9L27_XvObzka0IkmiHHhrIbQ9MBl-CNBpRQOdqrqgM62z78hSsBmiZXcCAxLrh4mYNfJayk7g4qSKv7__2ue0sNBT8hRRMobWdGnDa3FMKhaQhEiQG3crY" />
+                    </div>
+                    <div class="text-center">
+                        <h4 class="text-lg font-extrabold">Marcus Thorne</h4>
+                        <p class="text-sm text-primary font-semibold uppercase tracking-wider mt-1">Director of
+                            Operations, KKS</p>
+                        <div class="flex justify-center gap-3 mt-4 text-gray-400">
+                            <span
+                                class="material-symbols-outlined text-lg cursor-pointer hover:text-primary">alternate_email</span>
+                            <span
+                                class="material-symbols-outlined text-lg cursor-pointer hover:text-primary">person</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team Member 4 -->
+                <div
+                    class="group bg-white dark:bg-background-dark p-4 rounded-2xl shadow-sm hover:shadow-xl transition-all hover:-translate-y-2">
+                    <div class="aspect-square overflow-hidden rounded-xl mb-6 bg-gray-100">
+                        <img alt="Dr. Linda Woo"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                            data-alt="Professional woman with glasses in modern office"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIrLv5KN5_q2GU9tWqjx-Rkmuf9yqe80TQ55J7Kj2WNDq8z9BgsKO2hehpCRhDEBsEn486gDSfDkR6QcV6IH9StE9Ag4qhvInyNh_Fm5qX_FyEZTto2ARefpk5lPD9p88xJ9UTzhuM89geIQcUXyNKzjsuTE8AZ_JYXch2JVWWmTIYWslmq_wjMYo12hMJfOSGXCZMWE-A_6J6zxSc-cOqU5Dm8DUyWS5GnqPZGg3E7LqdX23GO2cGg5UiHAr4lf0641e3aaOG9NY" />
+                    </div>
+                    <div class="text-center">
+                        <h4 class="text-lg font-extrabold">Dr. Linda Woo</h4>
+                        <p class="text-sm text-primary font-semibold uppercase tracking-wider mt-1">Chief Sustainability
+                            Officer</p>
+                        <div class="flex justify-center gap-3 mt-4 text-gray-400">
+                            <span
+                                class="material-symbols-outlined text-lg cursor-pointer hover:text-primary">alternate_email</span>
+                            <span
+                                class="material-symbols-outlined text-lg cursor-pointer hover:text-primary">person</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-20 px-6 lg:px-10">
+        <div class="max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+            <div class="space-y-6">
+                <div class="flex items-center gap-3">
+                    <div class="size-8 text-primary">
+                        <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-xl font-extrabold tracking-tight">Impulse Group</h2>
+                </div>
+                <p class="text-gray-400 leading-relaxed">Defining industrial excellence since 1995. Built on integrity,
+                    fueled by innovation.</p>
+                <div class="flex gap-4">
+                    <div
+                        class="size-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors cursor-pointer">
+                        <span class="material-symbols-outlined text-sm">share</span>
+                    </div>
+                    <div
+                        class="size-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors cursor-pointer">
+                        <span class="material-symbols-outlined text-sm">public</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-6">Our Brands</h4>
+                <ul class="space-y-4 text-gray-400">
+                    <li><a class="hover:text-primary" href="#">Just Natural</a></li>
+                    <li><a class="hover:text-primary" href="#">Impulse Solutions</a></li>
+                    <li><a class="hover:text-primary" href="#">KKS Logistics</a></li>
+                    <li><a class="hover:text-primary" href="#">I13 Media</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-6">Company</h4>
+                <ul class="space-y-4 text-gray-400">
+                    <li><a class="hover:text-primary" href="#">About Us</a></li>
+                    <li><a class="hover:text-primary" href="#">Leadership Team</a></li>
+                    <li><a class="hover:text-primary" href="#">Careers</a></li>
+                    <li><a class="hover:text-primary" href="#">Global News</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-6">Newsletter</h4>
+                <p class="text-gray-400 mb-4">Stay updated with our latest ventures.</p>
+                <div class="flex overflow-hidden rounded-lg">
+                    <input class="bg-gray-800 border-none text-sm px-4 flex-1 focus:ring-1 focus:ring-primary"
+                        placeholder="Email address" type="email" />
+                    <button class="bg-primary px-4 py-2 hover:bg-opacity-90">
+                        <span class="material-symbols-outlined">send</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div
+            class="max-w-[1280px] mx-auto mt-20 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between text-gray-500 text-sm">
+            <p>© 2026 Impulse Group Holdings. All rights reserved.</p>
+            <div class="flex gap-8 mt-4 md:mt-0">
+                <a class="hover:text-white" href="#">Privacy Policy</a>
+                <a class="hover:text-white" href="#">Terms of Service</a>
+                <a class="hover:text-white" href="#">Compliance</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

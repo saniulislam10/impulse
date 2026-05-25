@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Products Catalog | Impulse Group</title>
+    <!-- Material Symbols -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1b9883",
+                        "accent-gold": "#D1BC94",
+                        "background-light": "#ffffff",
+                        "background-dark": "#1a1a1a",
+                        "off-white": "#f8f8f8",
+                        "border-subtle": "#f0f4f3",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-[#121716] dark:text-white min-h-screen flex flex-col">
+    <!-- Top Navigation -->
+    <header
+        class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-border-subtle dark:border-white/10 px-6 lg:px-20 py-4">
+        <div class="max-w-[1440px] mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-12">
+                <div class="flex items-center gap-3">
+                    <div class="size-8 bg-primary rounded-lg flex items-center justify-center text-white">
+                        <span class="material-symbols-outlined">corporate_fare</span>
+                    </div>
+                    <h2 class="text-xl font-extrabold tracking-tight">
+                        <a href="./home1.html">
+                            Impulse Group
+                        </a>
+                    </h2>
+                </div>
+                <nav class="hidden lg:flex items-center gap-8">
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="./about_us.html">About
+                        Us</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors"
+                        href="./brands.html">Brands</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors"
+                        href="./products.html">Products</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors"
+                        href="./media.html">Gallery</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors"
+                        href="./football_team.html">Football Team</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors"
+                        href="./contact_us.html">Contact Us</a>
+                </nav>
+            </div>
+            <div class="flex items-center gap-6">
+                <div class="relative hidden sm:block">
+                    <span
+                        class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[#658680] text-xl">search</span>
+                    <input
+                        class="bg-off-white dark:bg-white/5 border-none rounded-lg pl-10 pr-4 py-2 text-sm w-64 focus:ring-2 focus:ring-primary/20"
+                        placeholder="Search catalog..." type="text" />
+                </div>
+                <button
+                    class="flex items-center gap-2 px-5 py-2.5 bg-primary text-white text-sm font-bold rounded-lg hover:brightness-110 transition-all">
+                    <span class="material-symbols-outlined text-lg">login</span>
+                    Login
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="flex-1 flex flex-col lg:flex-row max-w-[1440px] mx-auto w-full px-6 lg:px-20 py-8 gap-10">
+        <!-- Sidebar Filter -->
+        <aside class="w-full lg:w-72 flex-shrink-0">
+            <div class="sticky top-28 space-y-8">
+                <div>
+                    <h3 class="text-sm font-bold uppercase tracking-wider text-[#658680] mb-4">Brands</h3>
+                    <div class="space-y-2">
+                        <label
+                            class="flex items-center justify-between p-3 rounded-xl bg-primary/10 border border-primary/20 cursor-pointer group">
+                            <div class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-primary">eco</span>
+                                <span class="text-sm font-semibold">Just Natural</span>
+                            </div>
+                            <span class="text-xs font-bold text-primary">24</span>
+                        </label>
+                        <label
+                            class="flex items-center justify-between p-3 rounded-xl hover:bg-off-white dark:hover:bg-white/5 cursor-pointer group transition-colors">
+                            <div class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-[#658680]">cloud_done</span>
+                                <span class="text-sm font-medium">Impulse Solutions</span>
+                            </div>
+                            <span class="text-xs font-medium text-[#658680]">18</span>
+                        </label>
+                        <label
+                            class="flex items-center justify-between p-3 rounded-xl hover:bg-off-white dark:hover:bg-white/5 cursor-pointer group transition-colors">
+                            <div class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-[#658680]">precision_manufacturing</span>
+                                <span class="text-sm font-medium">KKS Industrial</span>
+                            </div>
+                            <span class="text-xs font-medium text-[#658680]">12</span>
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-sm font-bold uppercase tracking-wider text-[#658680] mb-4">Product Type</h3>
+                    <div class="space-y-3">
+                        <label class="flex items-center gap-3 cursor-pointer">
+                            <input checked=""
+                                class="rounded text-primary focus:ring-primary/30 size-5 border-border-subtle"
+                                type="checkbox" />
+                            <span class="text-sm">Organic Foods</span>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer">
+                            <input class="rounded text-primary focus:ring-primary/30 size-5 border-border-subtle"
+                                type="checkbox" />
+                            <span class="text-sm">Cloud Architecture</span>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer">
+                            <input class="rounded text-primary focus:ring-primary/30 size-5 border-border-subtle"
+                                type="checkbox" />
+                            <span class="text-sm">Industrial Precision Tools</span>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer">
+                            <input class="rounded text-primary focus:ring-primary/30 size-5 border-border-subtle"
+                                type="checkbox" />
+                            <span class="text-sm">Sustainability Consulting</span>
+                        </label>
+                    </div>
+                </div>
+                <button
+                    class="w-full flex items-center justify-center gap-2 py-3 border-2 border-border-subtle dark:border-white/10 text-sm font-bold rounded-xl hover:bg-off-white dark:hover:bg-white/5 transition-colors">
+                    <span class="material-symbols-outlined text-lg">filter_alt_off</span>
+                    Clear Filters
+                </button>
+            </div>
+        </aside>
+        <!-- Content Area -->
+        <div class="flex-1 space-y-6">
+            <!-- Breadcrumbs & Heading -->
+            <div class="space-y-4">
+                <nav class="flex items-center gap-2 text-sm font-medium text-[#658680]">
+                    <a class="hover:text-primary" href="#">Home</a>
+                    <span class="material-symbols-outlined text-base">chevron_right</span>
+                    <span class="text-[#121716] dark:text-white">Product Catalog</span>
+                </nav>
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+                    <div>
+                        <h1 class="text-4xl font-black tracking-tight mb-2">Portfolio Explorer</h1>
+                        <p class="text-[#658680]">Discover excellence across our multi-brand conglomerate.</p>
+                    </div>
+                    <button
+                        class="flex items-center gap-2 px-5 py-2.5 bg-off-white dark:bg-white/5 text-[#121716] dark:text-white text-sm font-bold rounded-lg border border-border-subtle dark:border-white/10 hover:border-primary/50 transition-all">
+                        <span class="material-symbols-outlined text-lg">download</span>
+                        Full Catalog (PDF)
+                    </button>
+                </div>
+            </div>
+            <!-- Active Chips -->
+            <div class="flex flex-wrap gap-2 py-2">
+                <div
+                    class="flex items-center gap-2 bg-primary/10 text-primary px-3 py-1.5 rounded-full text-xs font-bold border border-primary/20">
+                    Brand: Just Natural
+                    <span class="material-symbols-outlined text-sm cursor-pointer">close</span>
+                </div>
+                <div
+                    class="flex items-center gap-2 bg-off-white dark:bg-white/5 text-[#658680] px-3 py-1.5 rounded-full text-xs font-bold border border-border-subtle">
+                    Category: Organic Food
+                    <span class="material-symbols-outlined text-sm cursor-pointer">close</span>
+                </div>
+            </div>
+            <!-- Product Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8">
+                <!-- Card 1: Just Natural -->
+                <div
+                    class="group bg-background-light dark:bg-white/5 rounded-2xl border border-border-subtle dark:border-white/10 overflow-hidden hover:shadow-2xl hover:shadow-primary/5 hover:-translate-y-1 transition-all duration-300">
+                    <div class="relative aspect-[4/3] overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent z-10"></div>
+                        <img alt="Organic olive oil in glass bottle"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            data-alt="Organic cold pressed olive oil bottle"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRyLNKgcaXPYHX-kibQ4BWyMDoJk9RoJm7eLhDnk74BAMAj0UWw94TrSoO63QM4Ewt75eq5A6y6nhK2lTTqHXYGgQ_5R0dEGlYvi9-K5wRA-UFKAxDwxKM8-6kJ57ohzOewChyoME8piT3704fuDOSJTH8X40Ect42Z3b_10Cblw4EA7wRR7lzpghUVq4y7vM4ugNNhuXc-ncXWDnU0C9ScIR_SrllKQGellrtNdtN8_0nnXXFgf6OTQo9vOjhgywsfkf0UAElZiQ" />
+                        <span
+                            class="absolute top-4 left-4 z-20 bg-white/90 dark:bg-black/80 px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest flex items-center gap-1.5 shadow-sm">
+                            <span class="w-2 h-2 rounded-full bg-primary"></span>
+                            Just Natural
+                        </span>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <div class="space-y-2">
+                            <h3 class="text-lg font-bold group-hover:text-primary transition-colors">Cold-Pressed Extra
+                                Virgin Olive Oil</h3>
+                            <p class="text-sm text-[#658680] line-clamp-2">Premium organic olives harvested from our
+                                sustainable groves, offering a rich, peppery finish.</p>
+                        </div>
+                        <button
+                            class="w-full flex items-center justify-center gap-2 py-3 bg-primary text-white text-sm font-bold rounded-xl hover:brightness-110 active:scale-[0.98] transition-all">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+                <!-- Card 2: Impulse Solutions -->
+                <div
+                    class="group bg-background-light dark:bg-white/5 rounded-2xl border border-border-subtle dark:border-white/10 overflow-hidden hover:shadow-2xl hover:shadow-primary/5 hover:-translate-y-1 transition-all duration-300">
+                    <div class="relative aspect-[4/3] overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent z-10"></div>
+                        <img alt="Digital cloud architecture visualization"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            data-alt="Abstract blue digital network cloud visualization"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVSX_wT9RmXRoDFYrD9KvYUt5mmWfUafdGlNkr7dCriuVJyn_K4LNCNGokt0VIT_OoPIBQ2v9LjqxhIPeqWihk-DE_KzUNggh527NUnQcRD56euVQP2fMZbBhb5p_ubw9FGb1oQ3AQsHE_5ZM4Sgyh04ISjBNr_Ciw8tjLL1Uhe5L8_1k4ZQgn0bp5gPT0Uyy0AfIRknn8IOzJBT0k1PX8nwfHkQ5KP9CPYUQ_BjnVH5k8NC-KO5FOs1LzG0U_D9R_H1TaLsl9CZo" />
+                        <span
+                            class="absolute top-4 left-4 z-20 bg-white/90 dark:bg-black/80 px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest flex items-center gap-1.5 shadow-sm">
+                            <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+                            Impulse Solutions
+                        </span>
+                        <span
+                            class="absolute top-4 right-4 z-20 bg-accent-gold text-white px-2 py-1 rounded text-[10px] font-black uppercase tracking-widest">
+                            Premium
+                        </span>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <div class="space-y-2">
+                            <h3 class="text-lg font-bold group-hover:text-primary transition-colors">Enterprise Cloud
+                                Architecture</h3>
+                            <p class="text-sm text-[#658680] line-clamp-2">Scalable, secure, and future-proof cloud
+                                infrastructures tailored for multinational operations.</p>
+                        </div>
+                        <button
+                            class="w-full flex items-center justify-center gap-2 py-3 bg-primary text-white text-sm font-bold rounded-xl hover:brightness-110 active:scale-[0.98] transition-all">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+                <!-- Card 3: KKS -->
+                <div
+                    class="group bg-background-light dark:bg-white/5 rounded-2xl border border-border-subtle dark:border-white/10 overflow-hidden hover:shadow-2xl hover:shadow-primary/5 hover:-translate-y-1 transition-all duration-300">
+                    <div class="relative aspect-[4/3] overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent z-10"></div>
+                        <img alt="Industrial precision gears and tools"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            data-alt="Close up of steel industrial gears"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUuJcZqP8VTH0potv0J59V5mfrpCzxbEThRecxswr34fLhIk1-2HKHJy5BlklpcBYa8ypo7SEMGqRZIQgSCRaHCQaVTdt8DC_NTKAzupegajPYVlDzdHZqBnos8KQaMVbyJQESF6NKnAMI_BVwss---CvEPVi5oJHmEveflFuabDFYYQrDkk1iSK_9pVvKdJmPWVJwzXIdK61-CzJTP0OQ29I3g4y_QII1Rt25EJgZf8yE-wVN0aLIlP30ZgAPjfrD8-fRFlxxMS8" />
+                        <span
+                            class="absolute top-4 left-4 z-20 bg-white/90 dark:bg-black/80 px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest flex items-center gap-1.5 shadow-sm">
+                            <span class="w-2 h-2 rounded-full bg-slate-500"></span>
+                            KKS Industrial
+                        </span>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <div class="space-y-2">
+                            <h3 class="text-lg font-bold group-hover:text-primary transition-colors">Precision Steel
+                                Calipers</h3>
+                            <p class="text-sm text-[#658680] line-clamp-2">High-accuracy measurement tools designed for
+                                aerospace-grade engineering and heavy industry.</p>
+                        </div>
+                        <button
+                            class="w-full flex items-center justify-center gap-2 py-3 bg-primary text-white text-sm font-bold rounded-xl hover:brightness-110 active:scale-[0.98] transition-all">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+                <!-- Card 4: Just Natural -->
+                <div
+                    class="group bg-background-light dark:bg-white/5 rounded-2xl border border-border-subtle dark:border-white/10 overflow-hidden hover:shadow-2xl hover:shadow-primary/5 hover:-translate-y-1 transition-all duration-300">
+                    <div class="relative aspect-[4/3] overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent z-10"></div>
+                        <img alt="Artisan honey jar"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            data-alt="Golden wildflower honey in glass jar"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQDVSrB5NzLMYaS9hxj9JfpjdfnD7XeO5ybuqlIHEDYhmW6XUpxblbDlP1X8dRHXtg7LF3XNu2Kq3q7zCMDYTZak1DgCMSEgT1-4Msf-Io16u9wtyFdz_USBlTab1S6ddbjfm_gne1OB04LPlGwV46yC43mH1xIMsoFt2g-PoQEmo10t6KEgmZWBVSEp5_tBCtrLq4LYVu6VLFw9tURTWs1-Zd_PjuUXlr1HkLlYXtBaT1syuIsFIKlWn5wvqv_WZKlAuJKh_yHCw" />
+                        <span
+                            class="absolute top-4 left-4 z-20 bg-white/90 dark:bg-black/80 px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest flex items-center gap-1.5 shadow-sm">
+                            <span class="w-2 h-2 rounded-full bg-primary"></span>
+                            Just Natural
+                        </span>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <div class="space-y-2">
+                            <h3 class="text-lg font-bold group-hover:text-primary transition-colors">Wildflower Forest
+                                Honey</h3>
+                            <p class="text-sm text-[#658680] line-clamp-2">Raw, unpasteurized honey sourced from
+                                protected forest reserves. Pure and rich in nutrients.</p>
+                        </div>
+                        <button
+                            class="w-full flex items-center justify-center gap-2 py-3 bg-primary text-white text-sm font-bold rounded-xl hover:brightness-110 active:scale-[0.98] transition-all">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+                <!-- Card 5: Impulse Solutions -->
+                <div
+                    class="group bg-background-light dark:bg-white/5 rounded-2xl border border-border-subtle dark:border-white/10 overflow-hidden hover:shadow-2xl hover:shadow-primary/5 hover:-translate-y-1 transition-all duration-300">
+                    <div class="relative aspect-[4/3] overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent z-10"></div>
+                        <img alt="Corporate team brainstorming"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            data-alt="Group of business professionals in meeting"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTgzhLBsCJuFtTtBaexSbW3XD0BmGOFmSiRpqbS1Ci_zA5MBfX0w7PSByFVwffePUnE0Z-yaXGnkzlLMG-EIaOUTUFPCAWfplVdhWRkzNIHmcNOcRazrYZhITEuvuG6RWGC5YcuLcszDmgZ5-YGrGehv-jTZULmTT40NQ0doL6V-lTNUrfXt8IFoDwBseEoQF-okOg3FWGJRNPBSfhzYGL0PM9cvZiLXhYll-NhkpNT_kjSShi9ci4Hlg8RnZ9vKqFAAI2S8frL3E" />
+                        <span
+                            class="absolute top-4 left-4 z-20 bg-white/90 dark:bg-black/80 px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest flex items-center gap-1.5 shadow-sm">
+                            <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+                            Impulse Solutions
+                        </span>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <div class="space-y-2">
+                            <h3 class="text-lg font-bold group-hover:text-primary transition-colors">Agile
+                                Transformation Suite</h3>
+                            <p class="text-sm text-[#658680] line-clamp-2">End-to-end consulting for teams transitioning
+                                to high-efficiency agile workflows.</p>
+                        </div>
+                        <button
+                            class="w-full flex items-center justify-center gap-2 py-3 bg-primary text-white text-sm font-bold rounded-xl hover:brightness-110 active:scale-[0.98] transition-all">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+                <!-- Card 6: Just Natural -->
+                <div
+                    class="group bg-background-light dark:bg-white/5 rounded-2xl border border-border-subtle dark:border-white/10 overflow-hidden hover:shadow-2xl hover:shadow-primary/5 hover:-translate-y-1 transition-all duration-300">
+                    <div class="relative aspect-[4/3] overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent z-10"></div>
+                        <img alt="Hemp seeds and oil"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            data-alt="Natural hemp seeds in wooden bowl"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCb5TNJnLr-Wlhi2WthFEaWINCIpo_OdfTFk4AUrlHLKHFS89PJiwpeOuK3BfE9HLTMzxkaCzEEfIl6ZxOXZmYk7pe2mRSrDeW9my8JQ6w9dvTHiEGP1uZ39A77Nx_bWI3zZWZgLyJkBi_8koA0jfrvs4xUx3SBSyRGfQPhOR7wMB4KP5Trmd3tDNwKywookGeS4dIU7lPIv0GpaG3nwR9Tc9KcDATNLHmVGQ09zIjYHK7DCfQxCBeMSsv9rhsyz8OHrFPboDd_EqY" />
+                        <span
+                            class="absolute top-4 left-4 z-20 bg-white/90 dark:bg-black/80 px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest flex items-center gap-1.5 shadow-sm">
+                            <span class="w-2 h-2 rounded-full bg-primary"></span>
+                            Just Natural
+                        </span>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <div class="space-y-2">
+                            <h3 class="text-lg font-bold group-hover:text-primary transition-colors">Organic Shelled
+                                Hemp Hearts</h3>
+                            <p class="text-sm text-[#658680] line-clamp-2">Nutrient-dense superfood perfect for
+                                smoothies and salads. Sustainably farmed and processed.</p>
+                        </div>
+                        <button
+                            class="w-full flex items-center justify-center gap-2 py-3 bg-primary text-white text-sm font-bold rounded-xl hover:brightness-110 active:scale-[0.98] transition-all">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Pagination -->
+            <div class="flex items-center justify-center gap-4 py-12">
+                <button
+                    class="size-10 flex items-center justify-center rounded-full border border-border-subtle text-[#658680] hover:border-primary hover:text-primary transition-colors">
+                    <span class="material-symbols-outlined">chevron_left</span>
+                </button>
+                <div class="flex items-center gap-2">
+                    <button
+                        class="size-10 flex items-center justify-center rounded-full bg-primary text-white font-bold text-sm">1</button>
+                    <button
+                        class="size-10 flex items-center justify-center rounded-full hover:bg-off-white dark:hover:bg-white/5 text-sm font-medium">2</button>
+                    <button
+                        class="size-10 flex items-center justify-center rounded-full hover:bg-off-white dark:hover:bg-white/5 text-sm font-medium">3</button>
+                    <span class="text-[#658680]">...</span>
+                    <button
+                        class="size-10 flex items-center justify-center rounded-full hover:bg-off-white dark:hover:bg-white/5 text-sm font-medium">12</button>
+                </div>
+                <button
+                    class="size-10 flex items-center justify-center rounded-full border border-border-subtle text-[#658680] hover:border-primary hover:text-primary transition-colors">
+                    <span class="material-symbols-outlined">chevron_right</span>
+                </button>
+            </div>
+        </div>
+    </main>
+    <!-- Simple Footer -->
+    <footer
+        class="bg-off-white dark:bg-white/5 border-t border-border-subtle dark:border-white/10 py-12 px-6 lg:px-20 mt-12">
+        <div class="max-w-[1440px] mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex flex-col items-center md:items-start gap-3">
+                <div class="flex items-center gap-3">
+                    <div class="size-6 bg-primary rounded flex items-center justify-center text-white">
+                        <span class="material-symbols-outlined text-sm">corporate_fare</span>
+                    </div>
+                    <h2 class="text-lg font-bold">Impulse Group</h2>
+                </div>
+                <p class="text-xs text-[#658680]">© 2024 Impulse Group Multi-Brand Conglomerate. All rights reserved.
+                </p>
+            </div>
+            <div class="flex gap-8 text-sm font-medium text-[#658680]">
+                <a class="hover:text-primary" href="#">Privacy Policy</a>
+                <a class="hover:text-primary" href="#">Terms of Service</a>
+                <a class="hover:text-primary" href="#">Global Offices</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

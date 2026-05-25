@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Media Gallery | Impulse Group</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet" />
+  <!-- Material Symbols -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#1b9883",
+            "background-light": "#ffffff",
+            "background-dark": "#1a1a1a",
+          },
+          fontFamily: {
+            "display": ["Manrope"]
+          },
+          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    /* Custom Masonry-like adjustment using columns */
+    .masonry-grid {
+      column-count: 1;
+      column-gap: 1.5rem;
+    }
+
+    @media (min-width: 640px) {
+      .masonry-grid {
+        column-count: 2;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .masonry-grid {
+        column-count: 4;
+      }
+    }
+
+    .masonry-item {
+      break-inside: avoid;
+      margin-bottom: 1.5rem;
+    }
+  </style>
+</head>
+
+<body
+  class="bg-background-light dark:bg-background-dark font-display text-[#121716] dark:text-white transition-colors duration-300">
+  <!-- Top Navigation Bar -->
+  <div class="layout-container flex flex-col">
+    <header
+      class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-100 dark:border-gray-800 px-6 md:px-20 py-4 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md sticky top-0 z-50">
+      <div class="flex items-center gap-12">
+        <div class="flex items-center gap-3">
+          <div class="text-primary">
+            <svg fill="none" height="32" viewbox="0 0 48 48" width="32" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
+                fill="currentColor"></path>
+            </svg>
+          </div>
+          <h2 class="text-xl font-extrabold tracking-tight"> 
+            <a href="./home1.html">
+                    Impulse Group
+                </a>
+            </h2>
+        </div>
+        <nav class="hidden lg:flex items-center gap-8">
+          <a class="text-sm font-semibold hover:text-primary transition-colors"
+              href="./about_us.html">About Us</a>
+              <a class="text-sm font-semibold hover:text-primary transition-colors"
+              href="./brands.html">Brands</a>
+          <a class="text-sm font-semibold hover:text-primary transition-colors"
+              href="./products.html">Products</a>
+          <a class="text-sm font-semibold hover:text-primary transition-colors"
+              href="./media.html">Gallery</a>
+          <a class="text-sm font-semibold hover:text-primary transition-colors"
+              href="./football_team.html">Football Team</a>
+          <a class="text-sm font-semibold hover:text-primary transition-colors"
+              href="./contact_us.html">Contact Us</a>
+      </nav>
+      </div>
+      <div class="flex items-center gap-6">
+        <div class="hidden sm:flex items-center bg-gray-100 dark:bg-gray-800 rounded-lg px-3 py-2">
+          <span class="material-symbols-outlined text-gray-400 text-xl">search</span>
+          <input class="bg-transparent border-none focus:ring-0 text-sm w-40" placeholder="Search gallery..." />
+        </div>
+        <button class="bg-primary text-white text-sm font-bold px-6 py-2 rounded-lg hover:bg-opacity-90 transition-all">
+          Login
+        </button>
+      </div>
+    </header>
+    <main class="max-w-[1440px] mx-auto w-full px-6 md:px-20 py-12">
+      <!-- Page Heading -->
+      <div class="mb-12">
+        <div class="max-w-3xl">
+          <h1 class="text-5xl font-black leading-tight tracking-tight mb-4">Our Visual Story</h1>
+          <p class="text-gray-500 dark:text-gray-400 text-lg">
+            Explore the diverse ecosystem of Impulse Group through our curated collection of brand highlights, facility
+            tours, and community impact events.
+          </p>
+        </div>
+      </div>
+      <!-- Filter Chips -->
+      <div class="flex gap-3 mb-10 overflow-x-auto pb-4 no-scrollbar">
+        <button class="px-6 py-2 rounded-full bg-primary text-white text-sm font-bold whitespace-nowrap">All
+          Media</button>
+        <button
+          class="px-6 py-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm font-semibold hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors whitespace-nowrap">Just
+          Natural</button>
+        <button
+          class="px-6 py-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm font-semibold hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors whitespace-nowrap">Impulse
+          Solutions</button>
+        <button
+          class="px-6 py-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm font-semibold hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors whitespace-nowrap">KKS
+          Sports</button>
+        <button
+          class="px-6 py-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm font-semibold hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors whitespace-nowrap">Corporate
+          HQ</button>
+        <button
+          class="px-6 py-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm font-semibold hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors whitespace-nowrap">Community
+          Events</button>
+      </div>
+      <!-- Masonry Image Grid -->
+      <div class="masonry-grid">
+        <!-- Item 1: Just Natural -->
+        <div class="masonry-item group relative overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800 cursor-pointer">
+          <img class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+            data-alt="Close up of organic green leaves with dew drops"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpPfTIT6N1xW4QlnEb1DglkoRihBPYLL9s-5b0Fnrsfnsph1ZuoExUdGuTx01q3LhpaM5ZUQrIX9d6BshKq0By2oVq9booJy2zTHYsnYMM5yedrkVbTfjd5OJ-gZAaTQ5l_3jiBwJEWD-sxEBMBcmaAzVtNk-p3uD0aTU2f5zUmQ0tmdb_MQZ1QLLlaqGOB-LxZruDuYhRKpe1joc6woVgg1SIXBMRzYO-5aWSueKqmrdsvFC5slaJlwoW0e2xEIIPDm-3NHKuOMk" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+            <span class="text-primary text-xs font-bold uppercase tracking-widest mb-1">Just Natural</span>
+            <h3 class="text-white font-bold text-lg">Sustainable Farming Practices</h3>
+          </div>
+        </div>
+        <!-- Item 2: Impulse Solutions -->
+        <div class="masonry-item group relative overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800 cursor-pointer">
+          <img class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+            data-alt="Modern minimalist glass office building interior"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZZ546O9QDA2afZlrI6zLtRW5THlQawJ63RErlJ49vdWGY70Pvd_d_B1y33ISK5HgxYKdRfqecDTRH3wfzynRAUOLV9zYzWtVBVgnDQ3UiW_lx4vuk2qanutOqFE2TifpdBmqEHFO9eCpvZYXggN7TJJl0BOSxwFce5nTWoKJSQi9EU1w5s5Pef-YNvS9gUcFns4h6ceqqaWE4Zl_CKrKJkU1OoAJAmBHxG41r4htbH6WE3EmlIBHo6tAvsfY0pfzuc966lwz9rzg" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+            <span class="text-primary text-xs font-bold uppercase tracking-widest mb-1">Impulse Solutions</span>
+            <h3 class="text-white font-bold text-lg">Innovation Hub - Floor 4</h3>
+          </div>
+        </div>
+        <!-- Item 3: KKS -->
+        <div class="masonry-item group relative overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800 cursor-pointer">
+          <img class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+            data-alt="Aerial view of a professional green football pitch"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfTK0Y8CXNX6VyFWizUJT3zimDgNcYuD35Xu3K4485gsRTMjNUC0sxFVwOtQYKtYZ077VGXcCov-KZF1iEb0TCC7iSCqNtWEheLwfXZ7HKEILuRZCuwSqO6cRxniiFTWVYqdYboGfuyb7ohhjrgGCS_3d3x_kZ-KCqOxMSkbABwB8xCKDlwMr94B_CT2JaZlQEhAfhhY6MLr_p4yAGaQ1x_NyhZfyt3GqnEePAfmbyeh7oFyIh_IB7fwmslgIQZcd-Pj-6hg4nHlI" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+            <span class="text-primary text-xs font-bold uppercase tracking-widest mb-1">KKS Sports</span>
+            <h3 class="text-white font-bold text-lg">Community Stadium Launch</h3>
+          </div>
+        </div>
+        <!-- Item 4: General -->
+        <div class="masonry-item group relative overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800 cursor-pointer">
+          <img class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+            data-alt="Diverse group of professionals having a meeting"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPH1iB3fBqpFVs9gYRGvRpT9AcXuzhLZM2TtpDzF0rs26zm9nX4BBXxx8ImUSLMzWZipKEnYRCupWcqQR855IMzrSW_GeJXnDSzCg14spB4cUHqShSHCt4iDft4Xl4xPo9BhTz50J9T1fZWPakG_WGOJx5wUgu5JU-iOnHF5IenV1gx_82muudsS0u7oP77n1o07EcAnW6b3i2fzI97X62lNtWAOPwi6iqqtfbXG0g8sIOo6rletpx2iL5DUIMCnKvgCP_klJYS20" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+            <span class="text-primary text-xs font-bold uppercase tracking-widest mb-1">Corporate</span>
+            <h3 class="text-white font-bold text-lg">Annual Strategic Forum</h3>
+          </div>
+        </div>
+        <!-- Item 5: Just Natural -->
+        <div class="masonry-item group relative overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800 cursor-pointer">
+          <img class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+            data-alt="Fresh organic vegetables in a wooden crate"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3nwXwOnQOa60UZP1o6UZ9Tt2Pz2MsA66rpxwuy8zkEi7kY5B7AbFY_-9QG6UrzDWDP6FOXeT1Kbg5EJ54V2HxUZJaFEvFKVGWFLY73W0-JI4PQALwwv9-sYm6LeDcftd36d9zhVImNRWXz4Pch3YmLKCed_Sg8JKGc_iWnTRvR4sE_vDfmiosu2Nx-F1ViP_YgHHu3hmJh2e9-DK3ShFdLvARRDzuIPsNN9jWguv6VAF_AQQ6nflJSDIb4rWCZc_D7NkFvNo_k94" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+            <span class="text-primary text-xs font-bold uppercase tracking-widest mb-1">Just Natural</span>
+            <h3 class="text-white font-bold text-lg">Direct From Source</h3>
+          </div>
+        </div>
+        <!-- Item 6: Impulse Solutions -->
+        <div class="masonry-item group relative overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800 cursor-pointer">
+          <img class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+            data-alt="Developers working with multiple computer monitors"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAj7e9B5IsUBI_lpQdOXqkRsN7RzJ5-kULYNzHYCkjVrk7RQCj1-LJ5NgXW3hbtTvRdwaBr4391-CshRK7chLBiZeLdpqb32hSyTN4pPNivyCpGAvcXNzFpCuIdEWACs4B1-chpEH2NUMnzeqBUlqiG4kAX-5CBmUTffRsygL9WLLsbGabvQ-16TMKPINuki3xxKdtzBfqnWi-0SiVAjJ5JM588AS6gBzgM3zEtbXCzSVd7U4tUWIBuSwAZ_YKlshCTZZ46gs8-ZaQ" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+            <span class="text-primary text-xs font-bold uppercase tracking-widest mb-1">Impulse Solutions</span>
+            <h3 class="text-white font-bold text-lg">Next-Gen Tech Lab</h3>
+          </div>
+        </div>
+        <!-- Item 7: HQ -->
+        <div class="masonry-item group relative overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800 cursor-pointer">
+          <img class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+            data-alt="Modern skyscraper with blue glass reflecting sky"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvRr3VsweVGZHAzOZonP7OYIMm2UVSerj_RdQ2PNCd_-SBkT-1AKOAyfzE4Cs_EwRz_KQ9j1lC3MGDytMwSf2Naz9swnn-3jLOm2WyMQir_pvWew5cUYyBanojlY7iDbFm1oCm9C6nzxGwBM-zcCpk3fOdzzJ12r2UpsjI5bmYLUbagadFFbWj71y34T4Dz31V-gD7VFlndh4dwQhgPd5W14mGRS13Vr4M3kdddwTGDlzL_bv0-IoVasp9cEwTBC7VShKR9KqsJB0" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+            <span class="text-primary text-xs font-bold uppercase tracking-widest mb-1">Corporate</span>
+            <h3 class="text-white font-bold text-lg">Impulse Tower Skyline</h3>
+          </div>
+        </div>
+        <!-- Item 8: Events -->
+        <div class="masonry-item group relative overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800 cursor-pointer">
+          <img class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+            data-alt="Large conference hall with people at round tables"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUHCTGVVZ9zzt9EyPa0znXQ10KZ2aNY9leTPsrlEtP68KnH4-d_kDfr4b9dOlnHi5Im7IbjsvK3j3MV9gJC6n0FY1bXa_uAFfWAhnyvHO8BgMhp6gWLgBAgw9N7WOPshJcg-mmS9M268sOdDKrjHlFpx1EsfFRGhDu8ixABUcaVVXnCU2GUNS_zeA4OVxIP5AtCR_EqXu1wQx8jlqbtcKvx4f4k0OTX5uG7PdDMFnrWOgm5HKykPm9VJc9f8S-XnRdRLKmGskH80k" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+            <span class="text-primary text-xs font-bold uppercase tracking-widest mb-1">Events</span>
+            <h3 class="text-white font-bold text-lg">Global Partners Summit</h3>
+          </div>
+        </div>
+      </div>
+      <!-- Load More Section -->
+      <div class="flex flex-col items-center justify-center py-16 gap-4">
+        <button
+          class="flex items-center gap-2 min-w-[180px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-14 px-8 bg-primary text-white text-base font-bold transition-all hover:shadow-lg hover:shadow-primary/20 active:scale-95">
+          <span>Load More</span>
+          <span class="material-symbols-outlined">expand_more</span>
+        </button>
+        <p class="text-gray-400 text-sm">Showing 8 of 124 items</p>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer
+      class="bg-gray-50 dark:bg-background-dark border-t border-gray-100 dark:border-gray-800 py-16 px-6 md:px-20">
+      <div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+        <div class="col-span-1 md:col-span-1">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="text-primary">
+              <svg fill="none" height="24" viewbox="0 0 48 48" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
+                  fill="currentColor"></path>
+              </svg>
+            </div>
+            <h2 class="text-lg font-extrabold tracking-tight">Impulse Group</h2>
+          </div>
+          <p class="text-gray-500 text-sm leading-relaxed mb-6">
+            Building a sustainable future through innovation and cross-industry excellence.
+          </p>
+          <div class="flex gap-4">
+            <a class="text-gray-400 hover:text-primary transition-colors" href="#"><span
+                class="material-symbols-outlined">share</span></a>
+            <a class="text-gray-400 hover:text-primary transition-colors" href="#"><span
+                class="material-symbols-outlined">public</span></a>
+            <a class="text-gray-400 hover:text-primary transition-colors" href="#"><span
+                class="material-symbols-outlined">mail</span></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-bold mb-6">Companies</h4>
+          <ul class="space-y-4 text-sm text-gray-500">
+            <li><a class="hover:text-primary transition-colors" href="#">Just Natural</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#">Impulse Solutions</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#">KKS Sports</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#">Logistics Hub</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold mb-6">Support</h4>
+          <ul class="space-y-4 text-sm text-gray-500">
+            <li><a class="hover:text-primary transition-colors" href="#">Press Kit</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#">Brand Assets</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#">Media Inquiries</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#">Terms of Use</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold mb-6">Newsletter</h4>
+          <p class="text-sm text-gray-500 mb-4">Stay updated with our latest ventures.</p>
+          <div class="flex gap-2">
+            <input
+              class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg px-4 py-2 text-sm flex-1 focus:ring-primary focus:border-primary"
+              placeholder="Your email" type="email" />
+            <button class="bg-primary text-white p-2 rounded-lg"><span
+                class="material-symbols-outlined">send</span></button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-w-[1440px] mx-auto mt-16 pt-8 border-t border-gray-100 dark:border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-400">
+        <p>© 2024 Impulse Group Holding. All rights reserved.</p>
+        <div class="flex gap-8">
+          <a class="hover:text-primary" href="#">Privacy Policy</a>
+          <a class="hover:text-primary" href="#">Compliance</a>
+          <a class="hover:text-primary" href="#">Accessibility</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- Lightbox Mockup (Hidden by default) -->
+  <div class="fixed inset-0 z-[100] bg-black/95 backdrop-blur-xl hidden flex items-center justify-center p-8"
+    id="lightbox">
+    <button class="absolute top-8 right-8 text-white hover:text-primary transition-colors">
+      <span class="material-symbols-outlined text-4xl">close</span>
+    </button>
+    <button class="absolute left-8 top-1/2 -translate-y-1/2 text-white/50 hover:text-white transition-colors">
+      <span class="material-symbols-outlined text-6xl">chevron_left</span>
+    </button>
+    <div class="max-w-5xl w-full flex flex-col gap-4">
+      <img class="w-full h-auto rounded-lg shadow-2xl" data-alt="Full size view of sustainable farming"
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHb5EBUmV2BXPa4n6vyhmpqfRWke3Yp3OBiTu9zosWpOWtDk00Yv8VwEFjB-s2wCkL5PuFLQQE1tcU2kbUy8I8kEqSnh4WtqXVp4n_rZQE8FE7l-fuv6tj2_UUGqAXLmtfjyEo6rZkxyMIy4V-YPXK33lznM2Un76xGe-9ppA-JNahWtkCObMeKilZvhyQ502qnmuYA8Hna3-z3WBBYWD0vwClcPWm_A_76-kM3V6xIGJEMiTF0r7uK27L-_J2JAmkvL2bD_pk-9Y" />
+      <div class="flex justify-between items-end">
+        <div>
+          <span class="text-primary font-bold text-sm uppercase tracking-widest">Just Natural</span>
+          <h2 class="text-white text-3xl font-bold">Sustainable Farming Practices</h2>
+          <p class="text-gray-400 mt-2">Captured at our Northern Highlands organic facility, June 2023.</p>
+        </div>
+        <button
+          class="bg-white/10 hover:bg-white/20 text-white px-6 py-3 rounded-xl flex items-center gap-2 transition-all">
+          <span class="material-symbols-outlined">download</span>
+          <span>Download High-Res</span>
+        </button>
+      </div>
+    </div>
+    <button class="absolute right-8 top-1/2 -translate-y-1/2 text-white/50 hover:text-white transition-colors">
+      <span class="material-symbols-outlined text-6xl">chevron_right</span>
+    </button>
+  </div>
+</body>
+
+</html>

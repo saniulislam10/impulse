@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Impulse Group | Nurturing Growth, Delivering Excellence</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1b9883",
+                        "accent-gold": "#D1BC94",
+                        "background-light": "#ffffff",
+                        "background-dark": "#1a1a1a",
+                        "surface-light": "#f8f8f8",
+                        "surface-dark": "#262626",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .logo-marquee {
+            display: flex;
+            overflow: hidden;
+            user-select: none;
+            gap: 4rem;
+        }
+
+        .logo-track {
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 4rem;
+            min-width: 100%;
+            animation: scroll 30s linear infinite;
+        }
+
+        @keyframes scroll {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        .brand-card:hover .brand-image {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark font-display text-[#121716] dark:text-white transition-colors duration-300">
+    <!-- Top Navigation -->
+    <div
+        class="sticky top-0 z-50 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-[#f0f4f3] dark:border-white/10">
+        <div class="max-w-[1280px] mx-auto px-6 lg:px-10">
+            <header class="flex items-center justify-between h-20">
+                <div class="flex items-center gap-3">
+                    <div class="text-primary">
+                        <svg class="size-8" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_logo)">
+                                <path
+                                    d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
+                                    fill="currentColor"></path>
+                            </g>
+                            <defs>
+                                <clippath id="clip0_logo">
+                                    <rect fill="white" height="48" width="48"></rect>
+                                </clippath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h2 class="text-xl font-extrabold tracking-tight">
+                        <a href="./home1.html">
+                            Impulse Group
+                        </a>
+                    </h2>
+                </div>
+                <nav class="hidden lg:flex items-center gap-8">
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="./about_us.html">About
+                        Us</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors"
+                        href="./brands.html">Brands</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors"
+                        href="./products.html">Products</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors"
+                        href="./media.html">Gallery</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors"
+                        href="./football_team.html">Football Team</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors"
+                        href="./contact_us.html">Contact Us</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <button
+                        class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all shadow-lg shadow-primary/20">
+                        Contact Us
+                    </button>
+                    <div class="bg-center bg-cover rounded-full size-10 border-2 border-primary/20"
+                        data-alt="Corporate professional headshot"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA-CUKhDOAFjxcPL1TZExYCBGs0-n1L8oS2v8NcBlIKAPrFwuv-GqE0d5b7j4a4_mlq-hEMPhEXNpnjtw32HmqkSbqBTPPUOzWYzrCPlI8AtNtyqgBUXn-l2E8ReIai_5r3qyhjcLuLLtqJAHnA0kZYLplEj3OEzTHnoS8EM28_cgsUUsiDP_RCgAJqeTW-PWcjCGt4iwLLPJndG7ZZ7SorGUXhfCi34jbAHmlTOS97HPt-f6CbRno2x1omKBR5IdOZzqmqck9FDOk");'>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div>
+    <main>
+        <!-- Hero Section -->
+        <section class="relative overflow-hidden pt-12 pb-24 lg:py-24">
+            <div class="max-w-[1280px] mx-auto px-6 lg:px-10">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 lg:order-1 flex flex-col gap-8">
+                        <div class="space-y-4">
+                            <span
+                                class="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest rounded">Multi-Brand
+                                Excellence</span>
+                            <h1
+                                class="text-5xl lg:text-7xl font-extrabold leading-[1.1] tracking-tight text-[#121716] dark:text-white">
+                                Nurturing Growth, <br /><span class="text-primary">Delivering Excellence.</span>
+                            </h1>
+                            <p class="text-lg text-gray-600 dark:text-gray-400 max-w-xl leading-relaxed">
+                                Impulse Group is a multi-brand conglomerate dedicated to excellence across Just Natural,
+                                Impulse Solutions, and KKS. We bridge industries with innovation and integrity.
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap gap-4">
+                            <button
+                                onclick="window.location.href='./brands.html'"
+                                class="bg-primary text-white px-8 py-4 rounded-lg font-bold text-lg hover:translate-y-[-2px] transition-all shadow-xl shadow-primary/20">
+                                Explore Brands
+                            </button>
+                            <button
+                                onclick="window.location.href='./products.html'"
+                                class="border border-[#dce5e3] dark:border-white/10 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-50 dark:hover:bg-white/5 transition-all">
+                                Our Products
+                            </button>
+                        </div>
+                    </div>
+                    <div class="order-1 lg:order-2">
+                        <div class="relative group">
+                            <div
+                                class="absolute -inset-4 bg-primary/5 rounded-2xl transform rotate-2 transition-transform group-hover:rotate-1">
+                            </div>
+                            <div class="relative aspect-square lg:aspect-[4/5] bg-center bg-cover rounded-xl shadow-2xl overflow-hidden"
+                                data-alt="High quality photography of Just Natural organic food products"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB98eWRU6D0nmpAyYkQ0vGNenXkgiKJfWT77PlSshqxThwYGa3StIC42NC5VsOmS2JBCfyHr0EMTq0hOKkdriukSl2qq_C8EVzVSq4ugFkkDErsRXHcx13v42mBUT3DIKuFAINCU1AQHwec3_flhuxhcuPMd_Vc5xpNqI-ohGTjoqMT0i3lgYVJsOdMEugdrovzXhYsGMLXU819o0rjmii0tv0jMVRLj9pKtDI-FpknUgyWyZPLoC5bbUruNEcdB9KhvDp_HEESpTo");'>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                                <div class="absolute bottom-8 left-8">
+                                    <div
+                                        class="bg-white/90 backdrop-blur px-4 py-2 rounded-lg inline-flex items-center gap-2">
+                                        <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                                        <span class="text-sm font-bold text-[#121716]">Just Natural Organic Range</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Stats Section -->
+        <section class="bg-surface-light dark:bg-surface-dark py-20 border-y border-[#f0f4f3] dark:border-white/5">
+            <div class="max-w-[1280px] mx-auto px-6 lg:px-10">
+                <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8 mb-12">
+                    <div class="space-y-2">
+                        <h2 class="text-3xl font-extrabold tracking-tight">By the Numbers</h2>
+                        <div class="h-1 w-20 bg-accent-gold rounded"></div>
+                    </div>
+                    <p class="max-w-md text-gray-500 dark:text-gray-400">Our trajectory of growth is defined by
+                        stability and a commitment to long-term value creation for our global partners.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div
+                        class="bg-background-light dark:bg-background-dark p-8 rounded-xl border border-[#dce5e3] dark:border-white/10 hover:shadow-xl transition-shadow group">
+                        <div class="flex justify-between items-start mb-4">
+                            <p class="text-sm font-bold text-gray-500 uppercase tracking-wider">Years of Excellence</p>
+                            <span class="text-primary font-bold text-sm bg-primary/10 px-2 py-1 rounded">+5% YoY</span>
+                        </div>
+                        <p class="text-5xl font-black text-[#121716] dark:text-white mb-2">25+</p>
+                        <p class="text-gray-500 text-sm">Founded on principles of sustainability and ethical growth.</p>
+                    </div>
+                    <div
+                        class="bg-background-light dark:bg-background-dark p-8 rounded-xl border border-[#dce5e3] dark:border-white/10 hover:shadow-xl transition-shadow group">
+                        <div class="flex justify-between items-start mb-4">
+                            <p class="text-sm font-bold text-gray-500 uppercase tracking-wider">Global Partners</p>
+                            <span class="text-primary font-bold text-sm bg-primary/10 px-2 py-1 rounded">+12%</span>
+                        </div>
+                        <p class="text-5xl font-black text-[#121716] dark:text-white mb-2">50+</p>
+                        <p class="text-gray-500 text-sm">Strengthening distribution networks across four continents.</p>
+                    </div>
+                    <div
+                        class="bg-background-light dark:bg-background-dark p-8 rounded-xl border border-[#dce5e3] dark:border-white/10 hover:shadow-xl transition-shadow group">
+                        <div class="flex justify-between items-start mb-4">
+                            <p class="text-sm font-bold text-gray-500 uppercase tracking-wider">Core Verticals</p>
+                            <span
+                                class="text-gray-400 font-bold text-sm bg-gray-100 dark:bg-white/5 px-2 py-1 rounded">Stable</span>
+                        </div>
+                        <p class="text-5xl font-black text-[#121716] dark:text-white mb-2">3</p>
+                        <p class="text-gray-500 text-sm">Strategic focus on Natural Products, Solutions, and KKS.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Brand Cards -->
+        <section class="py-24">
+            <div class="max-w-[1280px] mx-auto px-6 lg:px-10">
+                <div class="text-center mb-16 space-y-4">
+                    <h2 class="text-4xl font-extrabold tracking-tight">Diverse Portfolios</h2>
+                    <p class="text-gray-500 max-w-2xl mx-auto">Explore our specialized entities, each a leader in its
+                        respective domain, united under the Impulse vision.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Brand 1 -->
+                    <div class="brand-card group cursor-pointer">
+                        <div class="relative h-64 overflow-hidden rounded-xl mb-6">
+                            <div class="brand-image absolute inset-0 bg-cover bg-center transition-transform duration-500"
+                                data-alt="Just Natural brand aesthetic"
+                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD_oUNELye5PqitaZCRsGI3W_6K_FCqOOc9veQSMaW_sChcHlUpUFgbQ-6w2H4dO4JWPDCHc_SBK41s4zVwHf0gzzL_ZXTzCpPC-HiLXR03bNnK8bzHk0zmX5ubtt74yQxVpNbxzkwXWQEDr5z6Y-w6SIQ706kK2MHBMl9QMJk3lS-zuEs2LAcHoz5VjCfMkmVTYqH5i63hApbkOo0qa7gFhj8ONdil0_3vq_hdrfiofShVeFQyCM82ALsxHvEOkPDmXctT20QZQM0');">
+                            </div>
+                            <div class="absolute inset-0 bg-primary/20 group-hover:bg-primary/10 transition-colors">
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">Just Natural</h3>
+                        <p class="text-gray-500 text-sm mb-4 leading-relaxed">Sustainable organic products for a
+                            healthier lifestyle, ethically sourced and distributed globally.</p>
+                        <a class="text-primary font-bold flex items-center gap-2 group-hover:gap-3 transition-all"
+                            href="#">Learn More <span class="material-symbols-outlined">arrow_forward</span></a>
+                    </div>
+                    <!-- Brand 2 -->
+                    <div class="brand-card group cursor-pointer">
+                        <div class="relative h-64 overflow-hidden rounded-xl mb-6 border-t-4 border-accent-gold">
+                            <div class="brand-image absolute inset-0 bg-cover bg-center transition-transform duration-500"
+                                data-alt="Impulse Solutions corporate office"
+                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuACIg6FSa4EnTw1GKxa4Mq7nQIlcQUbjq3aHdo4dBRezskeKDvB6iZPQ6RuVmrL7iQHrZmVRP5mfIZS9LcwdnD7GJfGnscqdQvzPcg9ZXv5E95IwPIHfbnuWSpzBfisM2M-teovZPlV650NpUEtf1qaWTjtOBm9tLaoWxlgKQ_QWHyWy0j5IUJFF7k9Zp54w8KOT5YuznBTrFT4pymDYKHNEv6wtUlN_yIHT6KsMjjA6h2Gf8SfYU24zqRSC8oXqlSD_fQmQUrQdjs');">
+                            </div>
+                            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors"></div>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">Impulse Solutions</h3>
+                        <p class="text-gray-500 text-sm mb-4 leading-relaxed">Strategic corporate consulting and
+                            integrated business solutions for modern enterprises.</p>
+                        <a class="text-primary font-bold flex items-center gap-2 group-hover:gap-3 transition-all"
+                            href="#">Learn More <span class="material-symbols-outlined">arrow_forward</span></a>
+                    </div>
+                    <!-- Brand 3 -->
+                    <div class="brand-card group cursor-pointer">
+                        <div class="relative h-64 overflow-hidden rounded-xl mb-6">
+                            <div class="brand-image absolute inset-0 bg-cover bg-center transition-transform duration-500"
+                                data-alt="KKS industrial facility"
+                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCpR-XTKGy_iEDeo_sUZcdy6WCgrcEL56sIgW74VzauFN3mHt5QEbr-LA9TRADZKgnC_PFdRGeNGAsnXM7IkKne17Tv9qTcqMWHovhcULFm4L-pMftzxHFqV-R62oPhG9msFJ1IhkvLDO88n7255GneZ7HWsKQely4zD9Zre3zgVnbL7jBa_pLmxhPTD6zm4yybWILhKmZgVqKcYo9yN02XpKzkYy7TQH6k_JvEy_90scbRbTDil1gi3dhJbeUxYB91eBK7T99aiiw');">
+                            </div>
+                            <div class="absolute inset-0 bg-gray-800/40 group-hover:bg-gray-800/20 transition-colors">
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">KKS</h3>
+                        <p class="text-gray-500 text-sm mb-4 leading-relaxed">Advanced manufacturing and logistical
+                            infrastructure powering international trade lanes.</p>
+                        <a class="text-primary font-bold flex items-center gap-2 group-hover:gap-3 transition-all"
+                            href="#">Learn More <span class="material-symbols-outlined">arrow_forward</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Logo Marquee -->
+        <section class="py-16 border-t border-[#f0f4f3] dark:border-white/5 overflow-hidden">
+            <h3 class="text-center text-sm font-bold text-gray-400 uppercase tracking-[0.2em] mb-12">Our Prestigious
+                Clients</h3>
+            <div class="logo-marquee">
+                <div class="logo-track">
+                    <img alt="Client Logo 1"
+                        class="opacity-40 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAele9TFfTyrenqQg2qlrmDykNkffDTuPCDQuChoCt2FVo-yPSLLg-xwPC3SYm2ENG80ygaa1ShIFgCYxObOzNLKJffEY6swBIHPauWXA3frYiEjt35OteRKuBBVlQwhnJFLWszSLYIy1aWFsrtAnlMiFxoUoyhnGHAmN-MRopkBeqazGip7fMW6GEev1PkuJKLK55bVXY8ZiuX2ZYVry9q1qgjPS9QZQWEHINyPD3nRe7NR8qgMBhsYYfrTuApCcieYYx-Tr8JxL8" />
+                    <img alt="Client Logo 2"
+                        class="opacity-40 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWlB7Quq4t6Askq55gjTxBLzcrqa45PCL1fCuHTZb6ssA4UACJl_oEVWKnQyjMHxW6UV4ZOoPlfit4NSWqVKYU23bCAcgakd5vvFnfneMGRJFxfat92BasOh4cei7CXEPm-bJUXsh-sC1dpYd92Chg9YlIEQWtvOJLnCRQp6S-_dyH27HTmAINGuFOob7jy5pIZyRkgBLl1vIqa5oAQACJ_rgovsjdQwTsnAbTnM4gn3ruQRIOjo70xlkPzoQcBA9MJY2_ZaP1okY" />
+                    <img alt="Client Logo 3"
+                        class="opacity-40 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgwPvTakmvHuUClBZGpPTxmT3jfmQZScGcBEyvqnX6sF2R0n9ney3OiNl6qaZhMKWnBmXsbmL8iOtRyBddR0Krlcbr43NUEvJqP17Q5hXCqsv-T8qZ159zWkDLOWuTtAhkB5nfv14ttqwcpRQ3l26_m-EemsaaTLdSssTKDTTSAEWgaafh2lKs808zPzVLJ5JpUEX7CDSX_36WB095UbUiRIZs44vs83qtDhE3ZBry0qG78YX28ILo-aJzpPeTCYjiRwqXOBURy0w" />
+                    <img alt="Client Logo 4"
+                        class="opacity-40 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4ffRm-LDZWQ_iifgVXl6-5TyAdBNhhJNVP2p_X1yr7jsmA-_TFXxl1X6b5V7AriIW3_Rr_Hd3u2YlRR7MvoqmwOlR1SpYMSyvd9uIjUmIT5eap488hvTILIYMddCExUUi5xoV6uQJ2XjHd7nlrYvBTOTDXIxMPMFbV12NJo7RfLMrixr9HWulGBu8bGlpb8xS4MdWFUU3z-5VYLVGZMZNCDymYSVMY5i0TVsYXiT2wj_LGWjCgkKlj_q7rO1_MGzjFtT3aQ9Xg0M" />
+                    <img alt="Client Logo 5"
+                        class="opacity-40 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcXmkscD8ej6847blmTg0_rBkUX-zE4zaYn1XI6xJLH2QG0gqVb5EblDd7-AEncoY7oUmZbnyrOlN66zaIwX25wJy6fgAzG704eG6OJRak9Agp7i5k9WDJk5-ynJg9ACwaMy_Cr4VRY9KQK4mN192gIYrDWt0OmfXbXE_x5czGcbNWU1jXwOFORAIc3NeB3I7j_3wprYxoJ0SrpXglz5DodY3--HUVlhZzW-yk9EY7yeR4XIENo4f2NgNdaFt9EvDhY5EJfRCgv8g" />
+                    <img alt="Client Logo 6"
+                        class="opacity-40 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaVBxhOQ2YkPGiNRlSuHkjCTJ-68srrQzcKW9xR85e6Jc8geyywywYDCpaJYKwZdHW0zS7EdqVQb--UR-DGgQAvdnEckxtZntMz4RTUU-AZXHsMJkWhOfP4IKFHhpsLPwq9yTCOP9QTKTECCRDZmR7ivP0beACCEDvFRbg5RN_Cl0GKUhtH_kqre-yTV--8QA08_BgjhJRTGQ9Adx5sJZ8Ul7_OniN0TmHU5q7Dd6CJ1byEcRoAJFDn57_OeVLf60jKIyPUJdEHgE" />
+                </div>
+                <div class="logo-track">
+                    <img alt="Client Logo 1"
+                        class="opacity-40 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGZElHN20VUuB2Tc7qpG-Rw6oXSEa5TULR5AKwtq3KK24KRoGDEtXKnCsV9moUlDjfvVnLG11vd6wZBlfKj6QSrpAUYapV75ZbLnpnayC5djfA6A-flexe0pdPxxW3LKfMhdbqMoi1XFILa2-AxSdEDwif-72oyCttmzXDwlyAoIlFmFJmdCo-SBlrtMewVRgfKmKoGjxFPXpDSDTpgIfAK7S8fIcHD1AnuUKxcsXewWnk1Vz6f2M8Dge6PsCV8ILejLL6P6hM8oY" />
+                    <img alt="Client Logo 2"
+                        class="opacity-40 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMWD0qQh3Zgwc4FVrWYTqT5XUzbIqBf91FnvX0HnajcyipL5zd2c6ms_W1JpFNPBq-s5PbML4t-1mStYhDXgQ4GdYtFUO9YYXbus6IV6URYpllAZve2GpNEywJ8v3icHrsya9dTqvimScPSMjw6x0WVinb_5r8s9VnlvsH4L_OkUqPpHN1xaVgqBB4Vh_AJ8alN45utUNXlpsuQ77HoVMo0gWsGN9jVqqjznXSH_LVhlQRyjAo8b8Nu3oj096up4qBOsnmqror2AM" />
+                    <img alt="Client Logo 3"
+                        class="opacity-40 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuD29CT9whc8wEjM2sIH6w4AGwLeO8LP4WESNP3pINBy8SM7e_gahg4avOm0aN-HB6UIYIr2w3IQaz79fHI-wc40v5QeBu73vqaPyZ9ZjMKK1lIUot8-pgk_nqkUB6usHSzwk7wk7Yw1MB0VsU9GXwc0NqBahJXdkP13onMAX5FglJdbbx4pOIqYANZCp3EfsU-tt5zEUAQbrAaQeRrP4XCifQffzqEDTGbC4KqFk1RurGU85n-ssIkfL050UHdOLG5_hsbT4mcLH-c" />
+                    <img alt="Client Logo 4"
+                        class="opacity-40 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBl3RkwxBJyBIqr_zmwDczMKzFgahSnX3iS3kCM6yXZm5YMWdofifM_IsOwecPPcMfbIn7nlc4jfk_GkDFuWrGhdK5DKHc1nzbDdSiJB1I2b8xxSkNinXuoGHZwy7zDuBn3aSfvvg8YTzsMnxhwrUP6VVfRxEblYThCu_JkwxiBm2p6Db30__LuZltPpM8yDaraYarw_-SQgD9GUtkGRsNo7NYjnS4GrBdar6lxcnegwmlZXD1ulL08D2W3R6fxURQS__0w5IT23Pw" />
+                    <img alt="Client Logo 5"
+                        class="opacity-40 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaJxieM6bxsZPqWIU0uL0DzC0NHjqSBWAzfNZeVcOleTA8x7v9rUQ7qyAmb0tvQxAKvTnfONV7hvDid-u6Tb-8-TtoHPHvOv0PG6XdqbSIHKCdiGau2ahnoNQAwS6SIKJuwjJqRfxB4mAlxiB39ppGem3DkEZyRIxdwRfj0Bx7ZgLlislb1GoOjbfIPoCYYA8bdoxTJb2BYe962WprXUPUgGVLj7yA0mZ4iQ-NJfAi-mi17su0AiwlrsaMpnEImO2Izedaj7GPNzI" />
+                    <img alt="Client Logo 6"
+                        class="opacity-40 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqWiv8n-R1xkHKZ0-uYQwDXQXZHORaEAv3xNGij4EmAHpqV_nzI3QevzJDo4rDXzGnqTHbp3J58Rn9dxCsF-iNZBEIul-s_ZFLaqv1XC-6I2EdqY06dzCN0pQGTCbWw1Zi5rJOKKQhDn1__8ECaDFZplbPL6BZGtRas6YPqRthV76myw99wJny4puRhPGgRz0zkVYCuf0sLmDnOe47UyG9AGezu6BtQrr_G0be3pLZ3JtkiIlwl5Oo09g6BkYm1lbn410UEPpgC_s" />
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer
+        class="bg-background-light dark:bg-background-dark border-t border-[#f0f4f3] dark:border-white/10 pt-20 pb-10">
+        <div class="max-w-[1280px] mx-auto px-6 lg:px-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div class="space-y-6">
+                    <div class="flex items-center gap-3">
+                        <div class="text-primary">
+                            <svg class="size-6" fill="currentColor" viewbox="0 0 48 48">
+                                <path
+                                    d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h2 class="text-xl font-extrabold tracking-tight">Impulse Group</h2>
+                    </div>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        A leader in diversified business sectors, driving growth through ethical practices and
+                        sustainable development across our global verticals.
+                    </p>
+                    <div class="flex gap-4">
+                        <a class="size-10 rounded-full border border-[#dce5e3] dark:border-white/10 flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
+                            href="#">
+                            <span class="material-symbols-outlined text-xl">share</span>
+                        </a>
+                        <a class="size-10 rounded-full border border-[#dce5e3] dark:border-white/10 flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
+                            href="#">
+                            <span class="material-symbols-outlined text-xl">public</span>
+                        </a>
+                        <a class="size-10 rounded-full border border-[#dce5e3] dark:border-white/10 flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
+                            href="#">
+                            <span class="material-symbols-outlined text-xl">link</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <h4 class="font-bold">Our Brands</h4>
+                    <ul class="space-y-4 text-sm text-gray-500">
+                        <li><a class="hover:text-primary transition-colors" href="#">Just Natural</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Impulse Solutions</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">KKS Infrastructure</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Global Logistics</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-6">
+                    <h4 class="font-bold">Quick Links</h4>
+                    <ul class="space-y-4 text-sm text-gray-500">
+                        <li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Football Team</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Annual Report</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-6">
+                    <h4 class="font-bold">Contact Us</h4>
+                    <div class="space-y-4 text-sm text-gray-500">
+                        <p class="flex items-start gap-3"><span
+                                class="material-symbols-outlined text-primary">location_on</span> 123 Business Avenue,
+                            Suite 500<br />Corporate Hub, Metropolis</p>
+                        <p class="flex items-center gap-3"><span
+                                class="material-symbols-outlined text-primary">phone</span> +1 (555) 000-1234</p>
+                        <p class="flex items-center gap-3"><span
+                                class="material-symbols-outlined text-primary">mail</span> hello@imperialgroup.com</p>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="pt-10 border-t border-[#f0f4f3] dark:border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-400">
+                <p>© 2024 Impulse Group. All Rights Reserved.</p>
+                <div class="flex gap-8">
+                    <a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+                    <a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+                    <a class="hover:text-primary transition-colors" href="#">Cookie Settings</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
