@@ -1,10 +1,11 @@
 'use client';
 
 import Link from 'next/link';
+import { ThemeToggle } from './ThemeToggle';
 
 export default function Header() {
   return (
-    <div className="sticky top-0 z-50 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-[#f0f4f3] dark:border-white/10">
+    <div className="sticky top-0 z-50 bg-white/90 dark:bg-[#1a1a1a]/90 backdrop-blur-md border-b border-[#f0f4f3] dark:border-white/10">
       <div className="max-w-[1280px] mx-auto px-6 lg:px-10">
         <header className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -51,6 +52,7 @@ export default function Header() {
 
           {/* Right Actions */}
           <div className="flex items-center gap-4">
+            <ThemeToggle />
             <button className="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all shadow-lg shadow-primary/20">
               Contact Us
             </button>
