@@ -15,7 +15,9 @@ export default function About() {
         <div className="px-6 lg:px-10 py-6">
           <div className="flex items-center gap-2 text-sm font-medium text-gray-500 dark:text-gray-400">
             <a className="hover:text-[#1b9883]" href="#">Home</a>
-            <span className="material-symbols-outlined text-xs">chevron_right</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-gray-400">
+              <path d="M9 6l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
             <span className="text-[#1b9883]">About Us</span>
           </div>
         </div>
@@ -71,7 +73,10 @@ export default function About() {
               </div>
             </div>
             <div className="w-full lg:w-1/2 space-y-8">
-              <span className="material-symbols-outlined text-6xl text-[#D1BC94] opacity-50">format_quote</span>
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" className="text-[#D1BC94] opacity-50">
+                <path d="M3 21c3 0 7-1 7-8V5c0-1.25-4.25-2.25-7-2s-7 .75-7 2v12c0 1-6 3-6 3s1 1 6 1c1 0 3-1 3-1v-4c-1 1-3 2-6 2" />
+                <path d="M15 21c3 0 7-1 7-8V5c0-1.25-4.25-2.25-7-2s-7 .75-7 2v12c0 1-6 3-6 3s1 1 6 1c1 0 3-1 3-1v-4c-1 1-3 2-6 2" />
+              </svg>
               <h2 className="text-3xl font-bold italic leading-snug">
                 {`"Sustainability is no longer a choice; it's the core of how we build the future. At Impulse Group, we don't just scale businesses; we nurture ecosystems."`}
               </h2>
@@ -111,7 +116,10 @@ export default function About() {
                     <p className="text-gray-500 mt-3 leading-relaxed">{milestone.desc}</p>
                   </div>
                   <div className={`absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center size-10 rounded-full text-white border-4 border-white dark:border-[#1a1a1a] z-10 ${milestone.color}`}>
-                    <span className="material-symbols-outlined text-lg">{milestone.icon}</span>
+                    {milestone.icon === 'history_edu' && <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" /></svg>}
+                    {milestone.icon === 'eco' && <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c0 0-5 4.99-5 9 0 2.15.82 4.14 2.18 5.67.99 1.13 2.16 2.02 3.48 2.58-.41.59-.99 1.1-1.66 1.46-.5.26-1.04.49-1.6.68 1.57.42 3.29.64 5.08.64 6.08 0 11-4.92 11-11C22 7.01 17 2 12 2z" /></svg>}
+                    {milestone.icon === 'precision_manufacturing' && <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" /></svg>}
+                    {milestone.icon === 'hub' && <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z" /></svg>}
                   </div>
                   <div className={`hidden md:block w-[45%]`}></div>
                 </div>
@@ -128,7 +136,9 @@ export default function About() {
               <p className="text-gray-500">A collective of visionaries, engineers, and strategists leading the charge across three industries.</p>
             </div>
             <button className="flex items-center gap-2 text-[#1b9883] font-bold border-b-2 border-[#1b9883]/20 hover:border-[#1b9883] pb-1 transition-all">
-              View Full Directory <span className="material-symbols-outlined">arrow_forward</span>
+              View Full Directory <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" strokeWidth="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
             </button>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -146,8 +156,12 @@ export default function About() {
                   <h4 className="text-lg font-extrabold">{member.name}</h4>
                   <p className="text-sm text-[#1b9883] font-semibold uppercase tracking-wider mt-1">{member.role}</p>
                   <div className="flex justify-center gap-3 mt-4 text-gray-400">
-                    <span className="material-symbols-outlined text-lg cursor-pointer hover:text-[#1b9883]">alternate_email</span>
-                    <span className="material-symbols-outlined text-lg cursor-pointer hover:text-[#1b9883]">person</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" strokeWidth="2" className="cursor-pointer hover:text-[#1b9883]">
+                      <path d="M3 8l9 6 9-6M3 8v10a2 2 0 002 2h14a2 2 0 002-2V8"/>
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" strokeWidth="2" className="cursor-pointer hover:text-[#1b9883]">
+                      <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2M12 11a4 4 0 100-8 4 4 0 000 8z"/>
+                    </svg>
                   </div>
                 </div>
               </div>

@@ -19,21 +19,27 @@ export default function Products() {
               <div className="space-y-2">
                 <label className="flex items-center justify-between p-3 rounded-xl bg-[#1b9883]/10 border border-[#1b9883]/20 cursor-pointer group">
                   <div className="flex items-center gap-3">
-                    <span className="material-symbols-outlined text-[#1b9883]">eco</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" className="text-[#1b9883]">
+                      <path d="M12 2c0 0-5 4.99-5 9 0 2.15.82 4.14 2.18 5.67.99 1.13 2.16 2.02 3.48 2.58-.41.59-.99 1.1-1.66 1.46-.5.26-1.04.49-1.6.68 1.57.42 3.29.64 5.08.64 6.08 0 11-4.92 11-11C22 7.01 17 2 12 2z"/>
+                    </svg>
                     <span className="text-sm font-semibold">Just Natural</span>
                   </div>
                   <span className="text-xs font-bold text-[#1b9883]">24</span>
                 </label>
                 <label className="flex items-center justify-between p-3 rounded-xl hover:bg-[#f8f8f8] dark:hover:bg-white/5 cursor-pointer group transition-colors">
                   <div className="flex items-center gap-3">
-                    <span className="material-symbols-outlined text-[#658680]">cloud_done</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" strokeWidth="2" className="text-[#658680]">
+                      <path d="M6 19h12a3 3 0 003-3V7a3 3 0 00-3-3H6a3 3 0 00-3 3v9a3 3 0 003 3z"/>
+                    </svg>
                     <span className="text-sm font-medium">Impulse Solutions</span>
                   </div>
                   <span className="text-xs font-medium text-[#658680]">18</span>
                 </label>
                 <label className="flex items-center justify-between p-3 rounded-xl hover:bg-[#f8f8f8] dark:hover:bg-white/5 cursor-pointer group transition-colors">
                   <div className="flex items-center gap-3">
-                    <span className="material-symbols-outlined text-[#658680]">precision_manufacturing</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" strokeWidth="2" className="text-[#658680]">
+                      <path d="M3 3h7v7H3V3zm11 0h7v7h-7V3zM3 14h7v7H3v-7zm11 0h7v7h-7v-7z"/>
+                    </svg>
                     <span className="text-sm font-medium">KKS Industrial</span>
                   </div>
                   <span className="text-xs font-medium text-[#658680]">12</span>
@@ -62,7 +68,9 @@ export default function Products() {
               </div>
             </div>
             <button className="w-full flex items-center justify-center gap-2 py-3 border-2 border-[#f0f4f3] dark:border-white/10 text-sm font-bold rounded-xl hover:bg-[#f8f8f8] dark:hover:bg-white/5 transition-colors">
-              <span className="material-symbols-outlined text-lg">filter_alt_off</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" strokeWidth="2">
+                <path d="M3 6h18M6 12h12M9 18h6"/>
+              </svg>
               Clear Filters
             </button>
           </div>
@@ -73,7 +81,9 @@ export default function Products() {
           <div className="space-y-4">
             <nav className="flex items-center gap-2 text-sm font-medium text-[#658680]">
               <a className="hover:text-[#1b9883]" href="/">Home</a>
-              <span className="material-symbols-outlined text-base">chevron_right</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" strokeWidth="2">
+                <path d="M9 6l6 6-6 6"/>
+              </svg>
               <span className="text-[#121716] dark:text-white">Product Catalog</span>
             </nav>
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
@@ -82,7 +92,9 @@ export default function Products() {
                 <p className="text-[#658680]">Discover excellence across our multi-brand conglomerate.</p>
               </div>
               <button className="flex items-center gap-2 px-5 py-2.5 bg-[#f8f8f8] dark:bg-white/5 text-[#121716] dark:text-white text-sm font-bold rounded-lg border border-[#f0f4f3] dark:border-white/10 hover:border-[#1b9883]/50 transition-all">
-                <span className="material-symbols-outlined text-lg">download</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" strokeWidth="2">
+                  <path d="M12 2v12M5 10l7 7 7-7"/>
+                </svg>
                 Full Catalog (PDF)
               </button>
             </div>
@@ -91,11 +103,15 @@ export default function Products() {
           <div className="flex flex-wrap gap-2 py-2">
             <div className="flex items-center gap-2 bg-[#1b9883]/10 text-[#1b9883] px-3 py-1.5 rounded-full text-xs font-bold border border-[#1b9883]/20">
               Brand: Just Natural
-              <span className="material-symbols-outlined text-sm cursor-pointer">close</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" strokeWidth="2" className="cursor-pointer">
+                <path d="M18 6L6 18M6 6l12 12"/>
+              </svg>
             </div>
             <div className="flex items-center gap-2 bg-[#f8f8f8] dark:bg-white/5 text-[#658680] px-3 py-1.5 rounded-full text-xs font-bold border border-[#f0f4f3]">
               Category: Organic Food
-              <span className="material-symbols-outlined text-sm cursor-pointer">close</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" strokeWidth="2" className="cursor-pointer">
+                <path d="M18 6L6 18M6 6l12 12"/>
+              </svg>
             </div>
           </div>
           {/* Product Grid */}

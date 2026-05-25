@@ -25,21 +25,27 @@ export default function Footer() {
                 href="#"
                 aria-label="Share"
               >
-                <span className="material-symbols-outlined text-xl">share</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" strokeWidth="2">
+                  <path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8M16 6l-4-4-4 4M12 2v13"/>
+                </svg>
               </a>
               <a
                 className="size-10 rounded-full border border-[#dce5e3] dark:border-white/10 flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
                 href="#"
                 aria-label="Website"
               >
-                <span className="material-symbols-outlined text-xl">public</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                </svg>
               </a>
               <a
                 className="size-10 rounded-full border border-[#dce5e3] dark:border-white/10 flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
                 href="#"
                 aria-label="Link"
               >
-                <span className="material-symbols-outlined text-xl">link</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" strokeWidth="2">
+                  <path d="M10 13a5 5 0 0073.46-2.46l3.89-3.89a5 5 0 00-7.07-7.07l-1.93 1.93M14 11a5 5 0 00-7.34 2.46l-3.89 3.89a5 5 0 007.07 7.07l1.93-1.93"/>
+                </svg>
               </a>
             </div>
           </div>
@@ -103,17 +109,23 @@ export default function Footer() {
             <h4 className="font-bold">Contact Us</h4>
             <div className="space-y-4 text-sm text-gray-500">
               <p className="flex items-start gap-3">
-                <span className="material-symbols-outlined text-primary">location_on</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" className="text-primary flex-shrink-0">
+                  <path d="M12 2C6.48 2 2 6.48 2 12c0 8 10 18 10 18s10-10 10-18c0-5.52-4.48-10-10-10zm0 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/>
+                </svg>
                 123 Business Avenue, Suite 500
                 <br />
                 Corporate Hub, Metropolis
               </p>
               <p className="flex items-center gap-3">
-                <span className="material-symbols-outlined text-primary">phone</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" className="text-primary flex-shrink-0">
+                  <path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/>
+                </svg>
                 +1 (555) 000-1234
               </p>
               <p className="flex items-center gap-3">
-                <span className="material-symbols-outlined text-primary">mail</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" strokeWidth="2" className="text-primary flex-shrink-0">
+                  <path d="M3 8l9 6 9-6M3 8v10a2 2 0 002 2h14a2 2 0 002-2V8"/>
+                </svg>
                 hello@imperialgroup.com
               </p>
             </div>

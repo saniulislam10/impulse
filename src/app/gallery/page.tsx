@@ -64,7 +64,9 @@ export default function Gallery() {
                 <div className="absolute bottom-0 left-0 right-0 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
                   <p className="text-white font-bold text-sm">{item.label}</p>
                   <button className="mt-2 text-white text-xs font-bold flex items-center gap-1 hover:gap-2 transition-all">
-                    View <span className="material-symbols-outlined text-xs">arrow_forward</span>
+                    View <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" strokeWidth="2">
+                      <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
                   </button>
                 </div>
               </div>

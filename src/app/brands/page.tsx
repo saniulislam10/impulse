@@ -40,10 +40,14 @@ export default function Brands() {
               </div>
               <div className="flex gap-2">
                 <button className="p-3 border border-gray-200 dark:border-gray-700 rounded-full hover:bg-white dark:hover:bg-gray-800 transition-all">
-                  <span className="material-symbols-outlined">grid_view</span>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" strokeWidth="2">
+                    <path d="M3 3h7v7H3V3zm11 0h7v7h-7V3zM3 14h7v7H3v-7zm11 0h7v7h-7v-7z"/>
+                  </svg>
                 </button>
                 <button className="p-3 border border-gray-200 dark:border-gray-700 rounded-full hover:bg-white dark:hover:bg-gray-800 transition-all">
-                  <span className="material-symbols-outlined">view_list</span>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" strokeWidth="2">
+                    <path d="M3 5h18M3 10h18M3 15h18M3 20h18"/>
+                  </svg>
                 </button>
               </div>
             </div>
@@ -59,7 +63,9 @@ export default function Brands() {
                   ></div>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                   <div className="absolute top-6 left-6 bg-white dark:bg-gray-900 px-4 py-2 rounded-lg font-bold text-sm flex items-center gap-2">
-                    <span className="material-symbols-outlined text-green-500 text-base">eco</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" className="text-green-500">
+                      <path d="M12 2c0 0-5 4.99-5 9 0 2.15.82 4.14 2.18 5.67.99 1.13 2.16 2.02 3.48 2.58-.41.59-.99 1.1-1.66 1.46-.5.26-1.04.49-1.6.68 1.57.42 3.29.64 5.08.64 6.08 0 11-4.92 11-11C22 7.01 17 2 12 2z"/>
+                    </svg>
                     Agriculture
                   </div>
                 </div>
@@ -76,7 +82,9 @@ export default function Brands() {
                     href="#"
                   >
                     <span>Learn More</span>
-                    <span className="material-symbols-outlined group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" strokeWidth="2" className="group-hover/btn:translate-x-1 transition-transform">
+                      <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
                   </a>
                 </div>
               </div>
@@ -92,7 +100,9 @@ export default function Brands() {
                   ></div>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                   <div className="absolute top-6 left-6 bg-white dark:bg-gray-900 px-4 py-2 rounded-lg font-bold text-sm flex items-center gap-2">
-                    <span className="material-symbols-outlined text-blue-500 text-base">strategy</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" className="text-blue-500">
+                      <path d="M6 9l6 6 6-6"/>
+                    </svg>
                     Consulting
                   </div>
                 </div>
@@ -109,7 +119,9 @@ export default function Brands() {
                     href="#"
                   >
                     <span>Learn More</span>
-                    <span className="material-symbols-outlined group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" strokeWidth="2" className="group-hover/btn:translate-x-1 transition-transform">
+                      <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
                   </a>
                 </div>
               </div>
@@ -125,7 +137,9 @@ export default function Brands() {
                   ></div>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                   <div className="absolute top-6 left-6 bg-white dark:bg-gray-900 px-4 py-2 rounded-lg font-bold text-sm flex items-center gap-2">
-                    <span className="material-symbols-outlined text-orange-500 text-base">precision_manufacturing</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" className="text-orange-500">
+                      <path d="M3 3h7v7H3V3zm11 0h7v7h-7V3zM3 14h7v7H3v-7zm11 0h7v7h-7v-7z"/>
+                    </svg>
                     Industrial
                   </div>
                 </div>
@@ -142,7 +156,9 @@ export default function Brands() {
                     href="#"
                   >
                     <span>Learn More</span>
-                    <span className="material-symbols-outlined group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" strokeWidth="2" className="group-hover/btn:translate-x-1 transition-transform">
+                      <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
                   </a>
                 </div>
               </div>
@@ -175,27 +191,33 @@ export default function Brands() {
               </div>
               <div className="space-y-8">
                 <div className="flex gap-6">
-                  <div className="shrink-0 w-14 h-14 bg-[#1b9883]/10 rounded-2xl flex items-center justify-center text-[#1b9883]">
-                    <span className="material-symbols-outlined text-3xl">trending_up</span>
-                  </div>
+                <div className="shrink-0 w-14 h-14 bg-[#1b9883]/10 rounded-2xl flex items-center justify-center text-[#1b9883]">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" strokeWidth="2">
+                    <path d="M3 12h4l3-6 3 8 3-4h4"/>
+                  </svg>
+                </div>
                   <div>
                     <h4 className="text-xl font-bold mb-2">Sustainable Growth</h4>
                     <p className="text-gray-500">Long-term vision over short-term gains, ensuring our brands thrive for generations.</p>
                   </div>
                 </div>
                 <div className="flex gap-6">
-                  <div className="shrink-0 w-14 h-14 bg-[#1b9883]/10 rounded-2xl flex items-center justify-center text-[#1b9883]">
-                    <span className="material-symbols-outlined text-3xl">lightbulb</span>
-                  </div>
+                <div className="shrink-0 w-14 h-14 bg-[#1b9883]/10 rounded-2xl flex items-center justify-center text-[#1b9883]">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2a7 7 0 00-7 7c0 2.38 1.19 4.47 3 5.74V17a2 2 0 002 2h4a2 2 0 002-2v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 00-7-7zm0 16h-2v2h2v-2z"/>
+                  </svg>
+                </div>
                   <div>
                     <h4 className="text-xl font-bold mb-2">Continuous Innovation</h4>
                     <p className="text-gray-500">Investing in R&amp;D to maintain our competitive edge in agriculture, tech, and manufacturing.</p>
                   </div>
                 </div>
                 <div className="flex gap-6">
-                  <div className="shrink-0 w-14 h-14 bg-[#1b9883]/10 rounded-2xl flex items-center justify-center text-[#1b9883]">
-                    <span className="material-symbols-outlined text-3xl">verified</span>
-                  </div>
+                <div className="shrink-0 w-14 h-14 bg-[#1b9883]/10 rounded-2xl flex items-center justify-center text-[#1b9883]">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  </svg>
+                </div>
                   <div>
                     <h4 className="text-xl font-bold mb-2">Uncompromising Quality</h4>
                     <p className="text-gray-500">Rigorous standards applied across every service and product in the Impulse family.</p>

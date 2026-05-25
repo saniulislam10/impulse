@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -17,6 +17,34 @@ html {
 
 body {
   font-family: 'Manrope', sans-serif;
+}
+
+/* Material Symbols Icon Styles */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.material-symbols-outlined.sm {
+  font-size: 18px;
+}
+
+.material-symbols-outlined.lg {
+  font-size: 32px;
+}
+
+.material-symbols-outlined.xl {
+  font-size: 48px;
 }
 
 /* Marquee animation */
@@ -48,8 +76,4 @@ body {
 
 .brand-card:hover .brand-image {
   transform: scale(1.05);
-}
-
-.material-symbols-outlined {
-  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
 }

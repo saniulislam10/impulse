@@ -123,7 +123,9 @@ export default function Home() {
                 <h3 className="text-2xl font-bold mb-2">Just Natural</h3>
                 <p className="text-gray-500 text-sm mb-4 leading-relaxed">Sustainable organic products for a healthier lifestyle, ethically sourced and distributed globally.</p>
                 <a className="text-[#1b9883] font-bold flex items-center gap-2 group-hover:gap-3 transition-all" href="#">
-                  Learn More <span className="material-symbols-outlined">arrow_forward</span>
+                  Learn More <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
                 </a>
               </div>
               {/* Brand 2 */}
@@ -140,7 +142,9 @@ export default function Home() {
                 <h3 className="text-2xl font-bold mb-2">Impulse Solutions</h3>
                 <p className="text-gray-500 text-sm mb-4 leading-relaxed">Strategic corporate consulting and integrated business solutions for modern enterprises.</p>
                 <a className="text-[#1b9883] font-bold flex items-center gap-2 group-hover:gap-3 transition-all" href="#">
-                  Learn More <span className="material-symbols-outlined">arrow_forward</span>
+                  Learn More <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
                 </a>
               </div>
               {/* Brand 3 */}
@@ -157,7 +161,9 @@ export default function Home() {
                 <h3 className="text-2xl font-bold mb-2">KKS</h3>
                 <p className="text-gray-500 text-sm mb-4 leading-relaxed">Advanced manufacturing and logistical infrastructure powering international trade lanes.</p>
                 <a className="text-[#1b9883] font-bold flex items-center gap-2 group-hover:gap-3 transition-all" href="#">
-                  Learn More <span className="material-symbols-outlined">arrow_forward</span>
+                  Learn More <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
                 </a>
               </div>
             </div>
