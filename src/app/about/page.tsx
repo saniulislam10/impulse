@@ -143,10 +143,10 @@ export default function About() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { name: 'David Chen', role: 'CEO, Impulse Solutions', image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAvse2a4yL7TReINFxSv62fEtl9TJ6gpJv8wpX9UTM4huKnAkO7n9GynZ2COvLHVqSUplAk6O5dNmhdk7iLwl37lvtCMJyBVKQliHI2uJ1nbwBPQfxTKkUOBIXzWBXrxcnaH4dPW-owLD1fYNZsS505dc98Jx4vqFM0XbmhKYmmxUlbVD2lSt1woGrBeCIN0bN1Oprq52hutL4-3Msa0x-yKsjRuW4UX4Fk9vvGkcrwsfB-qv3Dqv5jZO1fmwtaj5NID8dg26BqmPw' },
-              { name: 'Elena Wong', role: 'Chief Product Officer', image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAvse2a4yL7TReINFxSv62fEtl9TJ6gpJv8wpX9UTM4huKnAkO7n9GynZ2COvLHVqSUplAk6O5dNmhdk7iLwl37lvtCMJyBVKQliHI2uJ1nbwBPQfxTKkUOBIXzWBXrxcnaH4dPW-owLD1fYNZsS505dc98Jx4vqFM0XbmhKYmmxUlbVD2lSt1woGrBeCIN0bN1Oprq52hutL4-3Msa0x-yKsjRuW4UX4Fk9vvGkcrwsfB-qv3Dqv5jZO1fmwtaj5NID8dg26BqmPw' },
-              { name: 'Marcus Johnson', role: 'VP Operations', image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAvse2a4yL7TReINFxSv62fEtl9TJ6gpJv8wpX9UTM4huKnAkO7n9GynZ2COvLHVqSUplAk6O5dNmhdk7iLwl37lvtCMJyBVKQliHI2uJ1nbwBPQfxTKkUOBIXzWBXrxcnaH4dPW-owLD1fYNZsS505dc98Jx4vqFM0XbmhKYmmxUlbVD2lSt1woGrBeCIN0bN1Oprq52hutL4-3Msa0x-yKsjRuW4UX4Fk9vvGkcrwsfB-qv3Dqv5jZO1fmwtaj5NID8dg26BqmPw' },
-              { name: 'Sophia Martinez', role: 'Director of Innovation', image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAvse2a4yL7TReINFxSv62fEtl9TJ6gpJv8wpX9UTM4huKnAkO7n9GynZ2COvLHVqSUplAk6O5dNmhdk7iLwl37lvtCMJyBVKQliHI2uJ1nbwBPQfxTKkUOBIXzWBXrxcnaH4dPW-owLD1fYNZsS505dc98Jx4vqFM0XbmhKYmmxUlbVD2lSt1woGrBeCIN0bN1Oprq52hutL4-3Msa0x-yKsjRuW4UX4Fk9vvGkcrwsfB-qv3Dqv5jZO1fmwtaj5NID8dg26BqmPw' },
+              { name: 'Sagor Roy', role: 'Head of Sales', image: '/sagor.jpg' },
+              { name: 'Krish Saha', role: 'Chief Admin Officer', image: '/krish.jpg' },
+              { name: 'Tarak Biswas', role: 'Senior Account Manager', image: '/tarak.jpg' },
+              { name: 'Aranya Khan', role: 'Brand Ambassador', image: '/aranya.png' },
             ].map((member, i) => (
               <div key={i} className="group bg-white dark:bg-[#1a1a1a] p-4 rounded-2xl shadow-sm hover:shadow-xl transition-all hover:-translate-y-2">
                 <div className="aspect-square overflow-hidden rounded-xl mb-6 bg-gray-100">

@@ -8,14 +8,9 @@ export const metadata = {
 
 export default function Gallery() {
   const galleryItems = [
-    { img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBjyqCj-6eVDwpA1vBZfEKvH1wdKj1eZ7x8ZcXWZcLi8JhLj1MvvPZS8XWP6JfYGcQvV4f-7KnQx4HqhZJCQjYkZnKk1g_ScUdGQEsaFzFyHqkNtqB9C9jt1XLxFJWV8VU_8o8QpMPf6PblCbgTpyF', label: 'Just Natural Organic Farm' },
-    { img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCfXH5JKZYvD_Ek_L3u92JHVKk5X9GzYJQ2b7XW1YyUwJxZy7qKwAm5fHT5CqW3rHZv9Z5YuYjJLf0t6h8qZBTp8u6EBEIpBZxRvwHLGqI3M', label: 'Impulse Solutions Conference' },
-    { img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDj-LK7MyNp2U9RJFRKzaWl1xVWH6JwXKKZqVZFE1Y4AYZm0jN0dGb3cVSHCy7YSoV-L_jMZwkZ1_x3rMqH0U_0SFZ2V7K', label: 'KKS Industrial Facility' },
-    { img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBjyqCj-6eVDwpA1vBZfEKvH1wdKj1eZ7x8ZcXWZcLi8JhLj1MvvPZS8XWP6JfYGcQvV4f-7KnQx4HqhZJCQjYkZnKk1g_ScUdGQEsaFzFyHqkNtqB9C9jt1XLxFJWV8VU_8o8QpMPf6PblCbgTpyF', label: 'Corporate Team Building' },
-    { img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCfXH5JKZYvD_Ek_L3u92JHVKk5X9GzYJQ2b7XW1YyUwJxZy7qKwAm5fHT5CqW3rHZv9Z5YuYjJLf0t6h8qZBTp8u6EBEIpBZxRvwHLGqI3M', label: 'Global Summit 2024' },
-    { img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDj-LK7MyNp2U9RJFRKzaWl1xVWH6JwXKKZqVZFE1Y4AYZm0jN0dGb3cVSHCy7YSoV-L_jMZwkZ1_x3rMqH0U_0SFZ2V7K', label: 'Community Initiative' },
-    { img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBjyqCj-6eVDwpA1vBZfEKvH1wdKj1eZ7x8ZcXWZcLi8JhLj1MvvPZS8XWP6JfYGcQvV4f-7KnQx4HqhZJCQjYkZnKk1g_ScUdGQEsaFzFyHqkNtqB9C9jt1XLxFJWV8VU_8o8QpMPf6PblCbgTpyF', label: 'Production Line Tour' },
-    { img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCfXH5JKZYvD_Ek_L3u92JHVKk5X9GzYJQ2b7XW1YyUwJxZy7qKwAm5fHT5CqW3rHZv9Z5YuYjJLf0t6h8qZBTp8u6EBEIpBZxRvwHLGqI3M', label: 'Product Launch Event' },
+    { img: '/cashew-nuts.png', label: 'Cashew Nuts' },
+    { img: '/red-apricot.png', label: 'Red Apricot' },
+    { img: '/chia-seeds.jpeg', label: 'Chia Seeds' },
   ];
 
   return (
@@ -65,7 +60,7 @@ export default function Gallery() {
                   <p className="text-white font-bold text-sm">{item.label}</p>
                   <button className="mt-2 text-white text-xs font-bold flex items-center gap-1 hover:gap-2 transition-all">
                     View <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" strokeWidth="2">
-                      <path d="M5 12h14M12 5l7 7-7 7"/>
+                      <path d="M5 12h14M12 5l7 7-7 7" />
                     </svg>
                   </button>
                 </div>

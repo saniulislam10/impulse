@@ -7,12 +7,47 @@ export const metadata = {
   description: 'Meet our corporate football team and athletes.',
 };
 
+const players = [
+  {
+    name: 'Sahal',
+    position: 'Central Defending Midfielder',
+    number: 8,
+    image: '/sahal.png'
+  },
+  {
+    name: 'Rawnak Islam ',
+    position: 'Defender',
+    number: 4,
+    image: '/rawnak.png'
+  },
+  {
+    name: 'Golam Akbar Faruqee',
+    position: 'Central Attacking Midfielder',
+    number: 10,
+    image: '/golam.jpg'
+  },
+  {
+    name: 'RV Rimon',
+    position: 'Defender',
+    number: 2,
+    image: 'https://static.vecteezy.com/system/resources/previews/029/107/598/non_2x/football-player-clip-art-free-vector.jpg'
+  },
+  {
+    name: 'Tahmid Rahman',
+    position: 'Goal Keeper',
+    number: 1,
+    image: '/tahmid.png'
+  }
+  // Add more players as needed
+];
+
 export default function FootballTeam() {
   return (
     <>
       <Header />
       <main>
         <section className="relative pt-20 pb-16 lg:py-32">
+          <img src="/club.jpg" alt="Football Team Hero" className="absolute inset-0 w-full h-full object-cover opacity-20" />
           <div className="max-w-[1280px] mx-auto px-6 lg:px-10">
             <h1 className="text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
               Impulse Football Team
@@ -32,9 +67,9 @@ export default function FootballTeam() {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-16">
               {[
                 { label: 'Players', value: '20+' },
-                { label: 'Tournaments', value: '15+' },
+                { label: 'Tournaments', value: '5+' },
                 { label: 'Victories', value: '80%' },
-                { label: 'Founded', value: '2015' },
+                { label: 'Founded', value: '2022' },
               ].map((stat, i) => (
                 <div
                   key={i}
@@ -52,16 +87,16 @@ export default function FootballTeam() {
               centered
             />
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {[1, 2, 3, 4, 5, 6].map((player) => (
+              {players.map((player, i) => (
                 <div
-                  key={player}
+                  key={i}
                   className="text-center space-y-4"
                 >
                   <div className="aspect-square bg-surface-light dark:bg-surface-dark rounded-xl overflow-hidden flex items-center justify-center">
-                    <p className="text-gray-400">Player {player}</p>
+                    <img src={player.image} alt={player.name} className="w-full h-full object-cover" />
                   </div>
-                  <h3 className="font-bold text-lg">Player Name</h3>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm">Forward | #7</p>
+                  <h3 className="font-bold text-lg">{player.name}</h3>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">{player.position} | #{player.number}</p>
                 </div>
               ))}
             </div>

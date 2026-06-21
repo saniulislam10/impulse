@@ -26,7 +26,7 @@ export default function Footer() {
                 aria-label="Share"
               >
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" strokeWidth="2">
-                  <path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8M16 6l-4-4-4 4M12 2v13"/>
+                  <path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8M16 6l-4-4-4 4M12 2v13" />
                 </svg>
               </a>
               <a
@@ -35,7 +35,7 @@ export default function Footer() {
                 aria-label="Website"
               >
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
                 </svg>
               </a>
               <a
@@ -44,7 +44,7 @@ export default function Footer() {
                 aria-label="Link"
               >
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" strokeWidth="2">
-                  <path d="M10 13a5 5 0 0073.46-2.46l3.89-3.89a5 5 0 00-7.07-7.07l-1.93 1.93M14 11a5 5 0 00-7.34 2.46l-3.89 3.89a5 5 0 007.07 7.07l1.93-1.93"/>
+                  <path d="M10 13a5 5 0 0073.46-2.46l3.89-3.89a5 5 0 00-7.07-7.07l-1.93 1.93M14 11a5 5 0 00-7.34 2.46l-3.89 3.89a5 5 0 007.07 7.07l1.93-1.93" />
                 </svg>
               </a>
             </div>
@@ -110,23 +110,23 @@ export default function Footer() {
             <div className="space-y-4 text-sm text-gray-500">
               <p className="flex items-start gap-3">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" className="text-primary flex-shrink-0">
-                  <path d="M12 2C6.48 2 2 6.48 2 12c0 8 10 18 10 18s10-10 10-18c0-5.52-4.48-10-10-10zm0 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/>
+                  <path d="M12 2C6.48 2 2 6.48 2 12c0 8 10 18 10 18s10-10 10-18c0-5.52-4.48-10-10-10zm0 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z" />
                 </svg>
-                123 Business Avenue, Suite 500
+                185 Rose view plaza, Room No - 504
                 <br />
-                Corporate Hub, Metropolis
+                Bir Uttam C R Dutta Road, Hatirpool, Dhaka
               </p>
               <p className="flex items-center gap-3">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" className="text-primary flex-shrink-0">
-                  <path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/>
+                  <path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z" />
                 </svg>
-                +1 (555) 000-1234
+                +880 1643 959 399
               </p>
               <p className="flex items-center gap-3">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" strokeWidth="2" className="text-primary flex-shrink-0">
-                  <path d="M3 8l9 6 9-6M3 8v10a2 2 0 002 2h14a2 2 0 002-2V8"/>
+                  <path d="M3 8l9 6 9-6M3 8v10a2 2 0 002 2h14a2 2 0 002-2V8" />
                 </svg>
-                hello@imperialgroup.com
+                info@imperialgroup.com
               </p>
             </div>
           </div>

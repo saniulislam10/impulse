@@ -74,10 +74,11 @@ npm start
 ## Components Guide
 
 ### Header
+
 Sticky navigation bar with logo, navigation links, and action buttons.
 
 ```tsx
-import Header from '@/components/Header';
+import Header from "@/components/Header";
 
 export default function Page() {
   return <Header />;
@@ -85,10 +86,11 @@ export default function Page() {
 ```
 
 ### Footer
+
 Comprehensive footer with brand info, links, and contact details.
 
 ```tsx
-import Footer from '@/components/Footer';
+import Footer from "@/components/Footer";
 
 export default function Page() {
   return <Footer />;
@@ -96,24 +98,26 @@ export default function Page() {
 ```
 
 ### StatCard
+
 Display statistics with trending information.
 
 ```tsx
-import StatCard from '@/components/StatCard';
+import StatCard from "@/components/StatCard";
 
 <StatCard
   label="Years of Excellence"
   value="25+"
   description="Founded on principles of sustainability"
   trend="+5% YoY"
-/>
+/>;
 ```
 
 ### BrandCard
+
 Showcase brand with image, description, and link.
 
 ```tsx
-import BrandCard from '@/components/BrandCard';
+import BrandCard from "@/components/BrandCard";
 
 <BrandCard
   title="Just Natural"
@@ -122,26 +126,28 @@ import BrandCard from '@/components/BrandCard';
   imageAlt="Brand image"
   overlayColor="primary"
   href="/brands"
-/>
+/>;
 ```
 
 ### SectionHeader
+
 Reusable section heading with optional underline.
 
 ```tsx
-import SectionHeader from '@/components/SectionHeader';
+import SectionHeader from "@/components/SectionHeader";
 
 <SectionHeader
   title="Our Values"
   description="Core principles guiding our work"
   centered
   showUnderline
-/>
+/>;
 ```
 
 ## Customization
 
 ### Colors
+
 Edit `tailwind.config.ts` to customize the color scheme:
 
 ```ts
@@ -153,6 +159,7 @@ colors: {
 ```
 
 ### Fonts
+
 The project uses Manrope font from Google Fonts. To change fonts:
 
 1. Edit `src/app/layout.tsx`
@@ -160,6 +167,7 @@ The project uses Manrope font from Google Fonts. To change fonts:
 3. Update `tailwind.config.ts` fontFamily configuration
 
 ### Content
+
 All pages are in `src/app/` directory. Edit the TSX files to update content, images, and links.
 
 ## Browser Support
@@ -183,5 +191,6 @@ All pages are in `src/app/` directory. Edit the TSX files to update content, ima
 ## Support
 
 For questions or issues, please contact:
-- Email: hello@imperialgroup.com
+
+- Email: info@imperialgroup.com
 - Phone: +1 (555) 000-1234
