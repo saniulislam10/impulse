@@ -7,6 +7,41 @@ export const metadata = {
 };
 const products = [
   {
+    title: 'Mustard honey',
+    brand: 'Just Natural',
+    desc: 'Experience the exquisite taste of our Lychee Flower Honey, a premium natural sweetener harvested from the nectar of lychee blossoms. This honey boasts a delicate floral aroma and a smooth, rich flavor that enhances teas, desserts, and culinary creations. Sourced sustainably, it is packed with antioxidants and nutrients, making it a healthy choice for your daily diet.',
+    img: '/products/Mustard honey 250g/photo.jpg',
+    icon: 'eco',
+    color: '#1b9883',
+    badge: ''
+  }, {
+    title: 'Lychee flower honey',
+    brand: 'Just Natural',
+    desc: 'Experience the exquisite taste of our Lychee Flower Honey, a premium natural sweetener harvested from the nectar of lychee blossoms. This honey boasts a delicate floral aroma and a smooth, rich flavor that enhances teas, desserts, and culinary creations. Sourced sustainably, it is packed with antioxidants and nutrients, making it a healthy choice for your daily diet.',
+    img: '/products/Lychee flower honey 500g/photo.jpg',
+    icon: 'eco',
+    color: '#1b9883',
+    badge: ''
+  },
+  {
+    title: 'Kalijeera flower honey',
+    brand: 'Just Natural',
+    desc: 'Discover the unique taste of our Kalijeera Flower Honey, a rare and exquisite honey variety derived from the nectar of Kalijeera blossoms. Known for its rich, aromatic flavor and smooth texture, this honey is perfect for enhancing teas, desserts, and culinary dishes. Packed with natural antioxidants and nutrients, it offers a wholesome and delicious addition to your daily diet.',
+    img: '/products/Kalijeera flower honey 250g/photo.jpg',
+    icon: 'eco',
+    color: '#1b9883',
+    badge: ''
+  },
+  {
+    title: 'Lychee honey',
+    brand: 'Just Natural',
+    desc: 'Experience the exquisite taste of our Lychee Flower Honey, a premium natural sweetener harvested from the nectar of lychee blossoms. This honey boasts a delicate floral aroma and a smooth, rich flavor that enhances teas, desserts, and culinary creations. Sourced sustainably, it is packed with antioxidants and nutrients, making it a healthy choice for your daily diet.',
+    img: '/products/Lychee honey 100g/photo.jpg',
+    icon: 'eco',
+    color: '#1b9883',
+    badge: ''
+  },
+  {
     title: 'Butter Glazed Cashew Nut',
     brand: 'Just Natural',
     desc: 'Indulge in the rich, creamy crunch of our Butter Glazed Cashew Nuts. Premium whole cashews are lightly roasted and coated in a smooth, golden butter glaze for an irresistibly satisfying snack. Perfect for munching on the go or sharing at gatherings — a classic treat with every bite.',
@@ -25,10 +60,10 @@ const products = [
     badge: ''
   },
   {
-    title: 'Mixed Nut and Dry Fruits',
+    title: 'Mixed Nuts and Dry Fruits',
     brand: 'Just Natural',
     desc: 'A delightful blend of premium nuts and dried fruits, perfect for a healthy snack or a quick energy boost. Each bite delivers a burst of natural flavors and essential nutrients.',
-    img: '/products/Mixed Nut and Dry Fruits/photo.jpg',
+    img: '/products/Mixed Nuts and Dry Fruits 100g/photo.jpg',
     icon: 'eco',
     color: '#1b9883',
     badge: 'Premium'
@@ -74,6 +109,24 @@ const products = [
     brand: 'Just Natural',
     desc: 'Almonds are nutrient-dense tree nuts known for their crunchy texture and mildly sweet flavor. Packed with healthy fats, protein, fiber, vitamins, and minerals, almonds are a popular choice for snacking, baking, and cooking. They can be enjoyed raw, roasted, or as almond butter and milk, making them a versatile and delicious addition to a healthy diet.',
     img: '/products/Almond 500g/photo.jpg',
+    icon: 'cloud_done',
+    color: '#3b82f6',
+    badge: 'Premium'
+  },
+  {
+    title: 'Walnut',
+    brand: 'Just Natural',
+    desc: 'Walnuts are nutrient-rich tree nuts known for their distinctive brain-like shape, rich flavor, and crunchy texture. Packed with healthy fats, protein, fiber, vitamins, and minerals, walnuts are a popular choice for snacking, baking, and cooking. They can be enjoyed raw, roasted, or as walnut butter and oil, making them a versatile and delicious addition to a healthy diet.',
+    img: '/products/Walnut 100g/photo.jpg',
+    icon: 'cloud_done',
+    color: '#3b82f6',
+    badge: 'Premium'
+  },
+  {
+    title: 'Psyllium Husk 70g',
+    brand: 'Just Natural',
+    desc: 'Psyllium Husk is a natural dietary fiber derived from the seeds of the Plantago ovata plant. Known for its high soluble fiber content, it is commonly used as a gentle laxative and to support digestive health. Psyllium Husk can help regulate bowel movements, promote satiety, and support heart health by helping to lower cholesterol levels. It is often added to smoothies, baked goods, and other foods to boost fiber intake and improve overall wellness.',
+    img: '/products/Psyllium Husk 70g/photo.jpg',
     icon: 'cloud_done',
     color: '#3b82f6',
     badge: 'Premium'
