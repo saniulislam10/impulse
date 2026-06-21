@@ -56,11 +56,6 @@ export default function Footer() {
                   KKS Infrastructure
                 </Link>
               </li>
-              <li>
-                <Link className="hover:text-primary transition-colors" href="/brands">
-                  Global Logistics
-                </Link>
-              </li>
             </ul>
           </div>
 
