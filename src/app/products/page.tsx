@@ -194,7 +194,7 @@ export default function Products() {
                 </label>
               </div>
             </div>
-            <div>
+            {/* <div>
               <h3 className="text-sm font-bold uppercase tracking-wider text-[#658680] mb-4">Product Type</h3>
               <div className="space-y-3">
                 <label className="flex items-center gap-3 cursor-pointer">
@@ -214,7 +214,7 @@ export default function Products() {
                   <span className="text-sm">Sustainability Consulting</span>
                 </label>
               </div>
-            </div>
+            </div> */}
             <button className="w-full flex items-center justify-center gap-2 py-3 border-2 border-[#f0f4f3] dark:border-white/10 text-sm font-bold rounded-xl hover:bg-[#f8f8f8] dark:hover:bg-white/5 transition-colors">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" strokeWidth="2">
                 <path d="M3 6h18M6 12h12M9 18h6" />
