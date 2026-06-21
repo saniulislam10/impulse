@@ -64,7 +64,7 @@ export default function About() {
                 <img
                   alt="Professional portrait of the Chairperson"
                   className="w-full h-full object-cover"
-                  src="https://github.com/saniulislam10/impulse/blob/master/nextjs-impulse/public/neher.jpg"
+                  src="/neher.jpg"
                 />
               </div>
               <div className="absolute -bottom-6 -right-6 bg-white dark:bg-gray-800 p-6 rounded-xl shadow-xl max-w-[240px]">
