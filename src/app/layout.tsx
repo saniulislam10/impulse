@@ -9,7 +9,7 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
   title: 'Impulse Group | Nurturing Growth, Delivering Excellence',
-  description: 'Impulse Group is a multi-brand conglomerate dedicated to excellence across Just Natural, Impulse Solutions, and KKS.',
+  description: 'Impulse Group is a multi-brand conglomerate dedicated to excellence across Just Natural, Impulse Business Solution OPC, and KKS.',
 };
 
 export default function RootLayout({

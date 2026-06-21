@@ -89,7 +89,7 @@ export default function Brands() {
                 </div>
               </div>
 
-              {/* Brand 2: Impulse Solutions */}
+              {/* Brand 2: Impulse Business Solution OPC */}
               <div className="brand-card group bg-white dark:bg-[#1a1a1a] border border-gray-100 dark:border-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col">
                 <div className="relative h-64 overflow-hidden">
                   <div
@@ -109,7 +109,7 @@ export default function Brands() {
                 <div className="p-8 flex flex-col flex-grow">
                   <div className="flex items-center gap-2 mb-4">
                     <span className="w-10 h-1 bg-[#1b9883] rounded-full"></span>
-                    <h3 className="text-2xl font-extrabold">Impulse Solutions</h3>
+                    <h3 className="text-2xl font-extrabold">Impulse Business Solution OPC</h3>
                   </div>
                   <p className="text-gray-600 dark:text-gray-400 mb-8 flex-grow leading-relaxed">
                     Strategic corporate consulting and cutting-edge technology solutions designed for the modern enterprise ecosystem.

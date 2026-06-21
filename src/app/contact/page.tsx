@@ -15,7 +15,7 @@ export default function Contact() {
         <div className="mb-12">
           <h2 className="text-[#121716] dark:text-white text-5xl font-black leading-tight tracking-tight mb-4">Connect With Us</h2>
           <p className="text-[#658680] dark:text-gray-400 text-lg max-w-2xl">
-            Whether you&apos;re looking for support with <span className="text-[#1b9883] font-semibold">Just Natural</span>, seeking <span className="text-[#1b9883] font-semibold">Impulse Solutions</span> for your business, or inquiring about <span className="text-[#1b9883] font-semibold">KKS</span> logistics, our team is ready to assist.
+            Whether you&apos;re looking for support with <span className="text-[#1b9883] font-semibold">Just Natural</span>, seeking <span className="text-[#1b9883] font-semibold">Impulse Business Solution OPC</span> for your business, or inquiring about <span className="text-[#1b9883] font-semibold">KKS</span> logistics, our team is ready to assist.
           </p>
         </div>
 
@@ -78,7 +78,7 @@ export default function Contact() {
                   <p className="text-gray-500 text-sm">info@impulsegroupbd.com</p>
                 </div>
                 <div className="group p-4 rounded-xl border border-gray-100 dark:border-gray-800 hover:border-[#1b9883]/30 transition-all bg-[#f8faf9]/50 dark:bg-white/5">
-                  <p className="text-xs font-bold text-[#1b9883] uppercase tracking-widest mb-2">Impulse Solutions (B2B)</p>
+                  <p className="text-xs font-bold text-[#1b9883] uppercase tracking-widest mb-2">Impulse Business Solution OPC (B2B)</p>
                   <p className="text-lg font-medium dark:text-white">+880 1643 959 399</p>
                   <p className="text-gray-500 text-sm">solutions@impulsegroupbd.com</p>
                 </div>
@@ -120,7 +120,7 @@ export default function Contact() {
                     <select className="w-full px-4 py-3 rounded-lg border border-gray-200 dark:border-gray-700 dark:bg-gray-800 dark:text-white focus:ring-2 focus:ring-[#1b9883]/20 focus:border-[#1b9883] outline-none appearance-none transition-all cursor-pointer">
                       <option value="general">Impulse Group (General)</option>
                       <option value="natural">Just Natural (Consumer Goods)</option>
-                      <option value="solutions">Impulse Solutions (Enterprise)</option>
+                      <option value="solutions">Impulse Business Solution OPC (Enterprise)</option>
                       <option value="kks">KKS (Logistics &amp; Supply)</option>
                     </select>
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" strokeWidth="2" className="absolute right-3 top-3.5 text-gray-400 pointer-events-none">

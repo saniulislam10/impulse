@@ -3,7 +3,7 @@ import Footer from '@/components/Footer';
 
 export const metadata = {
   title: 'Impulse Group | Nurturing Growth, Delivering Excellence',
-  description: 'Impulse Group is a multi-brand conglomerate dedicated to excellence across Just Natural, Impulse Solutions, and KKS.',
+  description: 'Impulse Group is a multi-brand conglomerate dedicated to excellence across Just Natural, Impulse Business Solution OPC, and KKS.',
 };
 
 const clients = ['/shajeda.jpg', '/i13media.png', '/pubali.jpeg'];
@@ -27,7 +27,7 @@ export default function Home() {
                     <span className="text-[#1b9883]">Delivering Excellence.</span>
                   </h1>
                   <p className="text-lg text-gray-600 dark:text-gray-400 max-w-xl leading-relaxed">
-                    Impulse Group is a multi-brand conglomerate dedicated to excellence across Just Natural, Impulse Solutions, and KKS. We bridge industries with innovation and integrity.
+                    Impulse Group is a multi-brand conglomerate dedicated to excellence across Just Natural, Impulse Business Solution OPC, and KKS. We bridge industries with innovation and integrity.
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-4">
@@ -140,7 +140,7 @@ export default function Home() {
                   ></div>
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors"></div>
                 </div>
-                <h3 className="text-2xl font-bold mb-2">Impulse Solutions</h3>
+                <h3 className="text-2xl font-bold mb-2">Impulse Business Solution OPC</h3>
                 <p className="text-gray-500 text-sm mb-4 leading-relaxed">Strategic corporate consulting and integrated business solutions for modern enterprises.</p>
                 <a className="text-[#1b9883] font-bold flex items-center gap-2 group-hover:gap-3 transition-all" href="#">
                   Learn More <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" strokeWidth="2">

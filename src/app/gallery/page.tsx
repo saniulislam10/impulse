@@ -33,7 +33,7 @@ export default function Gallery() {
             Just Natural
           </button>
           <button className="px-6 py-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm font-semibold hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors whitespace-nowrap">
-            Impulse Solutions
+            Impulse Business Solution OPC
           </button>
           <button className="px-6 py-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm font-semibold hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors whitespace-nowrap">
             KKS Sports

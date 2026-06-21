@@ -33,7 +33,7 @@ export default function About() {
                 Pioneering <span className="text-[#1b9883]">Excellence</span> Across Generations
               </h1>
               <p className="text-lg text-gray-600 dark:text-gray-400 max-w-xl leading-relaxed">
-                A multi-brand conglomerate dedicated to innovation, sustainability, and growth. We harmonize the organic purity of Just Natural with the precision of Impulse Solutions and the scale of KKS.
+                A multi-brand conglomerate dedicated to innovation, sustainability, and growth. We harmonize the organic purity of Just Natural with the precision of Impulse Business Solution OPC and the scale of KKS.
               </p>
               <div className="flex flex-wrap gap-4">
                 <button className="bg-[#1b9883] text-white font-bold px-8 py-4 rounded-xl hover:scale-105 transition-transform shadow-lg shadow-[#1b9883]/20">
@@ -86,7 +86,7 @@ export default function About() {
                   For nearly three decades, Impulse Group has evolved from a local startup into a global powerhouse. Our philosophy is simple: innovate where it matters most.
                 </p>
                 <p>
-                  Through {`'Just Natural'`}, we&apos;ve returned to our roots in organic wellness. Through {`'Impulse Solutions'`}, we define the cutting edge of industrial tech. And through {`'KKS'`}, we manage the logistics that connect the world.
+                  Through {`'Just Natural'`}, we&apos;ve returned to our roots in organic wellness. Through {`'Impulse Business Solution OPC'`}, we define the cutting edge of industrial tech. And through {`'KKS'`}, we manage the logistics that connect the world.
                 </p>
               </div>
             </div>
@@ -106,7 +106,7 @@ export default function About() {
               {[
                 { year: '1995', title: 'Foundation of Impulse Group', desc: 'Started as a small consulting firm in London, focusing on sustainable industrial practices before it was a global trend.', icon: 'history_edu', color: 'bg-[#1b9883]', borderColor: 'border-l-4 border-[#1b9883]', reverse: true },
                 { year: '2005', title: 'Launch of Just Natural', desc: 'Diversified into the FMCG sector with an organic-first approach, launching our flagship health brand.', icon: 'eco', color: 'bg-[#D1BC94]', borderColor: 'border-r-4 border-[#D1BC94]', reverse: false },
-                { year: '2012', title: 'Expansion into Solutions', desc: 'Impulse Solutions was established to provide enterprise-level technological frameworks for global logistics.', icon: 'precision_manufacturing', color: 'bg-[#1b9883]', borderColor: 'border-l-4 border-[#1b9883]', reverse: true },
+                { year: '2012', title: 'Expansion into Solutions', desc: 'Impulse Business Solution OPC was established to provide enterprise-level technological frameworks for global logistics.', icon: 'precision_manufacturing', color: 'bg-[#1b9883]', borderColor: 'border-l-4 border-[#1b9883]', reverse: true },
                 { year: '2020', title: 'Acquisition of KKS', desc: 'Finalized the acquisition of KKS Logistics, completing our end-to-end supply chain integration.', icon: 'hub', color: 'bg-gray-900', borderColor: 'border-r-4 border-gray-900', reverse: false },
               ].map((milestone, i) => (
                 <div key={i} className={`relative flex items-center justify-between ${milestone.reverse ? 'flex-row-reverse md:flex-row' : 'flex-row'}`}>

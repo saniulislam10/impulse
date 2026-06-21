@@ -179,7 +179,7 @@ export default function Products() {
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" strokeWidth="2" className="text-[#658680]">
                       <path d="M6 19h12a3 3 0 003-3V7a3 3 0 00-3-3H6a3 3 0 00-3 3v9a3 3 0 003 3z" />
                     </svg>
-                    <span className="text-sm font-medium">Impulse Solutions</span>
+                    <span className="text-sm font-medium">Impulse Business Solution OPC</span>
                   </div>
                   <span className="text-xs font-medium text-[#658680]">18</span>
                 </label>

@@ -48,7 +48,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link className="hover:text-primary transition-colors" href="/brands">
-                  Impulse Solutions
+                  Impulse Business Solution OPC
                 </Link>
               </li>
               <li>
