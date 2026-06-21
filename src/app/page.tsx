@@ -45,7 +45,7 @@ export default function Home() {
                   <div
                     className="relative aspect-square lg:aspect-[4/5] bg-center bg-cover rounded-xl shadow-2xl overflow-hidden"
                     style={{
-                      backgroundImage: `url("https://lh3.googleusercontent.com/aida-public/AB6AXuB98eWRU6D0nmpAyYkQ0vGNenXkgiKJfWT77PlSshqxThwYGa3StIC42NC5VsOmS2JBCfyHr0EMTq0hOKkdriukSl2qq_C8EVzVSq4ugFkkDErsRXHcx13v42mBUT3DIKuFAINCU1AQHwec3_flhuxhcuPMd_Vc5xpNqI-ohGTjoqMT0i3lgYVJsOdMEugdrovzXhYsGMLXU819o0rjmii0tv0jMVRLj9pKtDI-FpknUgyWyZPLoC5bbUruNEcdB9KhvDp_HEESpTo")`
+                      backgroundImage: `url("/all-sample.jpg")`,
                     }}
                   >
                     <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
@@ -116,7 +116,7 @@ export default function Home() {
                   <div
                     className="brand-image absolute inset-0 bg-cover bg-center transition-transform duration-500"
                     style={{
-                      backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuD_oUNELye5PqitaZCRsGI3W_6K_FCqOOc9veQSMaW_sChcHlUpUFgbQ-6w2H4dO4JWPDCHc_SBK41s4zVwHf0gzzL_ZXTzCpPC-HiLXR03bNnK8bzHk0zmX5ubtt74yQxVpNbxzkwXWQEDr5z6Y-w6SIQ706kK2MHBMl9QMJk3lS-zuEs2LAcHoz5VjCfMkmVTYqH5i63hApbkOo0qa7gFhj8ONdil0_3vq_hdrfiofShVeFQyCM82ALsxHvEOkPDmXctT20QZQM0')`
+                      backgroundImage: `url('/all-sample.jpg')`
                     }}
                   ></div>
                   <div className="absolute inset-0 bg-[#1b9883]/20 group-hover:bg-[#1b9883]/10 transition-colors"></div>
