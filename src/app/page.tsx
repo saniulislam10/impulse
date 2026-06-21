@@ -124,7 +124,7 @@ export default function Home() {
                 <p className="text-gray-500 text-sm mb-4 leading-relaxed">Sustainable organic products for a healthier lifestyle, ethically sourced and distributed globally.</p>
                 <a className="text-[#1b9883] font-bold flex items-center gap-2 group-hover:gap-3 transition-all" href="#">
                   Learn More <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" strokeWidth="2">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                    <path d="M5 12h14M12 5l7 7-7 7" />
                   </svg>
                 </a>
               </div>
@@ -143,7 +143,7 @@ export default function Home() {
                 <p className="text-gray-500 text-sm mb-4 leading-relaxed">Strategic corporate consulting and integrated business solutions for modern enterprises.</p>
                 <a className="text-[#1b9883] font-bold flex items-center gap-2 group-hover:gap-3 transition-all" href="#">
                   Learn More <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" strokeWidth="2">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                    <path d="M5 12h14M12 5l7 7-7 7" />
                   </svg>
                 </a>
               </div>
@@ -162,7 +162,7 @@ export default function Home() {
                 <p className="text-gray-500 text-sm mb-4 leading-relaxed">Advanced manufacturing and logistical infrastructure powering international trade lanes.</p>
                 <a className="text-[#1b9883] font-bold flex items-center gap-2 group-hover:gap-3 transition-all" href="#">
                   Learn More <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" strokeWidth="2">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                    <path d="M5 12h14M12 5l7 7-7 7" />
                   </svg>
                 </a>
               </div>
@@ -171,7 +171,7 @@ export default function Home() {
         </section>
 
         {/* Logo Marquee */}
-        <section className="py-16 border-t border-[#f0f4f3] dark:border-white/5 overflow-hidden">
+        {/* <section className="py-16 border-t border-[#f0f4f3] dark:border-white/5 overflow-hidden">
           <h3 className="text-center text-sm font-bold text-gray-400 uppercase tracking-[0.2em] mb-12">Our Prestigious Clients</h3>
           <div className="logo-marquee">
             <div className="logo-track">
@@ -179,7 +179,7 @@ export default function Home() {
               <img alt="Client Logo 2" className="opacity-40 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWlB7Quq4t6Askq55gjTxBLzcrqa45PCL1fCuHTZb6ssA4UACJl_oEVWKnQyjMHxW6UV4ZOoPlfit4NSWqVKYU23bCAcgakd5vvFnfneMGRJFxfat92BasOh4cei7CXEPm-bJUXsh-sC1dpYd92Chg9YlIEQWtvOJLnCRQp6S-_dyH2MngJy2P_6yIUpkm_mMqOsKO2Fb5X1xQa0RbxEVRSqxHZv4PteFd6pEQnIL0lJ-aDnOK6bKAYP_FOpqbKoSznEWKg" />
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
       <Footer />
     </div>
