@@ -64,7 +64,7 @@ export default function About() {
                 <img
                   alt="Professional portrait of the Chairperson"
                   className="w-full h-full object-cover"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAalncMc-OqSTGkMdxYxZf0jjoJ_ZUpT-WJe4iuriPQPj5pv3EDOt4_t0TtQJR_adtqZ0iGuvcRNBx4_JAce5TLFf4B7g5hv-wYsrqFKb8skxkX6ECnsS4nx3KurSx778G2sXNTX5gx-NV7YGTJlgf0r4sKPmt3Gi982lqp-VNzG5820tKupgD9GQwZLOqFtpmzu5UOZZFXHa2d9ISUq5jCLB7NJZtRRYT-YZ6IXrNeJvVO3-R6Y50vs6UpmzXQOM8ZjX-9mDs7Lb0"
+                  src="https://github.com/saniulislam10/impulse/blob/master/nextjs-impulse/public/neher.jpg"
                 />
               </div>
               <div className="absolute -bottom-6 -right-6 bg-white dark:bg-gray-800 p-6 rounded-xl shadow-xl max-w-[240px]">
@@ -137,7 +137,7 @@ export default function About() {
             </div>
             <button className="flex items-center gap-2 text-[#1b9883] font-bold border-b-2 border-[#1b9883]/20 hover:border-[#1b9883] pb-1 transition-all">
               View Full Directory <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" strokeWidth="2">
-                <path d="M5 12h14M12 5l7 7-7 7"/>
+                <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
             </button>
           </div>
@@ -157,10 +157,10 @@ export default function About() {
                   <p className="text-sm text-[#1b9883] font-semibold uppercase tracking-wider mt-1">{member.role}</p>
                   <div className="flex justify-center gap-3 mt-4 text-gray-400">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" strokeWidth="2" className="cursor-pointer hover:text-[#1b9883]">
-                      <path d="M3 8l9 6 9-6M3 8v10a2 2 0 002 2h14a2 2 0 002-2V8"/>
+                      <path d="M3 8l9 6 9-6M3 8v10a2 2 0 002 2h14a2 2 0 002-2V8" />
                     </svg>
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" strokeWidth="2" className="cursor-pointer hover:text-[#1b9883]">
-                      <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2M12 11a4 4 0 100-8 4 4 0 000 8z"/>
+                      <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2M12 11a4 4 0 100-8 4 4 0 000 8z" />
                     </svg>
                   </div>
                 </div>
