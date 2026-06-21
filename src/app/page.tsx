@@ -6,7 +6,7 @@ export const metadata = {
   description: 'Impulse Group is a multi-brand conglomerate dedicated to excellence across Just Natural, Impulse Solutions, and KKS.',
 };
 
-const clients = ['/shajeda.jpg', '/i13media.png'];
+const clients = ['/shajeda.jpg', '/i13media.png', '/pubali.jpeg'];
 
 export default function Home() {
   return (
@@ -177,7 +177,7 @@ export default function Home() {
           <div className="logo-marquee">
             <div className="logo-track flex items-center justify-center gap-4">
               {clients.map((logo, index) => (
-                <img key={index} alt={`Client Logo ${index + 1}`} className="w-32 h-32 object-contain opacity-40 hover:opacity-100 transition-opacity" src={logo} />
+                <img key={index} alt={`Client Logo ${index + 1}`} className="w-32 h-32 object-contain opacity-80 hover:opacity-100 transition-opacity" src={logo} />
               ))}
             </div>
           </div>
