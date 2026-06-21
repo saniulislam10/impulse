@@ -5,7 +5,32 @@ export const metadata = {
   title: 'Products Catalog | Impulse Group',
   description: 'Explore our diverse range of products and solutions across all brands.',
 };
-
+const products = [
+  {
+    title: 'Cashew Nuts',
+    brand: 'Just Natural',
+    desc: 'Cashew nuts are creamy, mildly sweet, and nutrient-rich tree nuts known for their soft texture and delicious taste. They are a good source of healthy fats, protein, vitamins, and minerals, making them a popular choice for healthy snacks, desserts, and savory dishes. Cashews are enjoyed worldwide for both their flavor and nutritional benefits.', img: '/cashew-nuts.png',
+    icon: 'eco',
+    color: '#1b9883'
+  },
+  {
+    title: 'Red Apricot',
+    brand: 'Just Natural',
+    desc: 'Red Apricot is a delicious and nutritious dried fruit known for its naturally sweet taste, vibrant color, and soft texture. Rich in fiber, vitamins, and antioxidants, it makes a healthy snack for any time of the day. Enjoy its delightful flavor on its own or add it to cereals, desserts, and trail mixes for an extra burst of natural goodness.',
+    img: '/red-apricot.png',
+    icon: 'cloud_done',
+    color: '#3b82f6',
+    badge: 'Premium'
+  },
+  {
+    title: 'Chia Seeds',
+    brand: 'Just Natural',
+    desc: 'Chia Seeds are tiny nutrient-rich seeds packed with fiber, plant-based protein, omega-3 fatty acids, and essential minerals. Known for their mild flavor and versatility, they can be easily added to smoothies, yogurt, cereals, baked goods, and desserts. Chia Seeds are a natural choice for supporting a healthy and balanced lifestyle while adding a nutritious boost to your daily diet.',
+    img: '/chia-seeds.jpeg',
+    icon: 'precision_manufacturing',
+    color: '#64748b'
+  },
+]
 export default function Products() {
   return (
     <div className="bg-white dark:bg-[#1a1a1a] font-[Manrope] text-[#121716] dark:text-gray-100 antialiased">
@@ -91,12 +116,12 @@ export default function Products() {
                 <h1 className="text-4xl font-black tracking-tight mb-2">Portfolio Explorer</h1>
                 <p className="text-[#658680]">Discover excellence across our multi-brand conglomerate.</p>
               </div>
-              <button className="flex items-center gap-2 px-5 py-2.5 bg-[#f8f8f8] dark:bg-white/5 text-[#121716] dark:text-white text-sm font-bold rounded-lg border border-[#f0f4f3] dark:border-white/10 hover:border-[#1b9883]/50 transition-all">
+              <a href="/Just-Natural-Export-Profile.pdf" download className="flex items-center gap-2 px-5 py-2.5 bg-[#f8f8f8] dark:bg-white/5 text-[#121716] dark:text-white text-sm font-bold rounded-lg border border-[#f0f4f3] dark:border-white/10 hover:border-[#1b9883]/50 transition-all">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" strokeWidth="2">
                   <path d="M12 2v12M5 10l7 7 7-7" />
                 </svg>
                 Full Catalog (PDF)
-              </button>
+              </a>
             </div>
           </div>
           {/* Active Chips */}
@@ -116,13 +141,7 @@ export default function Products() {
           </div>
           {/* Product Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8">
-            {[
-              {
-                title: 'Cashew Nuts', brand: 'Just Natural', desc: 'Cashew nuts are creamy, mildly sweet, and nutrient-rich tree nuts known for their soft texture and delicious taste. They are a good source of healthy fats, protein, vitamins, and minerals, making them a popular choice for healthy snacks, desserts, and savory dishes. Cashews are enjoyed worldwide for both their flavor and nutritional benefits.', img: '/cashew-nuts.png', icon: 'eco', color: '#1b9883'
-              },
-              { title: 'Red Apricot', brand: 'Just Natural', desc: 'Red Apricot is a delicious and nutritious dried fruit known for its naturally sweet taste, vibrant color, and soft texture. Rich in fiber, vitamins, and antioxidants, it makes a healthy snack for any time of the day. Enjoy its delightful flavor on its own or add it to cereals, desserts, and trail mixes for an extra burst of natural goodness.', img: '/red-apricot.png', icon: 'cloud_done', color: '#3b82f6', badge: 'Premium' },
-              { title: 'Chia Seeds', brand: 'Just Natural', desc: 'Chia Seeds are tiny nutrient-rich seeds packed with fiber, plant-based protein, omega-3 fatty acids, and essential minerals. Known for their mild flavor and versatility, they can be easily added to smoothies, yogurt, cereals, baked goods, and desserts. Chia Seeds are a natural choice for supporting a healthy and balanced lifestyle while adding a nutritious boost to your daily diet.', img: '/chia-seeds.jpeg', icon: 'precision_manufacturing', color: '#64748b' },
-            ].map((product, i) => (
+            {products.map((product, i) => (
               <div key={i} className="group bg-white dark:bg-white/5 rounded-2xl border border-[#f0f4f3] dark:border-white/10 overflow-hidden hover:shadow-2xl hover:shadow-[#1b9883]/5 hover:-translate-y-1 transition-all duration-300">
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent z-10"></div>

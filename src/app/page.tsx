@@ -6,6 +6,8 @@ export const metadata = {
   description: 'Impulse Group is a multi-brand conglomerate dedicated to excellence across Just Natural, Impulse Solutions, and KKS.',
 };
 
+const clients = ['/shajeda.jpg', '/i13media.png'];
+
 export default function Home() {
   return (
     <div className="bg-white dark:bg-[#1a1a1a] font-[Manrope] text-[#121716] dark:text-white transition-colors duration-300">
@@ -76,7 +78,6 @@ export default function Home() {
               <div className="bg-white dark:bg-[#1a1a1a] p-8 rounded-xl border border-[#dce5e3] dark:border-white/10 hover:shadow-xl transition-shadow group">
                 <div className="flex justify-between items-start mb-4">
                   <p className="text-sm font-bold text-gray-500 uppercase tracking-wider">Years of Excellence</p>
-                  <span className="text-[#1b9883] font-bold text-sm bg-[#1b9883]/10 px-2 py-1 rounded">+5% YoY</span>
                 </div>
                 <p className="text-5xl font-black text-[#121716] dark:text-white mb-2">25+</p>
                 <p className="text-gray-500 text-sm">Founded on principles of sustainability and ethical growth.</p>
@@ -175,12 +176,9 @@ export default function Home() {
           <h3 className="text-center text-sm font-bold text-gray-400 uppercase tracking-[0.2em] mb-12">Our Prestigious Clients</h3>
           <div className="logo-marquee">
             <div className="logo-track flex items-center justify-center gap-4">
-              <img alt="Client Logo 1" className="w-32 h-32 object-contain opacity-40 hover:opacity-100 transition-opacity" src="/shajeda.jpg" />
-              <img alt="Client Logo 2" className="w-32 h-32 object-contain opacity-40 hover:opacity-100 transition-opacity" src="/i13media.png" />
-              <img alt="Client Logo 1" className="w-32 h-32 object-contain opacity-40 hover:opacity-100 transition-opacity" src="/shajeda.jpg" />
-              <img alt="Client Logo 2" className="w-32 h-32 object-contain opacity-40 hover:opacity-100 transition-opacity" src="/i13media.png" />
-              <img alt="Client Logo 1" className="w-32 h-32 object-contain opacity-40 hover:opacity-100 transition-opacity" src="/shajeda.jpg" />
-              <img alt="Client Logo 2" className="w-32 h-32 object-contain opacity-40 hover:opacity-100 transition-opacity" src="/i13media.png" />
+              {clients.map((logo, index) => (
+                <img key={index} alt={`Client Logo ${index + 1}`} className="w-32 h-32 object-contain opacity-40 hover:opacity-100 transition-opacity" src={logo} />
+              ))}
             </div>
           </div>
         </section>

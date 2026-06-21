@@ -8,11 +8,7 @@ export default function Footer() {
           {/* Brand Info */}
           <div className="space-y-6">
             <div className="flex items-center gap-3">
-              <div className="text-primary">
-                <svg className="size-6" fill="currentColor" viewBox="0 0 48 48">
-                  <path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z" />
-                </svg>
-              </div>
+              <img src="/logo-old-t.png" alt="Impulse Group Logo" className="w-10 h-10 object-contain" />
               <h2 className="text-xl font-extrabold tracking-tight">Impulse Group</h2>
             </div>
             <p className="text-gray-500 text-sm leading-relaxed">
@@ -22,29 +18,20 @@ export default function Footer() {
             <div className="flex gap-4">
               <a
                 className="size-10 rounded-full border border-[#dce5e3] dark:border-white/10 flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
-                href="#"
-                aria-label="Share"
-              >
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" strokeWidth="2">
-                  <path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8M16 6l-4-4-4 4M12 2v13" />
-                </svg>
-              </a>
-              <a
-                className="size-10 rounded-full border border-[#dce5e3] dark:border-white/10 flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
-                href="#"
-                aria-label="Website"
+                href="https://www.facebook.com/impulsebusinesssolution"
+                aria-label="Facebook"
               >
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                  <path d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07C2 17.06 5.66 21.24 10.44 22v-7.01H8.08v-2.92h2.36V9.41c0-2.33 1.39-3.61 3.52-3.61 1.02 0 2.09.18 2.09.18v2.3h-1.18c-1.16 0-1.52.72-1.52 1.46v1.75h2.59l-.41 2.92h-2.18V22C18.34 21.24 22 17.06 22 12.07z" />
                 </svg>
               </a>
               <a
                 className="size-10 rounded-full border border-[#dce5e3] dark:border-white/10 flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
-                href="#"
-                aria-label="Link"
+                href="https://www.instagram.com/justnatural4u/"
+                aria-label="Instagram"
               >
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" strokeWidth="2">
-                  <path d="M10 13a5 5 0 0073.46-2.46l3.89-3.89a5 5 0 00-7.07-7.07l-1.93 1.93M14 11a5 5 0 00-7.34 2.46l-3.89 3.89a5 5 0 007.07 7.07l1.93-1.93" />
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849s.013-3.583.07-4.849c.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.059-1.28.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.322a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z" />
                 </svg>
               </a>
             </div>
