@@ -134,7 +134,7 @@ export default function Footer() {
 
         {/* Bottom Footer */}
         <div className="pt-10 border-t border-[#f0f4f3] dark:border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-400">
-          <p>© 2024 Impulse Group. All Rights Reserved.</p>
+          <p>© {new Date().getFullYear()} Impulse Group. All Rights Reserved.</p>
           <div className="flex gap-8">
             <a className="hover:text-primary transition-colors" href="#">
               Privacy Policy

@@ -171,15 +171,19 @@ export default function Home() {
         </section>
 
         {/* Logo Marquee */}
-        {/* <section className="py-16 border-t border-[#f0f4f3] dark:border-white/5 overflow-hidden">
+        <section className="py-16 border-t border-[#f0f4f3] dark:border-white/5 overflow-hidden">
           <h3 className="text-center text-sm font-bold text-gray-400 uppercase tracking-[0.2em] mb-12">Our Prestigious Clients</h3>
           <div className="logo-marquee">
-            <div className="logo-track">
-              <img alt="Client Logo 1" className="opacity-40 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAele9TFfTyrenqQg2qlrmDykNkffDTuPCDQuChoCt2FVo-yPSLLg-xwPC3SYm2ENG80ygaa1ShIFgCYxObOzNLKJffEY6swBIHPauWXA3frYiEjt35OteRKuBBVlQwhnJFLWszSLYIy1aWFsrtAnlMiFxoUoyhnGHAmN-MRopkBeqazGip7fMW6GEev1PkuJKLK55bVXY8ZiuX2ZYVry9q1qgjPS9QZQWEHINyPD3nRe7NR8qgMBhsYYfrTuApCcieYYx-Tr8JxL8" />
-              <img alt="Client Logo 2" className="opacity-40 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWlB7Quq4t6Askq55gjTxBLzcrqa45PCL1fCuHTZb6ssA4UACJl_oEVWKnQyjMHxW6UV4ZOoPlfit4NSWqVKYU23bCAcgakd5vvFnfneMGRJFxfat92BasOh4cei7CXEPm-bJUXsh-sC1dpYd92Chg9YlIEQWtvOJLnCRQp6S-_dyH2MngJy2P_6yIUpkm_mMqOsKO2Fb5X1xQa0RbxEVRSqxHZv4PteFd6pEQnIL0lJ-aDnOK6bKAYP_FOpqbKoSznEWKg" />
+            <div className="logo-track flex items-center justify-center gap-4">
+              <img alt="Client Logo 1" className="w-32 h-32 object-contain opacity-40 hover:opacity-100 transition-opacity" src="/shajeda.jpg" />
+              <img alt="Client Logo 2" className="w-32 h-32 object-contain opacity-40 hover:opacity-100 transition-opacity" src="/i13media.png" />
+              <img alt="Client Logo 1" className="w-32 h-32 object-contain opacity-40 hover:opacity-100 transition-opacity" src="/shajeda.jpg" />
+              <img alt="Client Logo 2" className="w-32 h-32 object-contain opacity-40 hover:opacity-100 transition-opacity" src="/i13media.png" />
+              <img alt="Client Logo 1" className="w-32 h-32 object-contain opacity-40 hover:opacity-100 transition-opacity" src="/shajeda.jpg" />
+              <img alt="Client Logo 2" className="w-32 h-32 object-contain opacity-40 hover:opacity-100 transition-opacity" src="/i13media.png" />
             </div>
           </div>
-        </section> */}
+        </section>
       </main>
       <Footer />
     </div>
