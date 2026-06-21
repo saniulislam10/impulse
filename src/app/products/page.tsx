@@ -1,10 +1,12 @@
+'use client';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { useState } from 'react';
 
-export const metadata = {
-  title: 'Products Catalog | Impulse Group',
-  description: 'Explore our diverse range of products and solutions across all brands.',
-};
+// export const metadata = {
+//   title: 'Products Catalog | Impulse Group',
+//   description: 'Explore our diverse range of products and solutions across all brands.',
+// };
 const products = [
   {
     title: 'Mustard honey',
@@ -14,7 +16,8 @@ const products = [
     icon: 'eco',
     color: '#1b9883',
     badge: ''
-  }, {
+  },
+  {
     title: 'Lychee flower honey',
     brand: 'Just Natural',
     desc: 'Experience the exquisite taste of our Lychee Flower Honey, a premium natural sweetener harvested from the nectar of lychee blossoms. This honey boasts a delicate floral aroma and a smooth, rich flavor that enhances teas, desserts, and culinary creations. Sourced sustainably, it is packed with antioxidants and nutrients, making it a healthy choice for your daily diet.',
@@ -123,7 +126,16 @@ const products = [
     badge: 'Premium'
   },
   {
-    title: 'Psyllium Husk 70g',
+    title: 'Peanut',
+    brand: 'Just Natural',
+    desc: 'Peanuts are a popular legume known for their rich flavor, crunchy texture, and nutritional benefits. Packed with protein, healthy fats, fiber, vitamins, and minerals, peanuts are a versatile ingredient enjoyed worldwide. They can be eaten raw, roasted, or as peanut butter and oil, making them a delicious and convenient addition to snacks, desserts, and savory dishes.',
+    img: '/products/Peanut 500g/photo.jpg',
+    icon: 'cloud_done',
+    color: '#3b82f6',
+    badge: 'Premium'
+  },
+  {
+    title: 'Psyllium Husk',
     brand: 'Just Natural',
     desc: 'Psyllium Husk is a natural dietary fiber derived from the seeds of the Plantago ovata plant. Known for its high soluble fiber content, it is commonly used as a gentle laxative and to support digestive health. Psyllium Husk can help regulate bowel movements, promote satiety, and support heart health by helping to lower cholesterol levels. It is often added to smoothies, baked goods, and other foods to boost fiber intake and improve overall wellness.',
     img: '/products/Psyllium Husk 70g/photo.jpg',
@@ -141,6 +153,8 @@ const products = [
   },
 ]
 export default function Products() {
+  const [selectedProduct, setSelectedProduct] = useState<any>(null);
+
   return (
     <div className="bg-white dark:bg-[#1a1a1a] font-[Manrope] text-[#121716] dark:text-gray-100 antialiased">
       <Header />
@@ -270,7 +284,10 @@ export default function Products() {
                     <h3 className="text-lg font-bold group-hover:text-[#1b9883] transition-colors">{product.title}</h3>
                     <p className="text-sm text-[#658680] line-clamp-2">{product.desc}</p>
                   </div>
-                  <button className="w-full flex items-center justify-center gap-2 py-3 bg-[#1b9883] text-white text-sm font-bold rounded-xl hover:brightness-110 active:scale-[0.98] transition-all">
+                  <button
+                    onClick={() => setSelectedProduct(product)}
+                    className="w-full flex items-center justify-center gap-2 py-3 bg-[#1b9883] text-white text-sm font-bold rounded-xl hover:brightness-110 active:scale-[0.98] transition-all"
+                  >
                     View Details
                   </button>
                 </div>
@@ -279,6 +296,91 @@ export default function Products() {
           </div>
         </div>
       </main>
+      {selectedProduct && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4">
+          <div className="bg-white dark:bg-[#1f1f1f] rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl">
+
+            <div className="relative">
+              <img
+                src={selectedProduct.img}
+                alt={selectedProduct.title}
+                className="w-full h-72 object-cover rounded-t-2xl"
+              />
+
+              <button
+                onClick={() => setSelectedProduct(null)}
+                className="absolute top-4 right-4 bg-white/90 dark:bg-black/80 rounded-full p-2 hover:scale-110 transition"
+              >
+                ✕
+              </button>
+            </div>
+
+            <div className="p-8">
+              <div className="flex items-center gap-3 mb-4">
+                <span
+                  className="w-3 h-3 rounded-full"
+                  style={{ backgroundColor: selectedProduct.color }}
+                ></span>
+
+                <span className="text-sm font-semibold text-[#658680]">
+                  {selectedProduct.brand}
+                </span>
+
+                {selectedProduct.badge && (
+                  <span className="bg-[#D1BC94] text-white px-2 py-1 rounded text-xs font-bold">
+                    {selectedProduct.badge}
+                  </span>
+                )}
+              </div>
+
+              <h2 className="text-3xl font-black mb-4">
+                {selectedProduct.title}
+              </h2>
+
+              <div className="space-y-4">
+                <p className="text-[#658680] dark:text-gray-300 leading-relaxed">
+                  {selectedProduct.desc}
+                </p>
+
+                <div className="border-t pt-4">
+                  <h3 className="font-bold mb-2">Product Information</h3>
+
+                  <div className="grid grid-cols-2 gap-4 text-sm">
+                    <div>
+                      <span className="font-semibold">Brand:</span>{' '}
+                      {selectedProduct.brand}
+                    </div>
+
+                    <div>
+                      <span className="font-semibold">Category:</span>{' '}
+                      Organic Food
+                    </div>
+
+                    <div>
+                      <span className="font-semibold">Status:</span>{' '}
+                      Available
+                    </div>
+
+                    <div>
+                      <span className="font-semibold">Quality:</span>{' '}
+                      Premium
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-8 flex justify-end">
+                <button
+                  onClick={() => setSelectedProduct(null)}
+                  className="px-6 py-3 bg-[#1b9883] text-white rounded-xl font-bold hover:brightness-110 transition"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
       <Footer />
     </div>
   );
