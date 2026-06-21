@@ -7,9 +7,56 @@ export const metadata = {
 };
 const products = [
   {
+    title: 'Butter Glazed Cashew Nut',
+    brand: 'Just Natural',
+    desc: 'Indulge in the rich, creamy crunch of our Butter Glazed Cashew Nuts. Premium whole cashews are lightly roasted and coated in a smooth, golden butter glaze for an irresistibly satisfying snack. Perfect for munching on the go or sharing at gatherings — a classic treat with every bite.',
+    img: '/products/Butter-Glazed-Cashew-Nut-150g/photo.jpg',
+    icon: 'eco',
+    color: '#1b9883',
+    badge: ''
+  },
+  {
+    title: 'Salt Roasted Cashew Nut',
+    brand: 'Just Natural',
+    desc: 'Perfectly roasted and lightly seasoned with just the right amount of salt, our Salt Roasted Cashew Nuts deliver a simple yet satisfying crunch in every bite. Made from premium whole cashews, this classic snack is ideal for any occasion — whether you are snacking solo, entertaining guests, or pairing with your favorite drink.',
+    img: '/products/Salt Roasted Cashew Nut/photo.jpg',
+    icon: 'eco',
+    color: '#1b9883',
+    badge: ''
+  },
+  {
+    title: 'Mixed Nut and Dry Fruits',
+    brand: 'Just Natural',
+    desc: 'A delightful blend of premium nuts and dried fruits, perfect for a healthy snack or a quick energy boost. Each bite delivers a burst of natural flavors and essential nutrients.',
+    img: '/products/Mixed Nut and Dry Fruits/photo.jpg',
+    icon: 'eco',
+    color: '#1b9883',
+    badge: 'Premium'
+  },
+  {
+    title: 'Mixed Dry Fruits',
+    brand: 'Just Natural',
+    desc: 'A delicious assortment of premium dried fruits, carefully selected for their natural sweetness and rich flavors. Perfect for snacking, baking, or adding a nutritious touch to your meals.',
+    img: '/products/Mixed Dry Fruits/photo.jpg',
+    icon: 'eco',
+    color: '#1b9883',
+    badge: 'Premium'
+  },
+  {
+    title: 'Sakura Plum',
+    brand: 'Just Natural',
+    desc: 'Sakura Plum is a unique and flavorful ingredient derived from the sap of the Sakura Palm tree. Known for its sweet, floral aroma and delicate taste, it is often used in gourmet cooking and artisanal products to add a touch of elegance and natural sweetness. Rich in nutrients and antioxidants, Sakura Plum is a versatile addition to both sweet and savory dishes, making it a favorite among chefs and food enthusiasts alike.',
+    img: '/products/Sakura Plum/photo.jpg',
+    icon: 'eco',
+    color: '#1b9883',
+    badge: 'Premium'
+  },
+
+  {
     title: 'Cashew Nuts',
     brand: 'Just Natural',
-    desc: 'Cashew nuts are creamy, mildly sweet, and nutrient-rich tree nuts known for their soft texture and delicious taste. They are a good source of healthy fats, protein, vitamins, and minerals, making them a popular choice for healthy snacks, desserts, and savory dishes. Cashews are enjoyed worldwide for both their flavor and nutritional benefits.', img: '/cashew-nuts.png',
+    desc: 'Cashew nuts are creamy, mildly sweet, and nutrient-rich tree nuts known for their soft texture and delicious taste. They are a good source of healthy fats, protein, vitamins, and minerals, making them a popular choice for healthy snacks, desserts, and savory dishes. Cashews are enjoyed worldwide for both their flavor and nutritional benefits.',
+    img: '/cashew-nuts.png',
     icon: 'eco',
     color: '#1b9883'
   },
@@ -17,7 +64,16 @@ const products = [
     title: 'Red Apricot',
     brand: 'Just Natural',
     desc: 'Red Apricot is a delicious and nutritious dried fruit known for its naturally sweet taste, vibrant color, and soft texture. Rich in fiber, vitamins, and antioxidants, it makes a healthy snack for any time of the day. Enjoy its delightful flavor on its own or add it to cereals, desserts, and trail mixes for an extra burst of natural goodness.',
-    img: '/red-apricot.png',
+    img: '/products/Red Apricot 300g/photo.jpg',
+    icon: 'cloud_done',
+    color: '#3b82f6',
+    badge: 'Premium'
+  },
+  {
+    title: 'Almond',
+    brand: 'Just Natural',
+    desc: 'Almonds are nutrient-dense tree nuts known for their crunchy texture and mildly sweet flavor. Packed with healthy fats, protein, fiber, vitamins, and minerals, almonds are a popular choice for snacking, baking, and cooking. They can be enjoyed raw, roasted, or as almond butter and milk, making them a versatile and delicious addition to a healthy diet.',
+    img: '/products/Almond 500g/photo.jpg',
     icon: 'cloud_done',
     color: '#3b82f6',
     badge: 'Premium'
