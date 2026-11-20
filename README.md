@@ -184,10 +184,6 @@ All pages are in `src/app/` directory. Edit the TSX files to update content, ima
 - **CSS Optimization** - Tailwind CSS purging unused styles
 - **SEO** - Metadata configuration for all pages
 
-## License
-
-© 2024 Impulse Group. All Rights Reserved.
-
 ## Support
 
 For questions or issues, please contact:
